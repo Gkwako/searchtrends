@@ -7,20 +7,12 @@
 
 ### Auteur:
 Gloria Kwako 
-
-#### Je startniveau:
-Blauwe piste 🗻
-
-#### Je focus:
-surface 🕹 🧩
  
 </details>
 
 
 
-
-
-## Je website
+## One page
 
 <details open>
 <summary>uitwerken voor kick-off werkgroep</summary>
@@ -44,14 +36,14 @@ Homepagina van de Louvre.
 ## Breakdownschets (week 1)
 
 <details>
-<summary>uitwerken na afloop 2e werkgroep</summary>
+<summary>uitwerkeing werkgroep</summary>
 
-### de hele pagina 1 & 2: 
-Hier is de volledige pagina te zien op een mobiele formaat.
+### de pagina: 
+
 <img src="" width="375px" alt="">
 
-### 2e pagina : 
-Hier is de volledige pagina te zien op een mobiele formaat.
+### de pagina : 
+
 <img src="" width="375px" alt="">
 
 
