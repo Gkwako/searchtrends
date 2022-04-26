@@ -3,22 +3,89 @@
 	margin: 0;
   }
 
-/* ****************************************************** */
-					/* CUSTOM PROPERTIES */
-/* ****************************************************** */
 
+
+
+
+/* ******************************* CUSTOM PROPERTIES */
 :root {
 	/* color */
-	--color-black:#111;
+    --color-blackish:#08060B;
+    --color-white:#FFFFFF;
+    --color-ww:#EDEDED;
 
 	/* fontfamily */
-	--h1-fontfamily: flegrei, sans-serif;
-	--h2-fontfamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	--h3-fontfamily: Avenir;
+	--h1-fontfamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --nav-fontfamily:'Open Sans', sans-serif;
 
 }
 
 
+
+
+
+/* ******************************* BODY OPMAAK */
 body{
-    background-color: #111;
+    background-color: var(--color-white);
 }
+
+
+
+/* ******************************* LOGO OPMAAK*/
+h1{
+    font-family: var(--h1-fontfamily);
+    font-weight: 400;
+
+    padding-left: 1em;
+}
+
+
+
+/* ******************************* NAVIGATIEBALK OPMAAK*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 2em;
+    background-color: gray; /* test */
+}
+    nav ul{
+        display: flex;
+        gap: 2em;
+        padding-right: 3em;
+    }
+        nav ul li{
+            list-style: none;
+            font-size: 2.5vmin;
+            font-family: var(--nav-fontfamily);
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: var(--color-blackish);
+        }
+
+
+        
+/* ******************************* OPMAAK HOME IMAGE*/
+section:first-of-type{
+    color: #FFFFFF;
+}
+section:first-of-type h2{
+    font-family: var(--h1-fontfamily);
+    font-weight: 400;
+
+    position: relative;
+    top: 5em;
+    padding-left: 2.3em;
+}
+
+    section:first-of-type h3{
+        position: relative;
+        top: -8em;
+        padding-left: 3.4em;
+    }
+        section:first-of-type img{
+            max-width: 100vmax;
+            max-height: 100vmax;
+        }
