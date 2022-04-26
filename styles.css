@@ -1,0 +1,19 @@
+*, *::after, *::before {
+	box-sizing:border-box;  
+	margin: 0;
+  }
+
+/* ****************************************************** */
+					/* CUSTOM PROPERTIES */
+/* ****************************************************** */
+
+:root {
+	/* color */
+	--color-black:#111;
+
+	/* fontfamily */
+	--h1-fontfamily: flegrei, sans-serif;
+	--h2-fontfamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--h3-fontfamily: Avenir;
+
+}
