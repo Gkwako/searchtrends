@@ -10,7 +10,7 @@ programmeren.
 ## Breakdownschets (onderdelen)
 
 <details>
-<img src="images/breakdownschets.png" width="375px" alt="breakdown van het geheel">
+<img src="images/breakdownschets.png" alt="breakdown van het geheel">
 </details>
 
 ## Voortgang 1 (week 2)
