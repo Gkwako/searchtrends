@@ -9,8 +9,9 @@ programmeren.
 
 ## Breakdownschets (onderdelen)
 
+<details>
 <img src="images/breakdownschets.png" width="375px" alt="breakdown van het geheel">
-
+</details>
 
 ## Voortgang 1 (week 2)
 
@@ -46,4 +47,5 @@ programmeren.
 
 <img src="RMimages/navv1b.png" width="375px" alt="navv1b">
 <img src="RMimages/navv1.png" width="375px" alt="navv1">
+
 </details>
