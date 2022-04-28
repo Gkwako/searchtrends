@@ -22,8 +22,6 @@
 
 
 
-
-
 /* ******************************* BODY OPMAAK */
 body{
     background-color: var(--color-white);
@@ -48,7 +46,7 @@ nav{
     align-items: center;
     
     padding: 2em;
-    background-color: gray; /* test */
+    /* background-color: gray; test */
 }
     nav ul{
         display: flex;
@@ -57,7 +55,7 @@ nav{
     }
         nav ul li{
             list-style: none;
-            font-size: 2.5vmin;
+            font-size: 2.3vmin;
             font-family: var(--nav-fontfamily);
         }
         nav ul li a{
@@ -68,7 +66,63 @@ nav{
 
         
 /* ******************************* OPMAAK HOME IMAGE*/
-section:first-of-type{
+
+.container-intro{
+    background-image: url(/images/home.jpg);
+    height: 50vmax;
+}
+    /* h2 tekst opmaak */
+    .background-shape h2{
+        font-family: var(--h1-fontfamily);
+        font-weight: 400;
+
+        color: #FFF;
+    }
+        /* h3 tekst opmaak */
+        .background-shape h3{
+            font-family: var(--h1-fontfamily);
+            font-weight: 400;
+
+            color: #FFF;
+        }
+
+        .background-shape{
+            background: rgba(203, 196, 196, 0.5); 
+            padding: 4em;
+            
+            position: relative;
+            min-height:100%;
+
+            overflow:hidden;
+        }
+            .background-shape::after{
+                content: '';
+                position: absolute;
+                bottom: -75%; left: 0; right: 0;
+                height:100%;
+                background:#FFF;
+                transform: skew(0deg, -9deg);
+
+
+        /* position: absolute; 
+        top: 1;
+        width: 2em;
+        background: rgb(0, 0, 0);
+        background: rgba(203, 196, 196, 0.5); 
+        
+        color: #f1f1f1; 
+        width: 100%;
+        transition: .5s ease;
+       
+        color: white;
+        font-size: 2em;
+        padding: 2em;
+        text-align: left; */
+
+    }
+
+    /* see-through */
+/* section:first-of-type{
     color: #FFFFFF;
 }
 section:first-of-type h2{
@@ -84,8 +138,8 @@ section:first-of-type h2{
         position: relative;
         top: -8em;
         padding-left: 3.4em;
-    }
-        section:first-of-type img{
+    } */
+        /* section:first-of-type img{
             max-width: 100vmax;
             max-height: 100vmax;
-        }
+        } */
