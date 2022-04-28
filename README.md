@@ -1,4 +1,3 @@
-# Procesverslag
 
 **Auteur: 
 Gloria Kwako 👾
@@ -38,7 +37,6 @@ programmeren.
 
 
 
-  
 ## Voortgang 1 (week 4)
 
 <details>
