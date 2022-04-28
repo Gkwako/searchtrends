@@ -24,6 +24,7 @@
 
 /* ******************************* BODY OPMAAK */
 body{
+    padding: 0 5em;
     background-color: var(--color-white);
 }
 
@@ -64,6 +65,9 @@ nav{
         }
 
 
+
+
+
         
 /* ******************************* OPMAAK HOME IMAGE*/
 
@@ -100,7 +104,7 @@ nav{
                 position: absolute;
                 bottom: -75%; left: 0; right: 0;
                 height:100%;
-                background:#FFF;
+                background:rgba(255, 255, 255, 0.283);
                 transform: skew(0deg, -9deg);
 
 
@@ -121,25 +125,173 @@ nav{
 
     }
 
-    /* see-through */
-/* section:first-of-type{
-    color: #FFFFFF;
-}
-section:first-of-type h2{
-    font-family: var(--h1-fontfamily);
-    font-weight: 400;
 
-    position: relative;
-    top: 5em;
-    padding-left: 2.3em;
+
+
+/* ******************************* OPMAAK KWALITEITEN*/
+
+  .container-kwaliteiten{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      padding: 7vmax;
+      gap: 5em;
+  }
+
+    .container-kwaliteiten section h3{
+        font-family: var(--h1-fontfamily);
+
+    }
+
+        .container-kwaliteiten section h4{
+            font-family: var(--h1-fontfamily);
+            font-weight: 350;
+            padding: 1em;
+        }
+
+
+
+
+
+/* ******************************* OPMAAK "OVER ONS"*/
+.container-info{
+    background-color: var(--color-ww);
 }
 
-    section:first-of-type h3{
-        position: relative;
-        top: -8em;
-        padding-left: 3.4em;
-    } */
-        /* section:first-of-type img{
-            max-width: 100vmax;
-            max-height: 100vmax;
-        } */
+#over-ons{
+    padding: 5em;
+}
+    #over-ons h2{
+        font-size: 2em;
+        font-family: var(--h1-fontfamily);
+    }
+
+       p{
+            font-family: var(--h1-fontfamily);
+            font-weight: 400;
+            padding-top: 1em;
+
+            text-align: justify;
+        }
+
+.parallax{
+    background-image: url(/images/home.jpg);
+    min-height: 30em; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/* ******************************* OPMAAK "PRODUCTEN"*/
+
+#product{
+    padding: 5em;
+}
+    #product h2{
+        font-size: 2em;
+        padding-bottom: 1em;
+        font-family: var(--h1-fontfamily);
+    }
+
+        #product article{
+            display: flex;
+            padding-bottom: 5em;
+            gap: 2em;
+
+        }
+            #product article img{
+                width: 60%;
+                height: 100%;   
+            }  
+
+            @media only screen and (max-width: 1000px) {
+                #product article {
+                    display: grid;
+                }
+                    #product article img{
+                        width: 100%;  
+                    }  
+              }
+
+
+/* ******************************* OPMAAK "PRODUCTEN INFO"*/
+
+.product-info{
+    padding: 5em;
+}
+    .product-info h2{
+        font-size: 2em;
+        padding-top: 2em;
+        font-family: var(--h1-fontfamily);
+    }
+        .product-info article{
+            display: flex;
+            padding-bottom: 1em;
+            gap: 2em;
+        }
+            .product-info article img{
+                width: 40em;
+            } 
+
+
+            @media only screen and (max-width: 1000px) {
+                .product-info article {
+                    display: grid;
+                }
+                    .product-info article img{
+                        width: 100%;
+                    }  
+              }
+
+
+
+
+/* ******************************* OPMAAK "CONTACT FORM"*/
+
+#contact{
+    padding: 5em;
+    background-color: var(--color-ww);
+}
+
+#contact p{
+    padding-bottom: 2em;
+}
+
+    #contact h2{
+        font-size: 2em;
+        font-family: var(--h1-fontfamily);
+    }
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
