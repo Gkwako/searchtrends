@@ -1,184 +1,236 @@
-*, *::after, *::before {
-	box-sizing:border-box;  
-	margin: 0;
-  }
-
-
-
-
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
 
 /* ******************************* CUSTOM PROPERTIES */
 :root {
-	/* color */
-    --color-blackish:#08060B;
-    --color-white:#FFFFFF;
-    --color-ww:#EDEDED;
+    /* color */
+    --color-blackish: #08060B;
+    --color-white: #FFFFFF;
+    --color-ww: #EDEDED;
 
-	/* fontfamily */
-	--h1-fontfamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --nav-fontfamily:'Open Sans', sans-serif;
-
+    /* fontfamily */
+    --h1-fontfamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --nav-fontfamily: 'Open Sans', sans-serif;
 }
 
 
 
-/* ******************************* BODY OPMAAK */
-body{
-    padding: 0 5em;
+
+
+/* ******************************* BODY */
+body {
+    /* Hele pagina opmaak */
     background-color: var(--color-white);
 }
 
 
 
-/* ******************************* LOGO OPMAAK*/
-h1{
-    font-family: var(--h1-fontfamily);
-    font-weight: 400;
-
-    padding-left: 1em;
-}
 
 
+/* ******************************* NAVIGATIEBALK */
 
-/* ******************************* NAVIGATIEBALK OPMAAK*/
-nav{
+nav { /* hele nav plaatsing */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    padding: 2em;
-    /* background-color: gray; test */
+    padding: 2em 7em;
+
+    /* nav sticky */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-white);
+    transition: .32s;
+    z-index: 1;
 }
-    nav ul{
-        display: flex;
-        gap: 2em;
-        padding-right: 3em;
+    .fixed {
+        position: fixed;
+        transition: .25s;
     }
-        nav ul li{
-            list-style: none;
-            font-size: 2.3vmin;
-            font-family: var(--nav-fontfamily);
-        }
-        nav ul li a{
-            text-decoration: none;
-            color: var(--color-blackish);
-        }
+
+h1 { /* logo opmaak*/
+    font-family: var(--h1-fontfamily);
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+nav ul { /* ruimte tussen de elementen*/
+    display: flex;
+    gap: 2.2em;
+}
+
+nav ul li { /* stijling van "home, over ons etc" */
+    font-family: var(--nav-fontfamily);
+    list-style: none;
+}
+
+nav ul li a { /* link stijling */
+    text-decoration: none;
+    color: var(--color-blackish);
+    padding: .6em;
+}
+
+
+  
+
+/* ---------------------- UNDERLINE EFFECT:HOVER */
+
+nav ul li a,
+nav ul li a:after { /* hover transition */
+    transition: all .5s;
+}
+
+nav ul li a:hover { /* hover kleur op tekst */
+    color: rgb(148, 143, 143);
+}
+
+nav ul li a { /* stroke plaatsing */
+    position: relative;
+}
+
+nav ul li a:after { /* stroke stijling */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: .1em;
+}
+
+nav ul li a:hover:after { /* stoke length */
+    width: 100%;
+}
 
 
 
 
 
-        
 /* ******************************* OPMAAK HOME IMAGE*/
 
-.container-intro{
-    background-image: url(/images/home.jpg);
+.container-intro {
+    background-image: url(../images/home.jpg);
     height: 50vmax;
 }
-    /* h2 tekst opmaak */
-    .background-shape h2{
-        font-family: var(--h1-fontfamily);
-        font-weight: 400;
 
-        color: #FFF;
-    }
-        /* h3 tekst opmaak */
-        .background-shape h3{
-            font-family: var(--h1-fontfamily);
-            font-weight: 400;
+/* h2 tekst opmaak */
+.background-shape h2 {
+    font-family: var(--h1-fontfamily);
+    font-weight: 400;
 
-            color: #FFF;
-        }
+    color: #FFF;
+}
 
-        .background-shape{
-            background: rgba(203, 196, 196, 0.5); 
-            padding: 4em;
-            
-            position: relative;
-            min-height:100%;
+/* h3 tekst opmaak */
+.background-shape h3 {
+    font-family: var(--h1-fontfamily);
+    font-weight: 400;
 
-            overflow:hidden;
-        }
-            .background-shape::after{
-                content: '';
-                position: absolute;
-                bottom: -75%; left: 0; right: 0;
-                height:100%;
-                background:rgba(255, 255, 255, 0.283);
-                transform: skew(0deg, -9deg);
+    color: #FFF;
+}
+
+.background-shape {
+    background: rgba(203, 196, 196, 0.5);
+    padding: 4em;
+
+    position: relative;
+    min-height: 100%;
+
+    overflow: hidden;
+}
+
+.background-shape::after {
+    content: '';
+    position: absolute;
+    bottom: -75%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.283);
+    transform: skew(0deg, -9deg);
 
 
-        /* position: absolute; 
-        top: 1;
-        width: 2em;
-        background: rgb(0, 0, 0);
-        background: rgba(203, 196, 196, 0.5); 
-        
-        color: #f1f1f1; 
-        width: 100%;
-        transition: .5s ease;
-       
-        color: white;
-        font-size: 2em;
-        padding: 2em;
-        text-align: left; */
+    position: absolute;
+    top: 1;
+    width: 2em;
+    background: rgb(0, 0, 0);
+    background: rgba(203, 196, 196, 0.5);
 
-    }
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+
+    color: white;
+    font-size: 2em;
+    padding: 2em;
+    text-align: left;
+
+}
 
 
 
 
 /* ******************************* OPMAAK KWALITEITEN*/
 
-  .container-kwaliteiten{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+.container-kwaliteiten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-      padding: 7vmax;
-      gap: 5em;
-  }
+    padding: 7vmax;
+    gap: 5em;
+}
 
-    .container-kwaliteiten section h3{
-        font-family: var(--h1-fontfamily);
+.container-kwaliteiten section h3 {
+    font-family: var(--h1-fontfamily);
 
-    }
+}
 
-        .container-kwaliteiten section h4{
-            font-family: var(--h1-fontfamily);
-            font-weight: 350;
-            padding: 1em;
-        }
+.container-kwaliteiten section h4 {
+    font-family: var(--h1-fontfamily);
+    font-weight: 350;
+    padding: 1em;
+}
 
 
 
 
 
 /* ******************************* OPMAAK "OVER ONS"*/
-.container-info{
+.container-info {
     background-color: var(--color-ww);
 }
 
-#over-ons{
+#over-ons {
     padding: 5em;
 }
-    #over-ons h2{
-        font-size: 2em;
-        font-family: var(--h1-fontfamily);
-    }
 
-       p{
-            font-family: var(--h1-fontfamily);
-            font-weight: 400;
-            padding-top: 1em;
+#over-ons h2 {
+    font-size: 2em;
+    font-family: var(--h1-fontfamily);
+}
 
-            text-align: justify;
-        }
+p {
+    font-family: var(--h1-fontfamily);
+    font-weight: 400;
+    padding-top: 1em;
 
-.parallax{
+    text-align: justify;
+}
+
+.parallax {
     background-image: url(/images/home.jpg);
-    min-height: 30em; 
+    min-height: 30em;
 
     background-attachment: fixed;
     background-position: center;
@@ -191,71 +243,78 @@ nav{
 
 /* ******************************* OPMAAK "PRODUCTEN"*/
 
-#product{
+#product {
     padding: 5em;
 }
-    #product h2{
-        font-size: 2em;
-        padding-bottom: 1em;
-        font-family: var(--h1-fontfamily);
+
+#product h2 {
+    font-size: 2em;
+    padding-bottom: 1em;
+    font-family: var(--h1-fontfamily);
+}
+
+#product article {
+    display: flex;
+    padding-bottom: 5em;
+    gap: 2em;
+
+}
+
+#product article img {
+    width: 60%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    #product article {
+        display: grid;
     }
 
-        #product article{
-            display: flex;
-            padding-bottom: 5em;
-            gap: 2em;
-
-        }
-            #product article img{
-                width: 60%;
-                height: 100%;   
-            }  
-
-            @media only screen and (max-width: 1000px) {
-                #product article {
-                    display: grid;
-                }
-                    #product article img{
-                        width: 100%;  
-                    }  
-              }
+    #product article img {
+        width: 100%;
+    }
+}
 
 
 /* ******************************* OPMAAK "PRODUCTEN INFO"*/
 
-.product-info{
+.product-info {
     padding: 5em;
 }
-    .product-info h2{
-        font-size: 2em;
-        padding-top: 2em;
-        font-family: var(--h1-fontfamily);
+
+.product-info h2 {
+    font-size: 2em;
+    padding-top: 2em;
+    font-family: var(--h1-fontfamily);
+}
+
+.product-info article {
+    display: flex;
+    padding-bottom: 1em;
+    gap: 2em;
+}
+
+.product-info article img {
+    width: 40em;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .product-info article {
+        display: grid;
     }
-        .product-info article{
-            display: flex;
-            padding-bottom: 1em;
-            gap: 2em;
-        }
-            .product-info article img{
-                width: 40em;
-            } 
 
-
-            @media only screen and (max-width: 1000px) {
-                .product-info article {
-                    display: grid;
-                }
-                    .product-info article img{
-                        width: 100%;
-                    }  
-              }
+    .product-info article img {
+        width: 100%;
+    }
+}
 
 
 
 
 /* ******************************* OPMAAK "CONTACT FORM"*/
 
-#contact{
+/* #contact{
     padding: 5em;
     background-color: var(--color-ww);
 }
@@ -267,31 +326,41 @@ nav{
     #contact h2{
         font-size: 2em;
         font-family: var(--h1-fontfamily);
-    }
+    } */
 
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+/* input[type=submit] {
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+  } */
+
+/* When moving the mouse over the submit button, add a darker green color */
+/* input[type=submit]:hover {
     background-color: #45a049;
   }
 
@@ -383,7 +452,6 @@ color: #f5f5f5 !important;
 .logo-part {
 border-right: 1px solid grey;
 height: 100%;
-}
+} */
 
-/* Credit to https://bootsnipp.com/snippets/M56El  */    
-  
+/* Credit to https://bootsnipp.com/snippets/M56El  */
