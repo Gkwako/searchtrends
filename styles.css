@@ -8,7 +8,7 @@
 /* ******************************* CUSTOM PROPERTIES */
 :root {
     /* color */
-    --color-blackish: #08060B;
+    --color-blackish: #08060bbb;
     --color-white: #FFFFFF;
     --color-ww: #EDEDED;
 
@@ -45,7 +45,7 @@ nav { /* hele nav plaatsing */
     height: 100px;
     background-color: var(--color-white);
     transition: .32s;
-    z-index: 1;
+    z-index: 2;
 }
     .fixed {
         position: fixed;
@@ -135,16 +135,22 @@ nav ul li a:hover:after{ /* stoke length */
         font-family: var(--h1-fontfamily);
         font-weight: 4;
         font-size: 12.5vmin;
+        line-height: 1em;
 
-        padding-top: .5em;
-        /* color: var(--color-blackish); */
-        color: #FFF;
+        padding-top: .6em;
+        color: var(--color-blackish);
+        
+        position: relative;
+        z-index: 1;
     }
 
     .introduction h3 { /* h3 tekst opmaak */
         font-family: var(--h1-fontfamily);
         font-weight: 400;
-        color: var(--color-white);
+        line-height: 4em;
+
+        position: relative;
+        z-index: 1;
     }
 
 
@@ -160,11 +166,10 @@ nav ul li a:hover:after{ /* stoke length */
     position: absolute;
     bottom: -250em;
     height: 260em;
-    background: rgba(255, 255, 255, 0.283);
     transform: skew(0deg, 75deg);
    
-    background: rgba(203, 196, 196, 0.5);
-    color: #f1f1f1;
+    background: rgba(203, 196, 196, 0.767);
+    
     width: 100%;
     transition: .5s ease;
 }
@@ -181,14 +186,15 @@ nav ul li a:hover:after{ /* stoke length */
     align-items: center;
     text-align: center;
 
-    padding: 5.8vmax;
+    padding: 3.5em 4em 3.3em;
     gap: 4em;
 }
-
+.container-kwaliteiten section img {
+    width: 4em;
+}
 .container-kwaliteiten section h3 {
     font-family: var(--h1-fontfamily);
 }
-
 .container-kwaliteiten section h4 {
     font-family: var(--h1-fontfamily);
     font-weight: 350;
@@ -196,57 +202,16 @@ nav ul li a:hover:after{ /* stoke length */
 }
 
 
- /* ---------------------- @MEDIA */
-
- @media only screen and (max-width: 600px) {
-   
-    nav { /* hele nav plaatsing */
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    h1 { /* logo bedrijf */
-        font-size: 1.5em;
-        padding: .5em;
-    }
-    nav ul { /* ruimte tussen de elementen*/
-        gap: 1em;
-    }
-    nav ul li { /* stijling van "home, over ons etc" */
-        font-size: .8em;
-    }
-    .introduction h2 { /* h2 tekst opmaak */
-        font-size: 6vmin;
-        padding-top: .6em ;
-    }
-    .introduction h3 { /* h3 tekst opmaak */
-        font-size: 2.2vmin;
-        padding-top: 1em ;
-        padding-right: 12.8em;
-    }
-    .container-kwaliteiten { /* opmaak kwaliteiten */
-        gap: 2em;
-    }
-        .container-kwaliteiten section h3 {
-            font-size: 2.5vmin;
-        }
-        
-        .container-kwaliteiten section h4 {
-            font-size: 2vmin;
-        }
-
-  }
-
-
-
 
 /* ******************************* OPMAAK "OVER ONS"*/
 .container-info {
     background-color: var(--color-ww);
+
 }
 
 #over-ons {
     padding: 5em;
+    margin: 2em 10em
 }
 
 #over-ons h2 {
@@ -257,13 +222,15 @@ nav ul li a:hover:after{ /* stoke length */
 p {
     font-family: var(--h1-fontfamily);
     font-weight: 400;
+    font-size: 1.4em;
     padding-top: 1em;
 
+    columns: 2;
     text-align: justify;
 }
 
 .parallax {
-    background-image: url(/images/home.jpg);
+    background-image: url(../images/home.jpg);
     min-height: 30em;
 
     background-attachment: fixed;
@@ -489,3 +456,52 @@ height: 100%;
 } */
 
 /* Credit to https://bootsnipp.com/snippets/M56El  */
+
+
+
+
+ /* ---------------------- @MEDIA */
+
+ @media only screen and (max-width: 600px) {
+   
+    nav { /* hele nav plaatsing */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 { /* logo bedrijf */
+        font-size: 1.5em;
+        padding: .5em;
+    }
+    nav ul { /* ruimte tussen de elementen*/
+        gap: 1em;
+    }
+    nav ul li { /* stijling van "home, over ons etc" */
+        font-size: .8em;
+    }
+    .introduction h2 { /* h2 tekst opmaak */
+        font-size: 6vmin;
+        padding-top: .6em ;
+    }
+    .introduction h3 { /* h3 tekst opmaak */
+        font-size: 2.2vmin;
+        padding-top: 1em ;
+        padding-right: 12.8em;
+
+        line-height: 1em;
+    }
+    .container-kwaliteiten { /* opmaak kwaliteiten */
+        gap: 2em;
+    }
+        .container-kwaliteiten section h3 {
+            font-size: 2.4vmin;
+        }
+        
+        .container-kwaliteiten section h4 {
+            font-size: 1.8vmin;
+        }
+    
+    .container-kwaliteiten section img { /* img opmaak "icons" */
+        width: 3em;
+    }    
+ }
