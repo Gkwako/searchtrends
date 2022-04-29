@@ -22,8 +22,7 @@
 
 
 /* ******************************* BODY */
-body {
-    /* Hele pagina opmaak */
+body { /* Hele pagina opmaak */
     background-color: var(--color-white);
 }
 
@@ -75,7 +74,6 @@ nav ul li a { /* link stijling */
     padding: .6em;
 }
 
-
   
 
 /* ---------------------- UNDERLINE EFFECT:HOVER */
@@ -107,7 +105,7 @@ nav ul li a:after { /* stroke stijling */
     height: .1em;
 }
 
-nav ul li a:hover:after { /* stoke length */
+nav ul li a:hover:after{ /* stoke length */
     width: 100%;
 }
 
@@ -117,83 +115,78 @@ nav ul li a:hover:after { /* stoke length */
 
 /* ******************************* OPMAAK HOME IMAGE*/
 
-.container-intro {
-    background-image: url(../images/home.jpg);
+.container-intro { /* stijling van container image */
+    position: relative;
+    height: 30vmax;
+    overflow: hidden;
+}
+
+.container-intro img { /* image stijling */
+    position: absolute;
     height: 50vmax;
+    top: -1em;
 }
 
-/* h2 tekst opmaak */
-.background-shape h2 {
-    font-family: var(--h1-fontfamily);
-    font-weight: 400;
+    .introduction { /* stijling tekst op image*/
+        padding: 2em 7em;
+    }
 
-    color: #FFF;
-}
+    .introduction h2 { /* h2 tekst opmaak */
+        font-family: var(--h1-fontfamily);
+        font-weight: 4;
+        font-size: 12.5vmin;
 
-/* h3 tekst opmaak */
-.background-shape h3 {
-    font-family: var(--h1-fontfamily);
-    font-weight: 400;
+        padding-top: .5em;
+        /* color: var(--color-blackish); */
+        color: #FFF;
+    }
 
-    color: #FFF;
-}
+    .introduction h3 { /* h3 tekst opmaak */
+        font-family: var(--h1-fontfamily);
+        font-weight: 400;
+        color: var(--color-white);
+    }
+
+
+
+/* ---------------------- SHAPE OPMAAK */
 
 .background-shape {
-    background: rgba(203, 196, 196, 0.5);
-    padding: 4em;
-
     position: relative;
-    min-height: 100%;
-
-    overflow: hidden;
 }
 
 .background-shape::after {
     content: '';
     position: absolute;
-    bottom: -75%;
-    left: 0;
-    right: 0;
-    height: 100%;
+    bottom: -250em;
+    height: 260em;
     background: rgba(255, 255, 255, 0.283);
-    transform: skew(0deg, -9deg);
-
-
-    position: absolute;
-    top: 1;
-    width: 2em;
-    background: rgb(0, 0, 0);
+    transform: skew(0deg, 75deg);
+   
     background: rgba(203, 196, 196, 0.5);
-
     color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
-
-    color: white;
-    font-size: 2em;
-    padding: 2em;
-    text-align: left;
-
 }
+
 
 
 
 
 /* ******************************* OPMAAK KWALITEITEN*/
 
-.container-kwaliteiten {
+.container-kwaliteiten { 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 
-    padding: 7vmax;
-    gap: 5em;
+    padding: 5.8vmax;
+    gap: 4em;
 }
 
 .container-kwaliteiten section h3 {
     font-family: var(--h1-fontfamily);
-
 }
 
 .container-kwaliteiten section h4 {
@@ -202,6 +195,47 @@ nav ul li a:hover:after { /* stoke length */
     padding: 1em;
 }
 
+
+ /* ---------------------- @MEDIA */
+
+ @media only screen and (max-width: 600px) {
+   
+    nav { /* hele nav plaatsing */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 { /* logo bedrijf */
+        font-size: 1.5em;
+        padding: .5em;
+    }
+    nav ul { /* ruimte tussen de elementen*/
+        gap: 1em;
+    }
+    nav ul li { /* stijling van "home, over ons etc" */
+        font-size: .8em;
+    }
+    .introduction h2 { /* h2 tekst opmaak */
+        font-size: 6vmin;
+        padding-top: .6em ;
+    }
+    .introduction h3 { /* h3 tekst opmaak */
+        font-size: 2.2vmin;
+        padding-top: 1em ;
+        padding-right: 12.8em;
+    }
+    .container-kwaliteiten { /* opmaak kwaliteiten */
+        gap: 2em;
+    }
+        .container-kwaliteiten section h3 {
+            font-size: 2.5vmin;
+        }
+        
+        .container-kwaliteiten section h4 {
+            font-size: 2vmin;
+        }
+
+  }
 
 
 
