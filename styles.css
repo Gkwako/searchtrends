@@ -13,7 +13,7 @@
 :root {
     /* color */
     --color-black: #08060bbb;
-    --color-gray: #EDEDED;
+    --color-gray: #F0E7E2;
     --color-grayish: #aaa;
     --color-white: #ffffff;
 
@@ -21,8 +21,6 @@
     --h1-fontfamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
     --h2-fontfamily: 'Open Sans', sans-serif;
 }
-
-
 
 
 /* ************************************************** */
@@ -33,7 +31,7 @@
 .header-top {
     display: flex;
     justify-content: space-between;
-    padding: 1em 5em 1em;
+    padding: .4em 5em .4em;
     background-color: var(--color-gray);
 }
 
@@ -54,12 +52,13 @@
 
 /* a styling opmaak */
 .header-top li a {
+    font-size: 0.8em;
     text-decoration: none;
     color: var(--color-black);
 }
 
 .header-top ul img {
-    width: 1.5em;
+    width: 1.2em;
 }
 
 
@@ -71,7 +70,7 @@
 header{
     position: sticky;
     top: 0;
-    height: 100px;
+    height: 5em;
     background-color: var(--color-white);
     transition: .32s;
     z-index: 2;
@@ -84,7 +83,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0em 5em;
-    height: 100px;
+    height: 5em;
 }
 
 /* logo opmaak*/
@@ -137,7 +136,7 @@ header svg{
         top: 0em;
         height: 35vmax;
         padding-top: 5em;
-        background: rgb(255, 157, 0);
+        background: #e3cec2;
     }  
 
     nav li {  
@@ -241,13 +240,13 @@ nav ul li a:hover:after{
 .container-intro img { 
     position: absolute;
     height: 50vmax;
-    top: -1em;
+    top: -2em;
 }
 
 /* stijling tekst op image*/
 .introduction { 
-    /* padding: 2em 7em; */
-    padding: 4em 5em 1em;
+    height: 26vmax;
+    padding: 5.5em 5em 1em;
 }
 
 /* h2 tekst opmaak */
@@ -257,7 +256,7 @@ nav ul li a:hover:after{
     font-size: 12.5vmin;
     line-height: 1em;
 
-    padding-top: .6em;
+    padding-top: 0em;
     color: var(--color-blackish);
         
     position: relative;
@@ -302,7 +301,7 @@ nav ul li a:hover:after{
             font-size: .8em;
         }
         .introduction { 
-            padding: 1.5em 5em 0em;
+            padding: 3em 5em 0em;
         }
         .introduction h2 {
             font-size: 7vmin;
@@ -345,51 +344,35 @@ nav ul li a:hover:after{
 /* ************************************ OPMAAK SKILLS */
 /* ************************************************** */
 
-/* colums plaatsing */
-.wrapper .columns {
+/* container plaatsing */
+.container-skills .container{
     display: flex;
     justify-content: center;
+    height: 15em;
+    padding: 0 5em 0;
+
+    position: relative;
+    top: -5em;
+}
+
+/* colums plaatsing */
+.container-skills .columns {
+    display: flex;
     align-items: center;
     text-align: center; 
-    padding: 1em 2em 1em;
 }
 
-/* afmetingen van alle div's */
+/* ruimte tussen de alle div's in skills*/
 .container-skills div div div div {
-    padding: 6em 6em 1em;
-    padding-right: 3em;
+    padding: 2em;
 }
 
-/* container wrapper afmeting */
-.container-skills .wrapper {
-	padding-bottom: 6.25em;
-}
-
-.columns{
-    position: absolute;
-    top: 6em;
-}
 .columns img{
-    width: 4.9em;
+    width: 4em;
 }
 
-.svg-container svg{
-    position: relative;
-    bottom: 3.5px;
-    z-index: -1;
-    right: 4em;
-    width: 3em;
-    visibility: hidden;
-}
 
-.svg-container svg :hover{
-    visibility: visible;
-}
-
-.container-skills .container {
-	padding: 5em 0em 5em;
-}
-
+/* ************************************ tekst in skills */
 
 /* h3 afmetingen */
 .container-skills div div div div h3 {
@@ -408,77 +391,38 @@ nav ul li a:hover:after{
         font-weight: 350;
         font-family: var(--h1-fontfamily);
     }
-
-
-.container-skills{
-    position: relative;
-}
-
-
-/* .svg-container{
-    display: flex;
-    align-items: center;
-}
-
-.svg-container svg{
-    position: absolute;
-    top: 58px;
-    z-index: -1;
-    left: 61px;
-
-    width: 4em;
-}
- */
-
-
-
-    @media only screen and (max-width: 999px) {
-        /* skills komen onder elkaar */
-        .wrapper .columns {
-            display: block;
-        }
-        .container-skills:before{
-            width: 15%;
-            top: 14em;
-            margin-left: 44%;
-            transform: none;
-        }
-       
-    }
   
 
-/* ******************************* OPMAAK "OVER ONS"*/
-.container-info {
-    padding: 5em 0;
+/* ************************************************** */
+/* ******************************* OPMAAK "OVER ONS"" */
+/* ************************************************** */
+
+.container-over {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 5em 10em 5em;
     background-color: var(--color-gray);
 }
 
-.column{
-    margin: 0;
-    padding: 0;
+.container-over .column{
+    display: flex;
+    justify-content: center;
 }
 
- /* lijn links */
- .container-info .wrapper::before {
-    content: "";
-    position: absolute;
-    width: 18%;
-    bottom: -20em;
-    margin-left: -4%;
-    border-bottom: 2px solid #748094;
-    transform: rotate(-0.25turn);
-    }
 
-
-.over-ons {
-  
-    margin: 2em 10em
-}
-
-.over-ons h2 {
+.container-over .column h2 { 
     font-size: 2em;
     font-family: var(--h1-fontfamily);
 }
+
+.container-over .column h5 { 
+    padding-top: .5em;
+    color: rgb(179, 116, 116);
+    font-size: 1em;
+    font-family: var(--h1-fontfamily);
+}
+
 
 .over-ons p {
     font-family: var(--h1-fontfamily);
@@ -491,10 +435,47 @@ nav ul li a:hover:after{
     text-align: justify;
 } 
 
-.parallax {
-    background-image: url(../images/home.jpg);
-    min-height: 30em;
 
+@media only screen and (max-width: 999px) {
+    /* skills komen onder elkaar */
+    .container-skills .columns {
+        display: block;
+    }
+    .container-skills .container{
+        height: 40em;
+    }
+    .container-skills div div div div {
+        padding: 1em;
+    }
+
+    .container-skills .container div:first-of-type{
+        padding-top: 1.8em;
+    }
+    .over-ons p {
+        columns: 1;
+    } 
+    .container-over {
+        padding: 5em 5em 5em;
+    }
+}
+
+
+/* lijn links */
+ /* .container-info .wrapper::before {
+    content: "";
+    position: absolute;
+    width: 18%;
+    bottom: -20em;
+    margin-left: -4%;
+    border-bottom: 2px solid #748094;
+    transform: rotate(-0.25turn);
+    } */
+
+
+
+.parallax {
+    background-image: url(../images/spa22.jpg);
+    min-height: 30em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
