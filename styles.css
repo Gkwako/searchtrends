@@ -195,7 +195,7 @@ nav ul li a:after {
 
 /* hover kleur op tekst */
 nav ul li a:hover {
-    color: rgb(148, 143, 143);
+    color: rgb(179, 116, 116);
 }
 
 /* stroke plaatsing */
@@ -214,7 +214,7 @@ nav ul li a:after {
 
     content: '.';
     color: transparent;
-    background: #aaa;
+    background: rgb(179, 116, 116);
     height: .1em;
 }
 
@@ -288,29 +288,6 @@ nav ul li a:hover:after{
         animation: 2.9s ease-out 0s 1 slideInFromLeft-2;
     }
 
-    @media screen and (max-width: 1000px) {
-        /* in a tekst stijling */
-        .header-top ul li a {
-            font-size: .7em;
-        }
-        /* in a tekst stijling */
-        .header-top ul li a { 
-            font-size: .7em;
-        }
-        nav ul {
-            font-size: .8em;
-        }
-        .introduction { 
-            padding: 3em 5em 0em;
-        }
-        .introduction h2 {
-            font-size: 7vmin;
-        }
-        .introduction h3 {
-            font-size: 1.4vmin;
-        }
-    }
-
 /* ---------------------- SHAPE OPMAAK */
 
 .background-shape {
@@ -348,11 +325,11 @@ nav ul li a:hover:after{
 .container-skills .container{
     display: flex;
     justify-content: center;
-    height: 15em;
+    height: 2em;
     padding: 0 5em 0;
 
     position: relative;
-    top: -5em;
+    top: -14em;
 }
 
 /* colums plaatsing */
@@ -371,6 +348,10 @@ nav ul li a:hover:after{
     width: 4em;
 }
 
+.container-skills .wrapper svg:nth-of-type(2){
+    position: relative;
+    top: -21vw;
+}
 
 /* ************************************ tekst in skills */
 
@@ -401,7 +382,7 @@ nav ul li a:hover:after{
     display: flex;
     justify-content: center;
     height: 100%;
-    padding: 5em 10em 5em;
+    padding: 10em 10em 10em;
     background-color: var(--color-gray);
 }
 
@@ -412,14 +393,14 @@ nav ul li a:hover:after{
 
 
 .container-over .column h2 { 
-    font-size: 2em;
+    font-size: 2.5em;
     font-family: var(--h1-fontfamily);
 }
 
 .container-over .column h5 { 
     padding-top: .5em;
     color: rgb(179, 116, 116);
-    font-size: 1em;
+    font-size: 1.3em;
     font-family: var(--h1-fontfamily);
 }
 
@@ -427,7 +408,7 @@ nav ul li a:hover:after{
 .over-ons p {
     font-family: var(--h1-fontfamily);
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1em;
     padding-top: 1em;
 
     columns: 2;
@@ -436,51 +417,18 @@ nav ul li a:hover:after{
 } 
 
 
-@media only screen and (max-width: 999px) {
-    /* skills komen onder elkaar */
-    .container-skills .columns {
-        display: block;
-    }
-    .container-skills .container{
-        height: 40em;
-    }
-    .container-skills div div div div {
-        padding: 1em;
-    }
-
-    .container-skills .container div:first-of-type{
-        padding-top: 1.8em;
-    }
-    .over-ons p {
-        columns: 1;
-    } 
-    .container-over {
-        padding: 5em 5em 5em;
-    }
-}
 
 
-/* lijn links */
- /* .container-info .wrapper::before {
-    content: "";
-    position: absolute;
-    width: 18%;
-    bottom: -20em;
-    margin-left: -4%;
-    border-bottom: 2px solid #748094;
-    transform: rotate(-0.25turn);
-    } */
 
-
+/* ************************************************** */
+/* ********************************** OPMAAK "SCROLL" */
+/* ************************************************** */
 
 .parallax {
-    background-image: url(../v1.png);
-    width: 100%;
-    height: 50vh;
-
-    /* min-height: 30em; */
+    background-image: url(../images/spa22.jpg);
+    min-height: 30em;
     background-attachment: fixed;
-    /* background-position: center; */
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -488,74 +436,173 @@ nav ul li a:hover:after{
 
 
 
-/* ******************************* OPMAAK "PRODUCTEN"*/
+/* ************************************************** */
+/* ******************************* OPMAAK "SIDE TEXT" */
+/* ************************************************** */
 
-#product {
-    padding: 5em;
+.container-sideText {
+    display: flex;
+    justify-content: center;
 }
 
-#product h2 {
-    font-size: 2em;
-    padding-bottom: 1em;
+.container-sideText .column{
+    display: flex;
+    justify-content: center;
+    padding: 0em 10em 5em;
+}
+
+.container-sideText .column h5 { 
+    font-size: 3em;
+    color: rgb(179, 116, 116);
     font-family: var(--h1-fontfamily);
 }
 
-#product article {
+.sideText {
     display: flex;
-    align-items: center;
-    padding-bottom: 5em;
+    justify-content: center;
     gap: 2em;
+} 
+
+.sideText p {
+    font-family: var(--h1-fontfamily);
+    font-weight: 400;
+    font-size: 1em;
+    padding-top: 1em;
+    text-align: justify;
+} 
+
+
+
+/* ************************************************** */
+/* ******************************* OPMAAK " CAROUSEL" */
+/* ************************************************** */
+
+a,a:hover{
+	color: #000000;
+	text-decoration: none;
+}
+.secCaro{
+	padding: 0 20%;
+	position: relative;
+}
+.secCaro .css-carousel{
+	overflow: hidden;
+}
+.secCaro .css-carousel .css-track{
+	position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(0);
+    transition: all .35s ease;
+}
+.secCaro .css-carousel .css-track:after{
+	display: table;
+    content: '';
+    clear: both;
+}
+.secCaro .css-carousel .css-slide{
+	float: left;
+	padding: 0 7px;
+}
+.secCaro .css-carousel .css-slide.active-slide >div{
+	border-color: red;
+}
+.secCaro .css-carousel .css-slide > div{
+	background-color: #f2f2f2;
+	color: #000000;
+	font-size: 22px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	width: 274px;
+	max-width: 100%;
+	border:1px solid transparent;
+}
+.secCaro .css-carousel .css-slide > div.big-wd{
+	width: 350px;
+}
+.secCaro .css-arrows{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 7px;
+}
+.secCaro .css-arrows .prev.disable{
+	opacity: .5;
+	cursor: default;
+	pointer-events: none;
+}
+.secCaro .css-arrows .next.disable{
+	opacity: .5;
+	cursor: default;
+	pointer-events: none;
 }
 
-#product article p{
-    font-size: 1.11em;
-}
 
-#product article img {
-    width: 40%;
+
+
+
+
+
+/* ************************************************** */
+/* ******************************* OPMAAK " DIENSTEN" */
+/* ************************************************** */
+
+.container-diensten {
+    display: flex;
+    justify-content: center;
     height: 100%;
+    padding: 10em 10em 10em;
+    background-color: var(--color-gray);
 }
 
-@media only screen and (max-width: 1000px) {
-    #product article {
-        display: grid;
-    }
-
-    #product article img {
-        width: 100%;
-    }
+.container-diensten .column{
+    display: flex;
+    justify-content: center;
 }
 
-
-/* ******************************* OPMAAK "PRODUCTEN INFO"*/
-
-.product-info {
-    padding: 5em;
-}
-
-.product-info h2 {
-    font-size: 2em;
-    padding-top: 2em;
+.container-diensten .column h2 { 
+    font-size: 2.5em;
     font-family: var(--h1-fontfamily);
 }
 
-.product-info article {
-    display: flex;
-    padding-bottom: 1em;
-    gap: 2em;
+.container-diensten .column h5 { 
+    padding-top: .5em;
+    color: rgb(179, 116, 116);
+    font-size: 1.3em;
+    font-family: var(--h1-fontfamily);
 }
 
-.product-info article img {
-    width: 40em;
+.diensten p {
+    font-family: var(--h1-fontfamily);
+    font-weight: 400;
+    font-size: 1em;
+    padding-top: 1em;
+    text-align: justify;
+} 
+
+
+.container-diensten article {
+    display: flex;
+    padding-bottom: 1em;
+    gap: 3em;
+}
+
+.container-diensten article img {
+    width: 33em;
 }
 
 
 @media only screen and (max-width: 1000px) {
-    .product-info article {
+    .container-diensten article {
         display: grid;
     }
 
-    .product-info article img {
+    .container-diensten article img {
         width: 100%;
     }
 }
@@ -565,21 +612,48 @@ nav ul li a:hover:after{
 
 /* ******************************* OPMAAK "CONTACT FORM"*/
 
-#contact{
-    padding: 5em;
-    background-color: var(--color-ww);
+.contact-us{
+    display: flex;
+    height: 100%;
+    padding: 10em 10em 10em;
+
 }
+.contact-us .row:nth-of-type(2){
+    display: flex;
+    gap: 2em;
+}
+
+.section-title h2 {
+    font-size: 2em;
+    font-family: var(--h1-fontfamily);
+   
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    border-bottom: 5px solid #af8070;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.section-title p {
+    padding-bottom: 2em;
+}
+.contact-us input,
+.contact-us textarea {
+    background: #fafafa;
+}
+
+.contact-us .map {
+    overflow: hidden;
+    border-radius: 4px;
+}
+
 
 #contact p{
     padding-bottom: 2em;
 }
 
-    #contact h2{
-        font-size: 2em;
-        font-family: var(--h1-fontfamily);
-    }
-
-input[type=text],
+ 
+.contact-us input[type=text],
 select,
 textarea {
     width: 100%;
@@ -601,22 +675,22 @@ textarea {
 }
 
 /* Style the submit button with a specific background color etc */
-/* input[type=submit] {
+.contact-us input[type=submit] {
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  } */
+  }
 
 /* When moving the mouse over the submit button, add a darker green color */
-/* input[type=submit]:hover {
+.contact-us input[type=submit]:hover {
     background-color: #45a049;
   }
 
 
-
+/*  
   .logo-footer {
     margin-bottom: 40px;
  }
@@ -712,4 +786,58 @@ height: 100%;
 
  /* ---------------------- @MEDIA */
 
- 
+ @media screen and (max-width: 1000px) {
+    /* in a tekst stijling */
+    .header-top ul li a {
+        font-size: .7em;
+    }
+    /* in a tekst stijling */
+    .header-top ul li a { 
+        font-size: .7em;
+    }
+    nav ul {
+        font-size: .8em;
+    }
+    .introduction { 
+        padding: 3em 5em 0em;
+    }
+    .introduction h2 {
+        font-size: 7vmin;
+    }
+    .introduction h3 {
+        font-size: 1.4vmin;
+    }
+
+ /* skills komen onder elkaar */
+     .container-skills .columns {
+        display: block;
+    }
+    .container-skills .container{
+        height: 40em;
+    }
+    .container-skills div div div div {
+        padding: 1em;
+    }
+
+    .container-skills .container div:first-of-type{
+        padding-top: 2.5em;
+    }
+    .over-ons p {
+        columns: 1;
+    } 
+    .container-over {
+        padding: 5em 5em 5em;
+    }
+
+    .container-sideText .column{
+        padding: 3em 5em 0em;
+    }
+    .sideText p {
+        font-size: 1em;
+    } 
+
+}
+
+
+
+
