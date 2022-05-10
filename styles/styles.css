@@ -330,6 +330,11 @@ nav ul li a:hover:after{
 
     position: relative;
     top: -14em;
+    max-height: 1200px;
+}
+
+.container-skills .wrapper{
+    
 }
 
 /* colums plaatsing */
@@ -500,12 +505,12 @@ nav ul li a:hover:after{
 
 .container-diensten article {
     display: flex;
-    padding-bottom: 1em;
+    padding-bottom: 5em;
     gap: 3em;
 }
 
 .container-diensten article img {
-    width: 33em;
+    width: 50%;
     height: 100%;
 }
 
@@ -519,13 +524,6 @@ nav ul li a:hover:after{
         width: 100%;
     }
 }
-
-
-
-
-
-
-
 
 
 
