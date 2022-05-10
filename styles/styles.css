@@ -425,7 +425,7 @@ nav ul li a:hover:after{
 /* ************************************************** */
 
 .parallax {
-    background-image: url(images/spa22.jpg);
+    background-image: url(../images/spa22.jpg);
     min-height: 30em;
     background-attachment: fixed;
     background-position: center;
