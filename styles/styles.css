@@ -22,10 +22,6 @@
     --h2-fontfamily: 'Open Sans', sans-serif;
 }
 
-main{
-    max-width: 2000px;
-}
-
 
 /* ************************************************** */
 /* ************************************ HEADER OPMAAK */
@@ -404,6 +400,10 @@ nav ul li a:hover:after{
     background-color: var(--color-gray);
 }
 
+.over-ons{
+    max-width: 1280px;
+}
+
 .container-over .column{
     display: flex;
     justify-content: center;
@@ -502,6 +502,7 @@ nav ul li a:hover:after{
 
 .container-diensten article img {
     width: 33em;
+    height: 100%;
 }
 
 
