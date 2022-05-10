@@ -401,7 +401,7 @@ nav ul li a:hover:after{
 }
 
 .over-ons{
-    max-width: 1280px;
+    max-width: 1200px;
 }
 
 .container-over .column{
@@ -466,6 +466,10 @@ nav ul li a:hover:after{
     height: 100%;
     padding: 10em 10em 10em;
     background-color: var(--color-gray);
+}
+
+.diensten{
+    max-width: 1200px;
 }
 
 .container-diensten .column{
