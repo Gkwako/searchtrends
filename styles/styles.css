@@ -352,8 +352,8 @@ nav ul li a:hover:after{
 }
 
 .columns-container:hover{
-    transition: 1s;
-    box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271);
+    /* transition: 1s;
+    box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271); */
 }
 
  
@@ -494,7 +494,7 @@ nav ul li a:hover:after{
     font-family: var(--h1-fontfamily);
 }
 
-.diensten p {
+.container-diensten .diensten article p {
     font-family: var(--h1-fontfamily);
     font-weight: 400;
     font-size: 1em;
@@ -505,7 +505,7 @@ nav ul li a:hover:after{
 
 .container-diensten article {
     display: flex;
-    padding-bottom: 5em;
+    padding-bottom: 2em;
     gap: 3em;
 }
 
@@ -526,7 +526,40 @@ nav ul li a:hover:after{
 }
 
 
+/* diensten die ze aanbieden */
 
+/* box waar de diensten in zit */
+.container-diensten .diensten-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+/* box opmaak en ruimte */
+.container-diensten .diensten-container{
+    padding: 4em;
+    border-radius: .5em;
+    text-align: center;
+    background-color: var(--color-white);
+
+    box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271);
+}
+
+
+/* h3 opmaak */
+.container-diensten .diensten-container h3{
+    padding-bottom: .5em;
+    font-size: 1.3em;
+    color: rgb(179, 116, 116);
+    font-family: var(--h1-fontfamily);
+
+    transition: 1s ease-in-out;
+}
+/* animatie */
+.container-diensten .diensten-container:hover h3{
+    transition: 1s ease-in-out;
+    color: #dfbeb3;
+}
 
 
 
@@ -537,12 +570,14 @@ nav ul li a:hover:after{
 .container-sideText {
     display: flex;
     justify-content: center;
+
 }
 
 .container-sideText .column{
     display: flex;
     justify-content: center;
-    padding: 0em 10em 5em;
+    padding: 0em 10em 1em;
+   
 }
 
 .container-sideText .column h5 { 
@@ -571,103 +606,84 @@ nav ul li a:hover:after{
 /* ******************************* OPMAAK " CAROUSEL" */
 /* ************************************************** */
 
-a,a:hover{
-	color: #000000;
-	text-decoration: none;
-}
-.secCaro{
-	padding: 0 20%;
+.carousel-container{
+    max-width: 1200px;
+    padding: 0 20%;
 	position: relative;
+    top: -1em;
+    background-color: #F0E7E2;
 }
-.secCaro .css-carousel{
-	overflow: hidden;
+
+.carousel .card{
+    background: rgba(179, 116, 116, 0.61);
+    border-radius: .3em;
+    padding: .2em;
 }
-.secCaro .css-carousel .css-track{
-	position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateX(0);
-    transition: all .35s ease;
+
+.carousel .card img{
+    border-radius: .5em;
 }
-.secCaro .css-carousel .css-track:after{
-	display: table;
-    content: '';
-    clear: both;
+
+.owl-dots{
+  text-align: center;
+  margin-top: .5em;
 }
-.secCaro .css-carousel .css-slide{
-	float: left;
-	padding: 0 7px;
+.owl-dot{
+  height: .1em;
+  width: 3em;
+  margin: .2em;
+  border-radius: 1em;
+
+  border: .1em solid white!important;
+  transition: all 0.3s ease;
 }
-.secCaro .css-carousel .css-slide.active-slide >div{
-	border-color: red;
-}
-.secCaro .css-carousel .css-slide > div{
-	background-color: #f2f2f2;
-	color: #000000;
-	font-size: 22px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 200px;
-	width: 274px;
-	max-width: 100%;
-	border:1px solid transparent;
-}
-.secCaro .css-carousel .css-slide > div.big-wd{
-	width: 350px;
-}
-.secCaro .css-arrows{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 40px 7px;
-}
-.secCaro .css-arrows .prev.disable{
-	opacity: .5;
-	cursor: default;
-	pointer-events: none;
-}
-.secCaro .css-arrows .next.disable{
-	opacity: .5;
-	cursor: default;
-	pointer-events: none;
+.owl-dot.active,
+.owl-dot:hover{
+  background: rgba(179, 116, 116, 0.61)!important;
 }
 
 
 
+/* ************************************************** */
+/* ******************************* OPMAAK " CONTACT " */
+/* ************************************************** */
 
-
-
-/* ******************************* OPMAAK "CONTACT FORM"*/
+.contact-container .wrapper svg{
+    position: relative;
+    top: -1em;
+}
 
 .contact-us{
-    display: flex;
     height: 100%;
-    padding: 10em 10em 10em;
-
+    padding: 0em 10em 10em;
 }
-.contact-us .row:nth-of-type(2){
+
+.contact-us h2 {
+    font-size: 2.5em;
+    font-family: var(--h1-fontfamily);
+    color: rgba(179, 116, 116);
+    padding-bottom: .2em;
+}
+
+.contact-us p {
+    font-family: var(--h2-fontfamily);
+    padding-bottom: 2em;
+}
+
+
+.contact-us .column {
     display: flex;
+    align-items: center;
     gap: 2em;
 }
 
-.section-title h2 {
-    font-size: 2em;
-    font-family: var(--h1-fontfamily);
-   
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 8px;
-    border-bottom: 5px solid #af8070;
-    padding-bottom: 10px;
-    display: inline-block;
+.contact-us .column form{
+    background-color: red;
+    padding: 1em;
+    width: 50%;
 }
-.section-title p {
-    padding-bottom: 2em;
-}
+
+
 .contact-us input,
 .contact-us textarea {
     background: #fafafa;
@@ -675,13 +691,10 @@ a,a:hover{
 
 .contact-us .map {
     overflow: hidden;
-    border-radius: 4px;
+    width: 50%;
+    object-fit: contain;
 }
 
-
-#contact p{
-    padding-bottom: 2em;
-}
 
  
 .contact-us input[type=text],
@@ -721,8 +734,8 @@ textarea {
   }
 
 
-/*  
-  .logo-footer {
+ 
+  /* .logo-footer {
     margin-bottom: 40px;
  }
  footer {
