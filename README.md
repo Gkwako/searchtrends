@@ -28,15 +28,15 @@ Maar het is mij wel gelukt om de schuine vorm op te lossen, alleen moet de paral
 </details>
 
 
-
 ## Voortgang 1 (week 3)
 
 <details>
 <summary>Stand van zaken</summary>
-......
+Deze week ben ik begonnen met het opschonen van de code en de structuur van Bulma aan het overnemen, dit was niet zo makkelijk dan gedacht. Hier liep ik erg mee vast omdat al mijn eigen structuur had gebruikt moest ik die veranderen zodat ik het structuur van Bulma kon overnemen. 
 
-<img src="RMimages/navv1b.png" width="375px" alt="navv1b">
-<img src="RMimages/navv1.png" width="375px" alt="navv1">
+Dankzij Jeroen was het mij gelukt om een grote deel van de structuur over te nemen. Wel heeft mijn code nu dringend grote schoonmaak nodig. 
+
+<img src="images/bulma.png" width="375px">
 </details>
 
 
