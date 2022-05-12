@@ -27,28 +27,30 @@
 </head>
 
 <body>
-    <div id="home" class="header-top">
+    <div id="home" class="extra-header">
         <ul>
             <li class="contact-phone">
-                <img src="images/phone.png" alt="">
+                <img src="images/phone.png" alt="img van een phone">
                 <a href="tel:+092323549"> +31(0)92 032 35 49</a>
             </li>
             <li class="contact-email">
-                <img src="images/email.png" alt="">
+                <img src="images/email.png" alt="img van een envelop">
                 <a href="mailto:rudydebeir1@gmail.com">beautyfitzaandam@gmail.com</a>
             </li>
         </ul>
         <ul>
             <li>
-                <a href=""><img src="images/facebook.png" alt=""></a>
-                <a href=""><img src="images/linkedin.png" alt=""></a>
-                <a href=""><img src="images/insta.png" alt=""></a>
-                <a href=""><img src="images/twitter.png" alt=""></a>
+                <a href="#"><img src="images/facebook.png" alt="img van facebook"></a>
+                <a href="#"><img src="images/linkedin.png" alt="img van linkedin"></a>
+                <a href="#"><img src="images/insta.png" alt="img van instagram"></a>
+                <a href="#"><img src="images/twitter.png" alt="img van twitter"></a>
             </li>
         </ul>
     </div>
+
     <header>
         <nav>
+            <!-- hamburger menu -->
             <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
                 <path class="line top"
                     d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
@@ -65,24 +67,27 @@
                 <li><a class="menuItem" href="#contact"> Contact </a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
-        <div class="container-intro">
-            <img src="images/spa1.jpg" alt="">
-            <div class="background-shape">
-                <div class="introduction">
-                    <h2>BeautyFit <br> Zaandam </h2>
-                    <h3>Lorem ipsum dolor sit amet consectet? Lorem ipsum dolor sit.
-                    </h3>
-                </div>
-            </div>
-        </div>
+        <div id="content-container" class="content-container">
 
-        <div class="content">
-            <section class="container-skills">
-                <div class="wrapper">
+            <section id="intro-page" class="container-intro">
+                <div class="intro-wrapper">
+                    <img src="images/spa1.jpg" alt="img van gezicht">
+                    
+                    <div class="shape">
+                        <div class="introductie">
+                            <h2>BeautyFit <br> Zaandam </h2>
+                            <h3>Lorem ipsum dolor sit amet consectet? Lorem ipsum dolor sit.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="container-skills">
+                <div class="skills-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 90 1420 300">
                         <path fill="#F0E7E2" fill-opacity="1"
                             d="M0,160L80,181.3C160,203,320,245,480,240C640,235,800,181,960,165.3C1120,149,1280,171,1360,181.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
@@ -95,69 +100,59 @@
                         </path>
                     </svg>
 
-
-                    <div class="container">
-                        <div class="columns">
-                            <div class="column">
-                                <div class="columns-container">
-                                    <img src="images/tijd.png" alt="">
-                                    <h3>Lorem ipsum dolor</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                </div>
+                    <div class="sub-container">
+                        
+                        <div class="sub-box">
+                            <div class="columns-container">
+                                <img src="images/tijd.png" alt="">
+                                <h3>Lorem ipsum dolor</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
                             </div>
-
-                            <div class="columns">
-                                <div class="columns-container">
-                                    <img src="images/kwaliteit.png" alt="">
-                                    <h3>Lorem ipsum dolor</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                </div>
+                       
+                            <div class="columns-container">
+                                <img src="images/kwaliteit.png" alt="">
+                                <h3>Lorem ipsum dolor</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
                             </div>
-
-
-                            <div class="columns">
-                                <div class="columns-container">
-                                    <img src="images/advies.png" alt="">
-                                    <h3>Lorem ipsum dolor</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                </div>
+                 
+                            <div class="columns-container">
+                                <img src="images/advies.png" alt="">
+                                <h3>Lorem ipsum dolor</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </section>
 
             <section id="over-ons" class="container-over">
-                <div class="wrapper">
-                    <div class="column">
-                        <div class="over-ons">
-                            <h2>Over ons</h2>
-                            <h5> Lorem ipsum dolor sit amet elite</h5>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam porro unde velit iste.
-                                Magnam
-                                nostrum ab excepturi impedit fugit praesentium dolor fugiat? Minima illum laboriosam ea
-                                accusantium
-                                non cumque aperiam.
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae aperiam odio ipsam
-                                perspiciatis
-                                rem dolores qui ullam. Magnam aut doloribus quasi ab ipsum sed quisquam mollitia minus
-                                quidem, ea
-                                quae!
+                <div class="over-wrapper">               
+                    <div class="over-ons">
+                        <h2>Over ons</h2>
+                        <h5> Lorem ipsum dolor sit amet elite</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam porro unde velit iste.
+                            Magnam
+                            nostrum ab excepturi impedit fugit praesentium dolor fugiat? Minima illum laboriosam ea
+                            accusantium
+                            non cumque aperiam.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae aperiam odio ipsam
+                            perspiciatis
+                            rem dolores qui ullam. Magnam aut doloribus quasi ab ipsum sed quisquam mollitia minus
+                            quidem, ea
+                            quae!
 
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt fugit fuga quae
-                                corrupti adipisci
-                                sapiente unde ullam consequuntur, ex veritatis, dolorem nihil atque veniam natus tenetur
-                                soluta? Ex,
-                                quos laudantium.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequatur odit non,
-                                officiis
-                                cupiditate doloremque quia? Quam accusamus at eos dolore, voluptate doloribus vitae
-                                aliquam
-                                doloremque ab facere, animi fuga.
-                            </p>
-                        </div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt fugit fuga quae
+                            corrupti adipisci
+                            sapiente unde ullam consequuntur, ex veritatis, dolorem nihil atque veniam natus tenetur
+                            soluta? Ex,
+                            quos laudantium.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequatur odit non,
+                            officiis
+                            cupiditate doloremque quia? Quam accusamus at eos dolore, voluptate doloribus vitae
+                            aliquam
+                            doloremque ab facere, animi fuga.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -165,12 +160,11 @@
             <section class="parallax"></section>
 
             <section id="diensten" class="container-diensten">
-                <div class="wrapper">
-                    <div class="column">
+                <div class="dienst-wrapper">
                         <div class="diensten">
                             <h2>Onze diensten</h2>
                             <h5> Lorem ipsum dolor sit amet elite</h5>
-                            <article>
+                           <article>
                                 <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit, amet consectetur
                                     adipisicing elit.
                                     Veritatis quis et cupiditate quas aperiam qui ab alias nulla, molestiae temporibus
@@ -198,7 +192,6 @@
 
                             <div class="diensten-box">
                                 <div class="diensten-wrapper">
-
                                     <div class="diensten-container">
                                         <h3>Lorem ipsum dolor</h3>
                                         <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
@@ -208,39 +201,34 @@
 
                                 <div class="diensten-wrapper">
                                     <div class="diensten-container">
-
                                         <h3>Lorem ipsum dolor</h3>
                                         <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
                                             consectetur.</p>
                                     </div>
                                 </div>
 
-
                                 <div class="diensten-wrapper">
                                     <div class="diensten-container">
-
                                         <h3>Lorem ipsum dolor</h3>
                                         <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
                                             consectetur.</p>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-                </div>
             </section>
 
             <section class="parallax"></section>
 
             <section class="container-sideText">
-                <div class="wrapper">
+                <div class="side-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 90 1420 300">
                         <path fill="#F0E7E2" fill-opacity="1"
                             d="M0,160L80,181.3C160,203,320,245,480,240C640,235,800,181,960,165.3C1120,149,1280,171,1360,181.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
                         </path>
                     </svg>
-                    <div class="column">
+                    
                         <div class="sideText">
                             <h5> Lorem ipsum</h5>
                             <p>
@@ -256,7 +244,7 @@
                                 quae!
                             </p>
                         </div>
-                    </div>
+
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                         <path fill="#F0E7E2" fill-opacity="1"
                             d="M0,32L48,74.7C96,117,192,203,288,208C384,213,480,139,576,133.3C672,128,768,192,864,208C960,224,1056,192,1152,181.3C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -266,7 +254,6 @@
             </section>
 
             <section id="carousel" class="carousel-container">
-                <div class="wrapper">
                     <div class="carousel owl-carousel">
                         <div class="card card-1">
                             <img src="images/spa1.jpg" alt="">
@@ -284,26 +271,26 @@
                             <img src="images/spa1.jpg" alt="">
                         </div>
                     </div>
-                </div>
             </section>
 
             <section id="contact" class="contact-container">
-                <div class="wrapper">
+                <div class="svg-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 90 1420 300">
                         <path fill="#F0E7E2" fill-opacity="1"
                             d="M0,160L80,181.3C160,203,320,245,480,240C640,235,800,181,960,165.3C1120,149,1280,171,1360,181.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
                         </path>
                     </svg>
-
                     <div class="contact-us">
+                        <div class="column1">
                         <h2>Neem contact</h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit.
                             Veritatis quis et cupiditate quas aperiam qui ab alias nulla, molestiae temporibus ratione
                         </p>
+                    </div>
 
-                        <div class="column">
+                        <div class="column2">
                             <form action="action_page.php">
                                 <input type="text" id="fname" name="firstname" placeholder="Naam">
 
@@ -323,11 +310,13 @@
                     </div>
                 </div>
             </section>
+        </div>
     </main>
+
     <footer>
-        <div class="footer-dark">
-            <div class="container">
-                <div class="row">
+        <div id="footer" class="footer-container">
+            <div class="footer-wrapper">
+                <div class="row-footer">
                     <div class="col-md-6 item text">
                         <h3>BeautyFit Zaandam</h3>
                         <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula
