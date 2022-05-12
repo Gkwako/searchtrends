@@ -333,9 +333,6 @@ nav ul li a:hover:after{
     max-height: 1200px;
 }
 
-.container-skills .wrapper{
-    
-}
 
 /* colums plaatsing */
 .container-skills .columns {
@@ -351,10 +348,10 @@ nav ul li a:hover:after{
     box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271);
 }
 
-.columns-container:hover{
-    /* transition: 1s;
-    box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271); */
-}
+/* .columns-container:hover{
+    transition: 1s;
+    box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271);
+} */
 
  
 /* ruimte tussen de alle div's in skills*/
