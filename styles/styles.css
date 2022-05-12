@@ -67,7 +67,7 @@
 /* ************************************************** */
 
 /* header sticky */
-header{
+header {
     position: sticky;
     top: 0;
     height: 5em;
@@ -112,18 +112,19 @@ nav ul li a {
 }
 
 
-header svg{
+header svg {
     display: none;
 }
 
 /* hamburgermenu opmaak */
 @media screen and (max-width: 1000px) {
-    header svg{
+    header svg {
         display: block;
         position: absolute;
         right: 4em;
         z-index: 1;
     }
+
     nav {
         position: relative;
     }
@@ -137,50 +138,56 @@ header svg{
         height: 35vmax;
         padding-top: 5em;
         background: #e3cec2;
-    }  
+    }
 
-    nav li {  
-    padding: 4vmax 4vmax 0vmax;
-    font-size: 2vmax;
+    nav li {
+        padding: 4vmax 4vmax 0vmax;
+        font-size: 2vmax;
     }
 }
-    
-    .ham {
-        cursor: pointer;
-        -webkit-tap-highlight-color: transparent;
-        transition: transform 400ms;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        height: 3.5em;
-      }
 
-      .hamRotate.active {
-        transform: rotate(45deg);
-      }
-      .hamRotate180.active {
-        transform: rotate(180deg);
-      }
-      .line{
-        fill:none;
-        transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-        stroke:#000;
-        stroke-width: 2;
-        stroke-linecap:round;
-      }
-      .ham1 .top {
-        stroke-dasharray: 40 139;
-      }
-      .ham1 .bottom {
-        stroke-dasharray: 40 180;
-      }
-      .ham1.active .top {
-        stroke-dashoffset: -98px;
-      }
-      .ham1.active .bottom {
-        stroke-dashoffset: -138px;
-      }
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 3.5em;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+.ham1 .top {
+    stroke-dasharray: 40 139;
+}
+
+.ham1 .bottom {
+    stroke-dasharray: 40 180;
+}
+
+.ham1.active .top {
+    stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+    stroke-dashoffset: -138px;
+}
 
 
 
@@ -204,7 +211,7 @@ nav ul li a {
 }
 
 /* stroke stijling */
-nav ul li a:after { 
+nav ul li a:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -219,7 +226,7 @@ nav ul li a:after {
 }
 
 /* stoke length */
-nav ul li a:hover:after{ 
+nav ul li a:hover:after {
     width: 100%;
 }
 
@@ -230,21 +237,21 @@ nav ul li a:hover:after{
 /* ************************************************** */
 
 /* stijling van container image */
-.container-intro { 
+.container-intro {
     position: relative;
     height: 30vmax;
     overflow: hidden;
 }
 
 /* image stijling */
-.container-intro img { 
+.container-intro img {
     position: absolute;
     height: 50vmax;
     top: -2em;
 }
 
 /* stijling tekst op image*/
-.introduction { 
+.introduction {
     height: 26vmax;
     padding: 5.5em 5em 1em;
 }
@@ -258,41 +265,43 @@ nav ul li a:hover:after{
 
     padding-top: 0em;
     color: var(--color-blackish);
-        
+
     position: relative;
     z-index: 1;
 
     animation: 2.7s ease-out 0s 1 slideInFromLeft-2;
 }
 
-    @keyframes slideInFromLeft-2{
-        0% {
-          transform: translateX(-100%);
-          z-index: 1;
-        }
-        100% {
-          transform: translateX(0);
-          z-index: 1;
-        }
-      }
-
-    /* h3 tekst opmaak */
-    .introduction h3 {
-        font-family: var(--h1-fontfamily);
-        font-weight: 400;
-        line-height: 4em;
-
-        position: relative;
+@keyframes slideInFromLeft-2 {
+    0% {
+        transform: translateX(-100%);
         z-index: 1;
-
-        animation: 2.9s ease-out 0s 1 slideInFromLeft-2;
     }
+
+    100% {
+        transform: translateX(0);
+        z-index: 1;
+    }
+}
+
+/* h3 tekst opmaak */
+.introduction h3 {
+    font-family: var(--h1-fontfamily);
+    font-weight: 400;
+    line-height: 4em;
+
+    position: relative;
+    z-index: 1;
+
+    animation: 2.9s ease-out 0s 1 slideInFromLeft-2;
+}
 
 /* ---------------------- SHAPE OPMAAK */
 
 .background-shape {
     position: relative;
 }
+
 .background-shape::after {
     content: '';
     position: absolute;
@@ -300,19 +309,20 @@ nav ul li a:hover:after{
     height: 260em;
     transform: skew(0deg, 75deg);
     background: rgba(203, 196, 196, 0.767);
-    
+
     animation: 1.5s ease-out 0s slideInFromLeft;
     width: 100%;
 }
 
-  @keyframes slideInFromLeft {
+@keyframes slideInFromLeft {
     0% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
+
     100% {
-      transform: skew(0deg, 75deg);
+        transform: skew(0deg, 75deg);
     }
-  }
+}
 
 
 
@@ -322,7 +332,7 @@ nav ul li a:hover:after{
 /* ************************************************** */
 
 /* container plaatsing */
-.container-skills .container{
+.container-skills .container {
     display: flex;
     justify-content: center;
     height: 2em;
@@ -338,10 +348,10 @@ nav ul li a:hover:after{
 .container-skills .columns {
     display: flex;
     align-items: center;
-    text-align: center; 
+    text-align: center;
 }
 
-.columns-container{
+.columns-container {
     background-color: #faf7f500;
     border-radius: .5em;
     transition: 1s;
@@ -353,17 +363,17 @@ nav ul li a:hover:after{
     box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271);
 } */
 
- 
+
 /* ruimte tussen de alle div's in skills*/
 .container-skills div div div div {
     padding: 3em;
 }
 
-.columns img{
+.columns img {
     width: 4em;
 }
 
-.container-skills .wrapper svg:nth-of-type(2){
+.container-skills .wrapper svg:nth-of-type(2) {
     position: relative;
     top: -21vw;
 }
@@ -373,22 +383,23 @@ nav ul li a:hover:after{
 
 /* h3 afmetingen */
 .container-skills div div div div h3 {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 /* h3 opmaak */
 .content .container-skills h3 {
-	color: rgb(179, 116, 116);
+    color: rgb(179, 116, 116);
     font-size: 1em;
     font-family: var(--h1-fontfamily);
 }
-    /* h4 opmaak */
-    .content .container-skills p {
-        font-weight: 350;
-        font-family: var(--h1-fontfamily);
-    }
-  
+
+/* h4 opmaak */
+.content .container-skills p {
+    font-weight: 350;
+    font-family: var(--h1-fontfamily);
+}
+
 
 /* ************************************************** */
 /* ******************************* OPMAAK "OVER ONS"" */
@@ -402,22 +413,22 @@ nav ul li a:hover:after{
     background-color: var(--color-gray);
 }
 
-.over-ons{
+.over-ons {
     max-width: 1200px;
 }
 
-.container-over .column{
+.container-over .column {
     display: flex;
     justify-content: center;
 }
 
 
-.container-over .column h2 { 
+.container-over .column h2 {
     font-size: 2.5em;
     font-family: var(--h1-fontfamily);
 }
 
-.container-over .column h5 { 
+.container-over .column h5 {
     padding-top: .5em;
     color: rgb(179, 116, 116);
     font-size: 1.3em;
@@ -434,7 +445,7 @@ nav ul li a:hover:after{
     columns: 2;
     column-gap: 2.5em;
     text-align: justify;
-} 
+}
 
 
 
@@ -470,21 +481,21 @@ nav ul li a:hover:after{
     background-color: var(--color-gray);
 }
 
-.diensten{
+.diensten {
     max-width: 1200px;
 }
 
-.container-diensten .column{
+.container-diensten .column {
     display: flex;
     justify-content: center;
 }
 
-.container-diensten .column h2 { 
+.container-diensten .column h2 {
     font-size: 2.5em;
     font-family: var(--h1-fontfamily);
 }
 
-.container-diensten .column h5 { 
+.container-diensten .column h5 {
     padding-top: .5em;
     color: rgb(179, 116, 116);
     font-size: 1.3em;
@@ -497,7 +508,7 @@ nav ul li a:hover:after{
     font-size: 1em;
     padding-top: 1em;
     text-align: justify;
-} 
+}
 
 
 .container-diensten article {
@@ -526,14 +537,14 @@ nav ul li a:hover:after{
 /* diensten die ze aanbieden */
 
 /* box waar de diensten in zit */
-.container-diensten .diensten-box{
+.container-diensten .diensten-box {
     display: flex;
     justify-content: space-between;
     gap: 2em;
 }
 
 /* box opmaak en ruimte */
-.container-diensten .diensten-container{
+.container-diensten .diensten-container {
     padding: 4em;
     border-radius: .5em;
     text-align: center;
@@ -544,7 +555,7 @@ nav ul li a:hover:after{
 
 
 /* h3 opmaak */
-.container-diensten .diensten-container h3{
+.container-diensten .diensten-container h3 {
     padding-bottom: .5em;
     font-size: 1.3em;
     color: rgb(179, 116, 116);
@@ -552,8 +563,9 @@ nav ul li a:hover:after{
 
     transition: 1s ease-in-out;
 }
+
 /* animatie */
-.container-diensten .diensten-container:hover h3{
+.container-diensten .diensten-container:hover h3 {
     transition: 1s ease-in-out;
     color: #dfbeb3;
 }
@@ -570,14 +582,14 @@ nav ul li a:hover:after{
 
 }
 
-.container-sideText .column{
+.container-sideText .column {
     display: flex;
     justify-content: center;
     padding: 0em 10em 1em;
-   
+
 }
 
-.container-sideText .column h5 { 
+.container-sideText .column h5 {
     font-size: 3em;
     color: rgb(179, 116, 116);
     font-family: var(--h1-fontfamily);
@@ -587,7 +599,7 @@ nav ul li a:hover:after{
     display: flex;
     justify-content: center;
     gap: 2em;
-} 
+}
 
 .sideText p {
     font-family: var(--h1-fontfamily);
@@ -595,7 +607,7 @@ nav ul li a:hover:after{
     font-size: 1em;
     padding-top: 1em;
     text-align: justify;
-} 
+}
 
 
 
@@ -603,40 +615,42 @@ nav ul li a:hover:after{
 /* ******************************* OPMAAK " CAROUSEL" */
 /* ************************************************** */
 
-.carousel-container{
+.carousel-container {
     max-width: 1200px;
     padding: 0 20%;
-	position: relative;
+    position: relative;
     top: -1em;
     background-color: #F0E7E2;
 }
 
-.carousel .card{
+.carousel .card {
     background: rgba(179, 116, 116, 0.61);
     border-radius: .3em;
     padding: .2em;
 }
 
-.carousel .card img{
+.carousel .card img {
     border-radius: .5em;
 }
 
-.owl-dots{
-  text-align: center;
-  margin-top: .5em;
+.owl-dots {
+    text-align: center;
+    margin-top: .5em;
 }
-.owl-dot{
-  height: .1em;
-  width: 3em;
-  margin: .2em;
-  border-radius: 1em;
 
-  border: .1em solid white!important;
-  transition: all 0.3s ease;
+.owl-dot {
+    height: .1em;
+    width: 3em;
+    margin: .2em;
+    border-radius: 1em;
+
+    border: .1em solid white !important;
+    transition: all 0.3s ease;
 }
+
 .owl-dot.active,
-.owl-dot:hover{
-  background: rgba(179, 116, 116, 0.61)!important;
+.owl-dot:hover {
+    background: rgba(179, 116, 116, 0.61) !important;
 }
 
 
@@ -645,12 +659,12 @@ nav ul li a:hover:after{
 /* ******************************* OPMAAK " CONTACT " */
 /* ************************************************** */
 
-.contact-container .wrapper svg{
+.contact-container .wrapper svg {
     position: relative;
     top: -1em;
 }
 
-.contact-us{
+.contact-us {
     position: relative;
     top: -2em;
     height: 100%;
@@ -678,7 +692,7 @@ nav ul li a:hover:after{
     gap: 2em;
 }
 
-.contact-us .column form{
+.contact-us .column form {
     /* background-color: rgba(53, 7, 7, 0.261); */
     /* padding: 1em; */
     width: 30%;
@@ -690,7 +704,7 @@ nav ul li a:hover:after{
     background: #fafafa;
 }
 
- 
+
 .contact-us input[type=text],
 select,
 textarea {
@@ -701,7 +715,9 @@ textarea {
     box-sizing: border-box;
     margin-top: 0.5em;
     margin-bottom: 1em;
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally);; */;
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally);; */
+    ;
     box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271);
 }
 
@@ -713,15 +729,15 @@ textarea {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
 
 /* When moving the mouse over the submit button, add a darker green color */
 .contact-us input[type=submit]:hover {
     background-color: #45a049;
-  }
+}
 
 
-#map{
+#map {
     top: -2em;
     height: 27em;
     width: 50%;
@@ -738,163 +754,175 @@ textarea {
 .footer-dark {
     padding: 5em 10em 2em;
     background-color: #F0E7E2;
-  }
-  .footer-dark .row{
-      display: flex;
-      align-items: baseline;
-      gap: 10em;
-  }
+}
 
-  .footer-dark h3 {
-    margin-top:0;
-    margin-bottom:12px;
-    font-weight:bold;
-    font-size:16px;
-  }
-  
-  .footer-dark ul {
-    padding:0;
-    list-style:none;
-    line-height:1.6;
-    font-size:14px;
-    margin-bottom:0;
-  }
+.footer-dark .row {
+    display: flex;
+    align-items: baseline;
+    gap: 10em;
+}
 
+.footer-dark h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
 
-  .footer-dark ul a {
-      padding: .5em;
-    color:inherit;
-    text-decoration:none;
-    opacity:0.6;
-  }
-  
-  .footer-dark ul a:hover {
-    opacity:0.8;
-  }
-  
+.footer-dark ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+}
 
 
+.footer-dark ul a {
+    padding: .5em;
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+    opacity: 0.8;
+}
 
 
-  @media (max-width:767px) {
+
+
+
+@media (max-width:767px) {
     .footer-dark .item:not(.social) {
-      text-align:center;
-      padding-bottom:20px;
+        text-align: center;
+        padding-bottom: 20px;
     }
-  }
-  
-  .footer-dark .item.text {
-    margin-bottom:36px;
-  }
-  
-  @media (max-width:767px) {
+}
+
+.footer-dark .item.text {
+    margin-bottom: 36px;
+}
+
+@media (max-width:767px) {
     .footer-dark .item.text {
-      margin-bottom:0;
+        margin-bottom: 0;
     }
-  }
-  
-  .footer-dark .item.text p {
-    opacity:0.6;
-    margin-bottom:0;
-  }
-  
-  .footer-dark .col-item-social {
-    text-align:center;
-  }
-  
-  @media (max-width:991px) {
+}
+
+.footer-dark .item.text p {
+    opacity: 0.6;
+    margin-bottom: 0;
+}
+
+.footer-dark .col-item-social {
+    text-align: center;
+}
+
+@media (max-width:991px) {
     .footer-dark .col-item-social {
-      text-align:center;
-      margin-top:20px;
+        text-align: center;
+        margin-top: 20px;
     }
-  }
+}
 
 
-  
-  .footer-dark .col-item-social {
-    font-size:20px;
-    width:36px;
-    height:36px;
-    line-height:36px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
-    margin:0 8px;
-    color:#fff;
-    opacity:0.75;
-  }
-  
-  .footer-dark .col-item-social > a:hover {
-    opacity:0.9;
-  }
-  
-  .footer-dark .copyright {
-    text-align:center;
-    padding-top:24px;
-    opacity:0.3;
-    font-size:13px;
-    margin-bottom:0;
-  }
 
-  .footer-social img{
+.footer-dark .col-item-social {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+}
+
+.footer-dark .col-item-social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.footer-social img {
     width: 1.2em;
-  }
-  
+}
+
 
 
 /* ************************************************** */
 /* ******************************** OPMAAK " @MEDIA " */
 /* ************************************************** */
 
- @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
+
     /* in a tekst stijling */
     .header-top ul li a {
         font-size: .7em;
     }
+
     /* in a tekst stijling */
-    .header-top ul li a { 
+    .header-top ul li a {
         font-size: .7em;
     }
+
     nav ul {
         font-size: .8em;
     }
-    .introduction { 
+
+    .introduction {
         padding: 3em 5em 0em;
     }
+
     .introduction h2 {
         font-size: 7vmin;
     }
+
     .introduction h3 {
         font-size: 1.4vmin;
     }
 
- /* skills komen onder elkaar */
-     .container-skills .columns {
+    /* skills komen onder elkaar */
+    .container-skills .columns {
         display: block;
     }
-    .container-skills .container{
+
+    .container-skills .container {
         height: 40em;
     }
+
     .container-skills div div div div {
         padding: 1em;
     }
 
-    .container-skills .container div:first-of-type{
+    .container-skills .container div:first-of-type {
         padding-top: 2.5em;
     }
+
     .over-ons p {
         columns: 1;
-    } 
+    }
+
     .container-over {
         padding: 5em 5em 5em;
     }
 
-    .container-sideText .column{
+    .container-sideText .column {
         padding: 3em 5em 0em;
     }
+
     .sideText p {
         font-size: 1em;
-    } 
+    }
 
 }
