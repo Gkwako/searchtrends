@@ -783,7 +783,13 @@ textarea {
         margin-bottom: .8em;
         font-weight: bold;
         font-size: 16px;
+        font-family: var(--h1-fontfamily);
     }
+
+    .footer-container p {
+        font-family: var(--h2-fontfamily);
+    }
+
 
     .footer-container ul {
         padding: 0;
@@ -799,6 +805,7 @@ textarea {
         color: inherit;
         text-decoration: none;
         opacity: 0.6;
+        font-family: var(--h2-fontfamily);
     }
 
     .footer-container ul a:hover {
@@ -890,19 +897,20 @@ textarea {
     }
 
     /* skills komen onder elkaar */
-    .container-skills .columns {
+    .container-skills .sub-box{
         display: block;
     }
+    
 
-    .container-skills .container {
-        height: 40em;
+    .container-skills .sub-container {
+        height: 25em;
     }
 
     .container-skills div div div div {
         padding: 1em;
     }
 
-    .container-skills .container div:first-of-type {
+    .container-skills .sub-container div:first-of-type {
         padding-top: 2.5em;
     }
 
@@ -911,7 +919,7 @@ textarea {
     }
 
     .container-over {
-        padding: 5em 5em 5em;
+        /* padding: 5em 5em 5em; */
     }
 
     .container-sideText .column {
@@ -957,5 +965,13 @@ textarea {
 
     .footer-container .row-footer {
         display: block;
+    }
+
+    .container-intro .intro-wrapper img {
+        height: 46vmax;
+    }
+
+    .container-intro {
+        height: 20vmax;
     }
 }
