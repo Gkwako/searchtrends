@@ -654,6 +654,8 @@ nav ul li a:hover:after{
 }
 
 .contact-us{
+    position: relative;
+    top: -2em;
     height: 100%;
     padding: 0em 10em 10em;
 }
@@ -666,6 +668,8 @@ nav ul li a:hover:after{
 }
 
 .contact-us p {
+
+    padding-right: 11em;
     font-family: var(--h2-fontfamily);
     padding-bottom: 2em;
 }
@@ -678,9 +682,9 @@ nav ul li a:hover:after{
 }
 
 .contact-us .column form{
-    background-color: red;
-    padding: 1em;
-    width: 50%;
+    /* background-color: rgba(53, 7, 7, 0.261); */
+    /* padding: 1em; */
+    width: 30%;
 }
 
 
@@ -689,38 +693,24 @@ nav ul li a:hover:after{
     background: #fafafa;
 }
 
-.contact-us .map {
-    overflow: hidden;
-    width: 50%;
-    object-fit: contain;
-}
-
-
  
 .contact-us input[type=text],
 select,
 textarea {
     width: 100%;
-    /* Full width */
-    padding: 12px;
-    /* Some padding */
-    border: 1px solid #ccc;
-    /* Gray border */
-    border-radius: 4px;
-    /* Rounded borders */
+    padding: 0.9em;
+    border: 0.8px solid #e9e3e3;
+    border-radius: 0.2em;
     box-sizing: border-box;
-    /* Make sure that padding and width stays in place */
-    margin-top: 6px;
-    /* Add a top margin */
-    margin-bottom: 16px;
-    /* Bottom margin */
-    resize: vertical
-        /* Allow the user to vertically resize the textarea (not horizontally) */
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally);; */;
+    box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271);
 }
 
 /* Style the submit button with a specific background color etc */
 .contact-us input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #5aaf47;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -734,101 +724,131 @@ textarea {
   }
 
 
- 
-  /* .logo-footer {
-    margin-bottom: 40px;
- }
- footer {
-        color: grey;
- }
- footer p, a {
-font-size: 12px;
-font-family: 'Roboto', sans-serif;
+#map{
+    top: -2em;
+    height: 27em;
+    width: 50%;
+    z-index: 1;
+    border-radius: .4em;
 }
-footer h6 {
-font-family: 'Playfair Display', serif;
-margin-bottom: 40px;
-position: relative;
-}
-footer h6:after {
-position: absolute;
-content: "";
-background: grey;
-width: 12%;
-height: 1px;
-left: 0;
-bottom: -20px;
-}
- footer {
-             color: grey;
-          
-            text-decoration: none;
-            border: 1px solid;
-            border-radius: 43px;
-            font-size: 13px;
-            padding: 7px 30px;
-            line-height: 47px;
- }
- .btn-footer:hover {
-            
-            text-decoration: none;
-           
- }
-.form-footer input[type="text"] {
-    border: none;
-border-radius: 16px 0 0 16px;
-outline: none;
-padding-left: 10px;
 
-}
-::placeholder {
-font-size: 10px;
-padding-left: 10px;
-font-style: italic;
-}
-.form-footer input[type="button"] {
-border: none;
-background:#232323;
-    margin-left: -5px;
-color: #fff;
-outline: none;
-border-radius: 0 16px 16px 0;
-padding: 2px 12px;
-}
- .social .fa {
-color: grey;
-font-size: 22px;
-padding: 10px 15px;
-background: #3c3c3c;
-}
- footer ul li {
-list-style: none;
-display: block;
-}
-footer ul  {
-padding-left: 0;
-}
-footer ul  li a{
-text-decoration: none;
-color: grey;
-text-decoration:none;
-}
-a:hover {
-text-decoration: none;
-color: #f5f5f5 !important;
 
-}
-.logo-part {
-border-right: 1px solid grey;
-height: 100%;
-} */
+/* ************************************************** */
+/* ******************************** OPMAAK " FOOTER " */
+/* ************************************************** */
 
-/* Credit to https://bootsnipp.com/snippets/M56El  */
+
+.footer-dark {
+    padding: 5em 10em 2em;
+    background-color: #F0E7E2;
+  }
+  .footer-dark .row{
+      display: flex;
+      align-items: baseline;
+      gap: 10em;
+  }
+
+  .footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+
+
+  .footer-dark ul a {
+      padding: .5em;
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
 
 
 
 
- /* ---------------------- @MEDIA */
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .col-item-social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .col-item-social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+
+
+  
+  .footer-dark .col-item-social {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-dark .col-item-social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
+
+  .footer-social img{
+    width: 1.2em;
+  }
+  
+
+
+/* ************************************************** */
+/* ******************************** OPMAAK " @MEDIA " */
+/* ************************************************** */
 
  @media screen and (max-width: 1000px) {
     /* in a tekst stijling */
@@ -881,7 +901,3 @@ height: 100%;
     } 
 
 }
-
-
-
-

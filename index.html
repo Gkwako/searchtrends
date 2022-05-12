@@ -6,14 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One page</title>
+    
 
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="images/hair.jpg">
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
 </head>
 
 <body>
@@ -25,7 +34,7 @@
             </li>
             <li class="contact-email">
                 <img src="images/email.png" alt="">
-                <a href="mailto:rudydebeir1@gmail.com">bilderdijkwijnhuys@gmail.com</a>
+                <a href="mailto:rudydebeir1@gmail.com">beautyfitzaandam@gmail.com</a>
             </li>
         </ul>
         <ul>
@@ -51,7 +60,7 @@
                       d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
               </svg>
 
-            <h1> Bilderdijk Wijnhuys</h1>
+            <h1>BeautyFit Zaandam</h1>
             <ul id="menu" class="menu">
                 <li><a class="menuItem" href="#home"> Home </a></li>
                 <li><a class="menuItem" href="#over-ons"> Over ons </a></li>
@@ -67,7 +76,7 @@
             <img src="images/hair.jpg" alt="">
             <div class="background-shape">
                 <div class="introduction">
-                    <h2>Bilderdijk <br> Wijnhuys </h2>
+                    <h2>BeautyFit <br> Zaandam </h2>
                     <h3>Lorem ipsum dolor sit amet consectet? Lorem ipsum dolor sit.
                     </h3>
                 </div>
@@ -75,7 +84,6 @@
         </div>
 
         <div class="content">
-
             <section class="container-skills">
                 <div class="wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 90 1420 300">
@@ -253,7 +261,7 @@
                 </div>
             </section>
 
-                <section id="contact" class="contact-container">
+            <section id="contact" class="contact-container">
                     <div class="wrapper">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 90 1420 300">
                             <path fill="#F0E7E2" fill-opacity="1" d="M0,160L80,181.3C160,203,320,245,480,240C640,235,800,181,960,165.3C1120,149,1280,171,1360,181.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
@@ -268,127 +276,65 @@
                                 
                                 <div class="column">
                                     <form action="action_page.php">
-
-                                        <label for="name">Naam</label>
-                                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                        <input type="text" id="fname" name="firstname" placeholder="Naam">
                         
-                                        <label for="name">E-mailadres </label>
-                                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                        <input type="text" id="lname" name="lastname" placeholder="E-mailadres">
                         
-                                        <label for="country">Telefoonnummer</label>
-                                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                        <input type="text" id="lname" name="lastname" placeholder="Telefoonnummer">
                         
-                                        <label for="subject">Bericht</label>
-                                        <textarea id="subject" name="subject" placeholder="...." style="height:200px"></textarea>
+                                        <textarea id="subject" name="subject" placeholder="Bericht" style="height:10em"></textarea>
                         
-                                        <input type="submit" value="Submit">
-                        
+                                        <input type="submit" value="Verzenden">
                                     </form>
 
-                                    <div class="map">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571289.733943155!2d76.08560099999998!3d29.058775699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e4a4b98404f57%3A0x75ffae70833e8448!2sShahbad%2C%20Haryana%20136135!5e0!3m2!1sen!2sin!4v1594195370933!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                                    </div>
+                                    <div id="map"></div>
 
                                 </div>
                             </div>
                     </div>
-                </section>
- 
-   
-        <!-- <section id="contact">
-          
-
-            <form action="action_page.php">
-
-                <label for="name">Naam</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                <label for="name">E-mailadres </label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                <label for="country">Telefoonnummer</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                <label for="subject">Bericht</label>
-                <textarea id="subject" name="subject" placeholder="...." style="height:200px"></textarea>
-
-                <input type="submit" value="Submit">
-
-            </form>
-        </section> -->
-
+            </section>
     </main>
-    <!-- 
-    <footer class="container-fluid bg-grey py-5">
-        <div class="container">
-           <div class="row">
-              <div class="col-md-6">
-                 <div class="row">
-                    <div class="col-md-6 ">
-                       <div class="logo-part">
-                          <img src="https://i.ibb.co/sHZz13b/logo.png" class="w-50 logo-footer" >
-                          <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
-                          <p>Use this tool as test data for an automated system or find your next pen</p>
-                       </div>
+            <footer>
+                <div class="footer-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 item text">
+                            <h3>BeautyFit Zaandam</h3>
+                            <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Diensten</h3>
+                            <ul>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Over ons</h3>
+                            <ul>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="footer-social">
+                            <a href=""><img src="images/facebook.png" alt=""></a>
+                            <a href=""><img src="images/linkedin.png" alt=""></a>
+                            <a href=""><img src="images/insta2.png" alt=""></a>
+                            <a href=""><img src="images/tweeter.png" alt=""></a>
+                        </div>
                     </div>
-                    <div class="col-md-6 px-4">
-                       <h6> About Company</h6>
-                       <p>But horizontal lines can only be a full pixel high.</p>
-                       <a href="#" class="btn-footer"> More Info </a><br>
-                       <a href="#" class="btn-footer"> Contact Us</a>
-                    </div>
+                    <p class="copyright">Searchtrends © 2022</p>
+                </div>
                  </div>
-              </div>
-              <div class="col-md-6">
-                 <div class="row">
-                    <div class="col-md-6 px-4">
-                       <h6> Help us</h6>
-                       <div class="row ">
-                          <div class="col-md-6">
-                             <ul>
-                                <li> <a href="#"> Home</a> </li>
-                                <li> <a href="#"> About</a> </li>
-                                <li> <a href="#"> Service</a> </li>
-                                <li> <a href="#"> Team</a> </li>
-                                <li> <a href="#"> Help</a> </li>
-                                <li> <a href="#"> Contact</a> </li>
-                             </ul>
-                          </div>
-                          <div class="col-md-6 px-4">
-                             <ul>
-                                <li> <a href="#"> Cab Faciliy</a> </li>
-                                <li> <a href="#"> Fax</a> </li>
-                                <li> <a href="#"> Terms</a> </li>
-                                <li> <a href="#"> Policy</a> </li>
-                                <li> <a href="#"> Refunds</a> </li>
-                                <li> <a href="#"> Paypal</a> </li>
-                             </ul>
-                          </div>
-                       </div>
-                    </div>
-                    <div class="col-md-6 ">
-                       <h6> Newsletter</h6>
-                       <div class="social">
-                          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                       </div>
-                       <form class="form-footer my-3">
-                          <input type="text"  placeholder="search here...." name="search">
-                          <input type="button" value="Go" >
-                       </form>
-                       <p>That's technology limitation of LCD monitors</p>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-        </footer> -->
+            </footer>
 
-
-    <!-- Credit to https://bootsnipp.com/snippets/M56El  -->
 </body>
 
 <script src="script/script.js"></script>
 
 </html>
+
 
