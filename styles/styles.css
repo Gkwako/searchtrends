@@ -1,8 +1,10 @@
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
+    /* box-sizing: inherit; */
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 
@@ -31,13 +33,24 @@
 /* ************************** OPMAAK VAN EXTRA HEADER */
 /* ************************************************** */
 
-/* container */
+/* container hele extra header*/
 .extra-header {
     display: flex;
-    justify-content: space-between;
-    padding: .4em 5em .4em;
+    justify-content: center;  
     background-color: var(--color-creme);
     }
+
+    /* container in extra header*/
+    .container-extra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5em;
+        max-width: 1200px !important;
+        width: 100%;
+        /* background: red; */
+    }
+    
 
     /* ruimte tussen tel en email in de extra header */
     .extra-header ul {
