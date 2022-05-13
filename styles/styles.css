@@ -45,12 +45,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0.5em;
+        padding: 0.3em;
+
         max-width: 1200px !important;
         width: 100%;
-        /* background: red; */
     }
-    
 
     /* ruimte tussen tel en email in de extra header */
     .extra-header ul {
@@ -97,15 +96,21 @@ header {
     
     transition: .32s;
     z-index: 2;
+
+    display: flex;
+    justify-content: center;
     }
 
     /* nav container opmaak */
     nav {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 0em 5em;
-        height: 5em;
+        gap: 45em;
+        /* height: 5em; */
+
+        max-width: 1200px;
+        width: 100%;
+          /* padding: 0em 9.5vmax; */
     }
 
     /* logo opmaak*/
@@ -218,38 +223,6 @@ header svg {
     display: none;
     }
 
-    @media screen and (max-width: 1000px) {
-        /* icon zichtbaar */
-        header svg {
-            display: block;
-            position: absolute;
-            right: 4em;
-            z-index: 1;
-        }
-
-        /* ??????? */
-        nav {
-            /* position: relative; */
-        }
-
-        /* icon "open" opmaak */
-        nav ul {    
-            display: none;
-            position: absolute;
-            right: 0;
-            left: 0;
-            top: 0em;
-            height: 35vmax;
-            padding-top: 5em;
-            background: var(--color-creme);
-        }
-
-        /* opmaak tekst in hamburger */
-        nav li {
-            padding: 4vmax 4vmax 0vmax;
-            font-size: 2vmax;
-        }
-    }
 
    
 
@@ -258,6 +231,7 @@ header svg {
 /* ************************************************** */
 /* ******************************** OPMAAK HOME IMAGE */
 /* ************************************************** */
+
 
 /* stijling van container image */
 .container-intro {
@@ -275,17 +249,23 @@ header svg {
 
     /* container stijling */
     .introductie {
-        height: 26vmax;
-        padding: 5.5em 5em 1em;
+        display: flex;
+        justify-content: center;  
+        /* height: 26vmax; */
+        padding: 5em 0 0;
+    }
+
+    .introductie .wrapper{
+        max-width: 1200px !important;
+        width: 100%;
     }
 
     /* h2 tekst opmaak */
     .introductie h2 {
         font-family: var(--h1-fontfamily);
         font-weight: 4;
-        font-size: 12.5vmin;
+        font-size: 6em;
         line-height: 1em;
-        padding-top: 0em;
         color: var(--color-blackish);
 
         position: relative;
@@ -364,10 +344,10 @@ header svg {
     display: flex;
     justify-content: center;
     height: 2em;
-    /* padding: 0 em 0; */
     position: relative;
     top: -14em;
     max-height: 1200px;
+    width: 100%;
     }
 
     /* ruimte tussen de andere containers */
@@ -438,8 +418,7 @@ header svg {
     .container-over {
         display: flex;
         justify-content: center;
-        height: 100%;
-        padding: 10em 10em 10em;
+        padding: 10em 0em 10em;
         background-color: var(--color-creme);
     }
 
@@ -460,15 +439,12 @@ header svg {
     /* opmaak p */
     .over-ons p {
         font-family: var(--h1-fontfamily);
-        font-weight: 400;
-        font-size: 1em;
         padding-top: 1em;
 
         columns: 2;
-        column-gap: 2.5em;
+        column-gap: 3.5em;
         text-align: justify;
     }
-
 
 
 
@@ -497,8 +473,7 @@ header svg {
 .container-diensten {
     display: flex;
     justify-content: center;
-    height: 100%;
-    padding: 9em 10em 10em;
+    padding: 10em 0em 10em;
     background-color: var(--color-creme);
 }
 
@@ -522,8 +497,6 @@ header svg {
     /* stijling p */
     .container-diensten .diensten article p {
         font-family: var(--h1-fontfamily);
-        font-weight: 400;
-        font-size: 1em;
         padding-top: 1em;
         text-align: justify;
     }
@@ -532,7 +505,7 @@ header svg {
     .container-diensten article {
         display: flex;
         padding-bottom: 2em;
-        gap: 3em;
+        gap: 3.5em;
     }
 
     /* img opmaak */
@@ -584,19 +557,25 @@ header svg {
 
 /* container opmaak */
 .container-sideText {
-    display: flex;
-    justify-content: center;
+    width: 100%;
  }
     /* padding in container*/
-    .sideText {
+   .side-wrapper .wrapper {
         display: flex;
         justify-content: center;
-        gap: 2em;
-        padding: 0em 10em 1em;
+    }
+
+    .sideText{
+        display: block;
+        /* text-align: center; */
+        columns: 2;
+        column-gap: 3.5em;
+        max-width: 1200px;
     }
    
     /* h5 opmaak */
     .container-sideText .sideText h5 {
+        padding-bottom: 0.1em;
         font-size: 3em;
         color: var(--color-lightPink);
         font-family: var(--h1-fontfamily);
@@ -605,9 +584,7 @@ header svg {
     /* p opmaak */
     .sideText p {
         font-family: var(--h1-fontfamily);
-        font-weight: 400;
-        font-size: 1em;
-        padding-top: 1em;
+        /* padding-top: 1em; */
         text-align: justify;
     }
 
@@ -621,18 +598,27 @@ header svg {
 
 /* comtainer opmaak */
 .carousel-container {
-    max-width: 1200px;
     padding: 0 20%;
+    width: 100%;
     position: relative;
     top: -1em;
     background-color: var(--color-creme);
 }
+
+.carousel .owl-carousel{
+    max-width: 1200px;
+    
+}
+
+
 
 /* opmaak card */
 .carousel .card {
     background: var(--color-lightPink);
     border-radius: .3em;
     padding: .2em;
+    animation-delay: 2s;
+  
 }
 
 /* img grote */
@@ -648,14 +634,15 @@ header svg {
 
 /* opmaak button */
 .owl-dot {
-    height: .1em;
+    height: .3em;
     width: 3em;
     margin: .2em;
     border-radius: 1em;
     text-align: center;
 
     border: .1em solid white !important;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in;
+  
 }
 
 /* button kleur hover */
@@ -663,6 +650,7 @@ header svg {
 .owl-dot:hover {
     background: var(--color-lightPink) !important;
 }
+
 
 
 
@@ -680,8 +668,9 @@ header svg {
 
     /* container opmaak */
     .contact-us {
+        max-width: 1200px;
         position: relative;
-        top: -1em;
+        top: -4em;
         height: 100%;
         padding: 0em 10em 8em;
     }
@@ -704,6 +693,7 @@ header svg {
     /* opmaak tekst */
     .contact-us .column1 {
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
         padding: 0em 6em 1em;
@@ -722,6 +712,26 @@ header svg {
         width: 30%;
     }
 
+
+
+/* 
+    .extra-header {
+        display: flex;
+        justify-content: center;  
+        background-color: var(--color-creme);
+        }
+    
+
+        .container-extra {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.3em;
+    
+            max-width: 1200px !important;
+            width: 100%;
+        }
+     */
 
 
 
@@ -883,6 +893,105 @@ textarea {
 
 @media screen and (max-width: 1000px) {
 
+    /* size grote van "extra header" box */
+    .extra-header ul li {
+        font-size: .6em;
+    }
+    .extra-header ul {
+        gap: .7em;
+    }
+    /* size grote icon's "extra header" */
+    .extra-header ul img {
+        width: 1.8em;
+    }
+    /* ruimte tussen container */
+    .container-extra {
+        padding: .5em 2.5em .5em;
+    }
+    /* plaatsing van logo bij hamburger menu */
+    nav {
+        padding: 0em 2.5em;
+    }
+    /* icon zichtbaar "ham"*/
+    header svg {
+        display: block;
+        position: absolute;
+        right: 1em;
+        z-index: 1;
+    }
+    /* icon "open" opmaak */
+    nav ul {    
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0em;
+        height: 35vmax;
+        background: var(--color-creme);
+
+        transition: all 3s linear;
+    }
+    /* opmaak tekst in hamburger */
+    nav li {
+        position: relative;
+        top: 2em;
+        padding: 3vmax 4vmax 0vmax;
+        font-size: 2vmax;
+    }
+    /* intro opmaak */
+    .introductie {
+        padding: 3.5em 2.5em 0em;
+    }
+    /* container van skills */
+    .container-skills .sub-container {
+        top: -5.5em;
+    }
+    .container-skills div div div div {
+        padding: 0em;
+        margin-bottom: 1.5em;
+    }
+    .container-skills .sub-container div:first-of-type {
+        padding: .5em;
+    }
+
+    .container-skills .sub-container {
+        height: 30em;
+    } 
+
+    .container-over {
+        padding: 5em 3.5em 5em;
+    }
+    .container-diensten {
+        padding: 5em 3.5em 5em;
+    }
+    .container-diensten .diensten-container {
+        margin-bottom: 2em;
+    }
+    .sideText {
+        columns: 1;
+        padding: 0em 3.5em 5em;
+    }
+    .contact-us {
+        height: 100%;
+        padding: 3em 3.5em 0em;
+    }
+    .footer-container {
+        padding: 2.5em 3.5em 1em;
+    }
+    
+
+
+
+
+
+    
+    
+
+
+
+
+
+
     /* in a tekst stijling */
     .header-top ul li a {
         font-size: .7em;
@@ -897,9 +1006,6 @@ textarea {
         font-size: .8em;
     }
 
-    .introductie {
-        padding: 3em 5em 0em;
-    }
 
     .introductie h2 {
         font-size: 7vmin;
@@ -915,25 +1021,16 @@ textarea {
     }
     
 
-    .container-skills .sub-container {
-        height: 25em;
-    }
-
+/*     
     .container-skills div div div div {
         padding: 1em;
-    }
+    }  */
 
-    .container-skills .sub-container div:first-of-type {
-        padding-top: 2.5em;
-    }
 
     .over-ons p {
         columns: 1;
     }
 
-    .container-over {
-        /* padding: 5em 5em 5em; */
-    }
 
     .container-sideText .column {
         padding: 3em 5em 0em;
