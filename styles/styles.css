@@ -19,6 +19,7 @@
     --color-grayish: #aaa;
     --color-white: #ffffff;
     --color-lightPink:rgb(179, 116, 116);
+    --color-basic: rgb(56, 40, 40); 
 
     /* fontfamily */
     --h1-fontfamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -118,6 +119,7 @@ header {
         font-family: var(--h1-fontfamily);
         font-weight: 400;
         font-size: 1.2em;
+        color: var(--color-basic);
     }
 
     /* opmaak navigatie "home, over ons etc" */
@@ -266,7 +268,7 @@ header svg {
         font-weight: 4;
         font-size: 6em;
         line-height: 1em;
-        color: var(--color-blackish);
+        color: rgb(56, 40, 40);
 
         position: relative;
         z-index: 1;
@@ -279,6 +281,7 @@ header svg {
         font-family: var(--h1-fontfamily);
         font-weight: 400;
         line-height: 4em;
+        color: rgb(77, 53, 53);
 
         position: relative;
         z-index: 1;
@@ -426,6 +429,7 @@ header svg {
     .container-over .over-ons h2 {
         font-size: 2.5em;
         font-family: var(--h1-fontfamily);
+        color: var(--color-basic);
     }
 
     /* opmaak h5 */
@@ -486,6 +490,7 @@ header svg {
     .container-diensten .diensten h2 {
         font-size: 2.5em;
         font-family: var(--h1-fontfamily);
+        color: var(--color-basic);
     }
     /* stijling h5 */
     .container-diensten .diensten h5 {
@@ -563,13 +568,17 @@ header svg {
    .side-wrapper .wrapper {
         display: flex;
         justify-content: center;
+        padding: 0em 12em 0em;
     }
 
     .sideText{
         display: block;
-        /* text-align: center; */
         columns: 2;
         column-gap: 3.5em;
+        column-rule-style: solid;
+        column-rule-width: 4px;
+        column-rule-color: rgb(185, 127, 136);
+
         max-width: 1200px;
     }
    
@@ -584,7 +593,7 @@ header svg {
     /* p opmaak */
     .sideText p {
         font-family: var(--h1-fontfamily);
-        /* padding-top: 1em; */
+        font-size: 15px;
         text-align: justify;
     }
 
@@ -660,6 +669,11 @@ header svg {
 /* ******************************* OPMAAK " CONTACT " */
 /* ************************************************** */
 
+.container-max {
+    display: flex;
+    justify-content: center;
+    }
+
 /* svg opmaak boven "neem contact" */
 .contact-container .svg-wrapper svg {
     position: relative;
@@ -672,7 +686,7 @@ header svg {
         position: relative;
         top: -4em;
         height: 100%;
-        padding: 0em 10em 8em;
+        padding: 0em 7em 8em;
     }
 
     /* h2 opmaak */
@@ -696,7 +710,7 @@ header svg {
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
-        padding: 0em 6em 1em;
+        padding: 0em 5em 1em;
     }
 
     /* opmaak contact form */
@@ -711,27 +725,6 @@ header svg {
     .contact-us .column2 form {
         width: 30%;
     }
-
-
-
-/* 
-    .extra-header {
-        display: flex;
-        justify-content: center;  
-        background-color: var(--color-creme);
-        }
-    
-
-        .container-extra {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.3em;
-    
-            max-width: 1200px !important;
-            width: 100%;
-        }
-     */
 
 
 
@@ -758,7 +751,7 @@ textarea {
 
 /* Style the submit button with a specific background color etc */
 .contact-us input[type=submit] {
-    background-color: #5aaf47;
+    background-color: rgb(185, 127, 136);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -790,8 +783,14 @@ textarea {
 
 /* plaatsing container */
 .footer-container {
-    padding: 2.5em 10em 2em;
+    display: flex;
+    justify-content: center;
+    padding: 2.5em 0em 2em;
     background-color: var(--color-creme);
+    }
+
+    .footer-wrapper{
+        max-width: 1200px;
     }
 
     /* opmaak container */
@@ -807,6 +806,7 @@ textarea {
         font-weight: bold;
         font-size: 16px;
         font-family: var(--h1-fontfamily);
+        color: var(--color-basic);
     }
 
     .footer-container p {
