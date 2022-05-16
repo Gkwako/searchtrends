@@ -344,7 +344,6 @@ header svg {
 
 /* container opmaak */
 .container-skills .sub-container {
-    display: flex;
     justify-content: center;
     height: 2em;
     position: relative;
@@ -353,10 +352,16 @@ header svg {
     width: 100%;
     }
 
+    .container-skills .sub-container h2{
+      
+        max-width: 1200px;
+        background-color: red;
+        }
+
     /* ruimte tussen de andere containers */
     .container-skills .sub-box {
         display: flex;
-        align-items: center;
+        justify-content: center;
         text-align: center;
         gap: 3em;
     }
@@ -371,12 +376,12 @@ header svg {
 
     /* grote van box*/
     .container-skills div div div div {
-        padding: 2em;
+        padding: .5em;
     }
 
     /* grote van icon */
     .columns-container img {
-        width: 5em;
+        width: 4.5em;
     }
 
     /* svg opmaak */
@@ -401,6 +406,7 @@ header svg {
     /* h4 opmaak */
     .content-container .container-skills p {
         font-weight: 350;
+        padding: 0.5em 1em 1em;
         font-family: var(--h1-fontfamily);
     }
 
