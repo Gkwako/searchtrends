@@ -47,7 +47,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0.3em;
-
+        min-width: 360px;
         max-width: 1200px !important;
         width: 100%;
     }
@@ -253,7 +253,6 @@ header svg {
     .introductie {
         display: flex;
         justify-content: center;  
-        /* height: 26vmax; */
         padding: 5em 0 0;
     }
 
@@ -280,6 +279,7 @@ header svg {
     .introductie h3 {
         font-family: var(--h1-fontfamily);
         font-weight: 400;
+        font-size: 1vw;
         line-height: 4em;
         color: rgb(77, 53, 53);
 
@@ -314,8 +314,8 @@ header svg {
     .shape::after {
         content: '';
         position: absolute;
-        bottom: -250em;
-        height: 260em;
+        bottom: -265em;
+        height: 270em;
         transform: skew(0deg, 75deg);
         background: rgba(203, 196, 196, 0.767);
 
@@ -344,19 +344,28 @@ header svg {
 
 /* container opmaak */
 .container-skills .sub-container {
+    display: grid;
     justify-content: center;
-    height: 2em;
+    /* height: 2em; */
+    padding: 5em 0 10em;
+    height: 0em;
     position: relative;
-    top: -14em;
+    top: -21em;
     max-height: 1200px;
     width: 100%;
     }
 
+
+
     .container-skills .sub-container h2{
-      
+        font-size: 2.5em;
+        font-family: var(--h1-fontfamily);
+        color: var(--color-lightPink);
         max-width: 1200px;
-        background-color: red;
+        padding-bottom: 1.5em;
         }
+
+        
 
     /* ruimte tussen de andere containers */
     .container-skills .sub-box {
@@ -410,6 +419,7 @@ header svg {
         font-family: var(--h1-fontfamily);
     }
 
+    
 
 
 
@@ -420,14 +430,16 @@ header svg {
 
 /* container grote */
 .over-ons {
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    max-width: 1100px;
  }
 
     /* opmaak container */
     .container-over {
         display: flex;
         justify-content: center;
-        padding: 10em 0em 10em;
+        /* padding: 10em 0em 10em; */
+        padding: 10em 7.5em 10em;
         background-color: var(--color-creme);
     }
 
@@ -489,7 +501,8 @@ header svg {
 
     /* max width */
     .diensten {
-        max-width: 1200px;
+        /* max-width: 1200px; */
+        max-width: 1100px;
     }
 
     /* stijling h2 */
@@ -585,7 +598,7 @@ header svg {
         column-rule-width: 4px;
         column-rule-color: rgb(185, 127, 136);
 
-        max-width: 1200px;
+        max-width: 1100px;
     }
    
     /* h5 opmaak */
@@ -678,6 +691,7 @@ header svg {
 .container-max {
     display: flex;
     justify-content: center;
+    padding-bottom: 5em;
     }
 
 /* svg opmaak boven "neem contact" */
@@ -687,13 +701,27 @@ header svg {
     }
 
     /* container opmaak */
-    .contact-us {
+    /* .contact-us {
         max-width: 1200px;
         position: relative;
         top: -4em;
         height: 100%;
         padding: 0em 7em 8em;
+    } */
+
+
+    .contact-us {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        max-width: 1100px;
+        position: relative;
+        top: -5em;
+        /* height: 100%; */
+        /* padding: 0em 7em 8em; */
     }
+
+
 
     /* h2 opmaak */
     .contact-us h2 {
@@ -716,20 +744,23 @@ header svg {
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
-        padding: 0em 5em 1em;
+        /* padding: 0em 5em 1em; */
     }
 
     /* opmaak contact form */
     .contact-us .column2 {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 2em;
+        /* justify-content: center; */
+        gap: 4em;
+        padding: 2em;
+        border-radius: .5em;
+        box-shadow: -10px 20px 20px 10px rgb(100 55 55 / 27%);
     }
 
     /* opmaak grote form */
     .contact-us .column2 form {
-        width: 30%;
+        width: 31%;
     }
 
 
@@ -739,20 +770,21 @@ header svg {
 
 .contact-us input,
 .contact-us textarea {
-    background: #fafafa;
+    background: #fcfcfc;
 }
 
 .contact-us input[type=text],
 select,
 textarea {
     width: 100%;
-    padding: 0.9em;
-    border: 0.8px solid #e9e3e3;
+    padding: 1em;
+    border: 1px solid #e2e0e0;
     border-radius: 0.2em;
     box-sizing: border-box;
     margin-top: 0.5em;
     margin-bottom: 1em;
-    box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271);
+    font-family: var(--h2-fontfamily);
+    /* box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271); */
 }
 
 /* Style the submit button with a specific background color etc */
@@ -774,7 +806,7 @@ textarea {
 #map {
     top: -2em;
     height: 27em;
-    width: 50%;
+    width: 63%;
     z-index: 1;
     border-radius: .4em;
 }
@@ -1090,4 +1122,55 @@ textarea {
     .container-intro {
         height: 20vmax;
     }
+}
+
+
+
+@media screen and (min-width: 1920px) {
+    /* container opmaak */
+    .container-intro {
+
+        height: 23vmax;
+    }
+    .container-skills .sub-container {
+        top: -29em;
+        }
+
+        .columns-container img {
+            width: 5em;
+        }
+
+    .introductie {
+        height: 0vmax;
+        padding: 5em 0 4em;
+    }
+
+    .content-container .container-skills p {
+        padding: .5em 1.5em .5em;
+    }
+
+    .container-skills div div div div {
+        padding: 5em 0 5em;
+    }
+
+}
+
+
+@media screen and (min-width: 360px) {
+    .extra-header li a {
+        font-size: .66em;
+    }
+    nav ul {
+        height: 28.5vmax;
+    }
+    .container-intro {
+        height: 17vmax;
+    }
+    .container-intro .intro-wrapper img {
+        height: 21vmax;
+    }
+    .container-intro .intro-wrapper img {
+        top: -1em;
+    }
+
 }
