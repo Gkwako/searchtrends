@@ -1156,7 +1156,10 @@ textarea {
 }
 
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
+    .extra-header li a {
+        font-size: 0.7em;
+    }
     .extra-header li a {
         font-size: .66em;
     }
@@ -1167,10 +1170,20 @@ textarea {
         height: 17vmax;
     }
     .container-intro .intro-wrapper img {
-        height: 21vmax;
+        height: 25vmax;
     }
     .container-intro .intro-wrapper img {
         top: -1em;
+    }
+    .introductie {
+        padding: 2.5em 2.5em 0em;
+    }
+    .container-skills .sub-container h2 {
+        font-size: 1.5em;
+    }
+    .container-skills .sub-container {
+        top: -6.5em;
+        padding: 2.6em;
     }
 
 }
