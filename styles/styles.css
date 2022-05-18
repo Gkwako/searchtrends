@@ -1182,9 +1182,58 @@ textarea {
         font-size: 1.5em;
     }
     .container-skills .sub-container {
-        top: -6.5em;
+        top: -5em;
         padding: 2.6em;
-        background-color: #45a049;
+        
+    }
+    .container-skills .sub-container {
+        height: 47em;
+    }
+    .container-skills div div div div {
+        margin-bottom: 3.5em;
+    }
+    .over-ons p {
+        columns: 1;
+        font-size: .8em;
+    }
+    .container-diensten .diensten article p {
+        font-size: .8em;
+    }
+    .side-wrapper .wrapper {
+        padding: 0;
+    }
+    .sideText p {
+        padding-top: 1em;
+        font-size: .8em;
+    }
+    .container-sideText .sideText h5 {
+        font-size: 2em;
+    }
+    .sideText {
+        padding: 0em 3.5em 1em;
+    }
+    .owl-dots {
+        display: none;
+    }
+    .contact-us h2 {
+        font-size: 2em;
+    }
+    .contact-us p {
+        text-align: justify;
+        font-size: .8em;
+    }
+    .contact-us {
+        padding: 5em 3.5em 0em;
+    }
+    .container-max {
+        padding-bottom: 0;
+    }
+    .footer-container .item.text p {
+        /* text-align: justify; */
+        font-size: .8em;
+    }
+    .footer-social {
+        padding: 0em 5em 0em;
     }
 
 }
