@@ -1159,16 +1159,29 @@ textarea {
 
 @media screen and (max-width: 430px) {
     .extra-header li a {
-        font-size: .1em;
-        color: red;
-    }
-    .extra-header ul:nth-of-type(1) {
-        gap: 0.8em;
-    } 
-    .extra-header ul:nth-of-type(2) img {
+        font-size: .9em;
         gap: 0.1em;
-        width: 4em;
     }
+    .extra-header ul:nth-of-type(1) li a {
+        visibility:hidden
+    }
+    .extra-header ul{
+        gap: 0.1em;
+    } 
+    .extra-header ul:nth-of-type(1) li:nth-of-type(2) img {
+        position: relative;
+        left: 1em;
+    }
+    .extra-header ul:nth-of-type(1) li:nth-of-type(2)  {
+    border-left: 1px solid var(--color-lightPink);
+    height: 20px;
+    
+    position: relative;
+    left: -8em;
+
+    }
+    
+
     nav ul {
         height: 28.5vmax;
     }
