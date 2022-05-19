@@ -2,27 +2,43 @@
 // HAMBURGER MENU -----
 console.log(" hamburger menu ");
 
-var menu = document.querySelector(".menu");
-var menuItems = document.querySelectorAll(".menuItem");
-var hamburger = document.querySelector(".ham");
+var hamburgerMenu = document.querySelector(".menu");
 
-let open = 0;
+var menuButton = document.querySelector(".icon");
 
-function toggleMenu() {
-	if (open == 0) {
-		open = 1;
-		document.getElementById("menu").style.display = "none";
-		hamburger.classList.remove('active');
-		console.log(" close ");
 
-	} else {
-		open = 0;
-		document.getElementById("menu").style.display = "unset";
-		hamburger.classList.add('active');
-		console.log(" open ");
-	}
+menuButton.addEventListener("click", toggleHamburgerMenu);
+
+
+
+function toggleHamburgerMenu(){
+
+    hamburgerMenu.classList.toggle("visible");
+
 }
-hamburger.addEventListener("click", toggleMenu);
+
+
+// var menu = document.querySelector(".menu");
+// var menuItems = document.querySelectorAll(".menuItem");
+// var hamburger = document.querySelector(".ham");
+
+// let open = 0;
+
+// function toggleMenu() {
+// 	if (open == 0) {
+// 		open = 1;
+// 		document.getElementById("menu").style.display = "none";
+// 		hamburger.classList.remove('active');
+// 		console.log(" close ");
+
+// 	} else {
+// 		open = 0;
+// 		document.getElementById("menu").style.display = "unset";
+// 		hamburger.classList.add('active');
+// 		console.log(" open ");
+// 	}
+// }
+// hamburger.addEventListener("click", toggleMenu);
 
 
 

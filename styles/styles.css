@@ -6,11 +6,6 @@
     margin: 0;
     padding: 0;
 }
-/* 
-@font-face { 
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif ;
-    src:url(../font/artbrush/Artbrush.ttf) format('truetype');
-}  */
 
 
 
@@ -227,7 +222,7 @@ nav ul li a:after {
 }
 
 /* display hamburger menu niet zichtbaar */
-header svg {
+.icon svg {
     display: none;
     }
 
@@ -957,14 +952,64 @@ textarea {
         padding: 0em 2.5em;
     }
     /* icon zichtbaar "ham"*/
-    header svg {
-        display: block;
+    button{
+        display: unset;
         position: absolute;
         right: 1em;
         z-index: 1;
+        width: 3em;
+        height: 3em;
+        border: none;
+        background-color: transparent;
     }
+
+    /* .icon svg{
+        display: unset;
+        position: absolute;
+        top: -2em;
+        right: 0em;
+        z-index: 1;
+    } */
+    
+    .icon svg {
+        display: block;
+        position: absolute;
+        top: -.3em;
+        right: 0em;
+        z-index: 1;
+    }
+    .menu{
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        height: 30vmax;
+        background: var(--color-creme);
+
+        transform: translate(0%, -100%);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    }
+
+    .menu li {
+        position: relative;
+        top: 2em;
+        padding: 3vmax 4vmax 0vmax;
+        font-size: 2vmax;
+    }
+
+    .visible{
+        display: block;
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    
+
+    
     /* icon "open" opmaak */
-    nav ul {    
+    /* nav ul {    
         display: none;
         position: absolute;
         right: 0;
@@ -974,14 +1019,19 @@ textarea {
         background: var(--color-creme);
 
         transition: all 3s linear;
-    }
+    } */
+
     /* opmaak tekst in hamburger */
-    nav li {
+    /* nav li {
         position: relative;
         top: 2em;
         padding: 3vmax 4vmax 0vmax;
         font-size: 2vmax;
-    }
+    } */
+
+
+
+
     /* intro opmaak */
     .introductie {
         padding: 3.5em 2.5em 0em;
