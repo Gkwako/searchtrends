@@ -1156,7 +1156,8 @@ textarea {
 }
 
 
-@media screen and (max-width: 430px) {
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
     .extra-header li a {
         font-size: 0.7em;
     }
