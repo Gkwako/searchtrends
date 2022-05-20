@@ -11,15 +11,50 @@ var linkclose = document.querySelector(".menu a");
 
 menuButton.addEventListener("click", toggleHamburgerMenu);
 
+// test = 0;
 
+
+// function toggleHamburgerMenu(){
+// 	if (test == 0){
+// 		hamburgerMenu.classList.add("visible");
+// 		test = 1;
+// 		menuButton.classList.toggle('.hamRotate.active');
+// 		console.log('visible');
+// 	} else if (test == 2){
+// 		hamburgerMenu.classList.remove("visible");
+// 		test = 0;
+// 		console.log('no visible');
+// 	}
+//     hamburgerMenu.classList.toggle("visible");
+// }
+// menuButton.addEventListener("click", toggleHamburgerMenu);
+
+// test = 0;
 
 
 function toggleHamburgerMenu(){
-
-    hamburgerMenu.classList.toggle("visible");
-
+	hamburgerMenu.classList.toggle('visible');
 
 }
+
+menuButton.addEventListener("click", toggleHamburgerMenu);
+
+
+
+
+
+$( '.menu a' ).on("click", function(){
+	$('.icon').click();
+	console.log(" menu gone");
+
+  });
+
+
+ 
+
+
+  // $('.ham').toggle('.hamRotate');
+	// console.log(" button toggled");
 
 
 
