@@ -222,9 +222,15 @@ nav ul li a:after {
 }
 
 /* display hamburger menu niet zichtbaar */
-.icon svg {
+.icon  svg{
     display: none;
     }
+
+    button{
+        display: none;
+        }
+    
+
 
 
    
@@ -962,14 +968,6 @@ textarea {
         border: none;
         background-color: transparent;
     }
-
-    /* .icon svg{
-        display: unset;
-        position: absolute;
-        top: -2em;
-        right: 0em;
-        z-index: 1;
-    } */
     
     .icon svg {
         display: block;
@@ -994,10 +992,15 @@ textarea {
 
     .menu li {
         position: relative;
-        top: 2em;
-        padding: 3vmax 4vmax 0vmax;
+        top: 3em;
+        left: 2em;
+        padding-bottom: 1em;
+        /* padding: 3vmax 4vmax 0vmax; */
         font-size: 2vmax;
     }
+
+
+
 
     .visible{
         display: block;
