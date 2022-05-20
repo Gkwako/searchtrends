@@ -6,8 +6,11 @@ var hamburgerMenu = document.querySelector(".menu");
 
 var menuButton = document.querySelector(".icon");
 
+var linkclose = document.querySelector(".menu a");
+
 
 menuButton.addEventListener("click", toggleHamburgerMenu);
+
 
 
 
@@ -15,7 +18,9 @@ function toggleHamburgerMenu(){
 
     hamburgerMenu.classList.toggle("visible");
 
+
 }
+
 
 
 // var menu = document.querySelector(".menu");
