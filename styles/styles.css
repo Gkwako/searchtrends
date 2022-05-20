@@ -1271,7 +1271,7 @@ textarea {
         height: 28.5vmax;
     }
     .container-intro {
-        height: 17vmax;
+        height: 25vmax;
     }
     .container-intro .intro-wrapper img {
         height: 29vmax;
@@ -1280,7 +1280,7 @@ textarea {
         top: -1em;
     }
     .introductie {
-        padding: 1.7em 2.5em 0em;
+        /* padding: 1.7em 2.5em 0em; */
     }
     .container-skills .sub-container h2 {
         font-size: 1.5em;
