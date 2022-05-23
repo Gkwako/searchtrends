@@ -45,11 +45,10 @@
     /* container in extra header*/
     .container-extra {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        gap: 45%;
         padding: 0.3em;
-        min-width: 360px;
-        max-width: 1200px !important;
         width: 100%;
     }
 
@@ -106,10 +105,9 @@ header {
     /* nav container opmaak */
     nav {
         display: flex;
+        justify-content: center;
         align-items: center;
-        gap: 45em;
-
-        max-width: 1200px;
+        gap: 45%;
         width: 100%;
     }
 
@@ -256,21 +254,24 @@ nav ul li a:after {
 
     /* container stijling */
     .introductie {
-        display: flex;
-        justify-content: center;  
+        width: 37%;
         padding: 5em 0 0;
+        text-align: center;
+        /* display: flex;
+        justify-content: center;  
+        padding: 5em 0 0; */
     }
 
     .introductie .wrapper{
-        max-width: 1200px !important;
-        width: 100%;
+        /* max-width: 1200px !important;
+        width: 100%; */
     }
 
     /* h2 tekst opmaak */
     .introductie h2 {
         font-family: var(--h1-fontfamily);
-        font-weight: 4;
-        font-size: 6em;
+        font-weight: 300;
+        font-size: 4em;
         line-height: 1em;
         color: rgb(56, 40, 40);
 
@@ -283,7 +284,7 @@ nav ul li a:after {
     /* h3 tekst opmaak */
     .introductie h3 {
         font-family: var(--h1-fontfamily);
-        font-weight: 400;
+        font-weight: 300;
         font-size: 1vw;
         line-height: 4em;
         color: rgb(77, 53, 53);
