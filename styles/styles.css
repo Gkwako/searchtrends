@@ -489,7 +489,6 @@ nav ul li a:after {
 
 
 
-
 /* ************************************************** */
 /* ******************************* OPMAAK " DIENSTEN" */
 /* ************************************************** */
@@ -1230,6 +1229,15 @@ textarea {
     }
     .container-diensten .diensten-box {
         display: block;
+    }
+
+    .parallax {
+        background-image: url(../images/spa2.jpg);
+        min-height: 30em;
+        background-attachment: local, scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 }
