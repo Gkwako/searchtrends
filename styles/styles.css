@@ -108,11 +108,9 @@ header {
         display: flex;
         align-items: center;
         gap: 45em;
-        /* height: 5em; */
 
         max-width: 1200px;
         width: 100%;
-          /* padding: 0em 9.5vmax; */
     }
 
     /* logo opmaak*/
@@ -353,7 +351,6 @@ nav ul li a:after {
 .container-skills .sub-container {
     display: grid;
     justify-content: center;
-    /* height: 2em; */
     padding: 5em 0 10em;
     height: 0em;
     position: relative;
@@ -437,7 +434,6 @@ nav ul li a:after {
 
 /* container grote */
 .over-ons {
-    /* max-width: 1200px; */
     max-width: 1100px;
  }
 
@@ -445,7 +441,6 @@ nav ul li a:after {
     .container-over {
         display: flex;
         justify-content: center;
-        /* padding: 10em 0em 10em; */
         padding: 10em 7.5em 10em;
         background-color: var(--color-creme);
     }
@@ -508,7 +503,6 @@ nav ul li a:after {
 
     /* max width */
     .diensten {
-        /* max-width: 1200px; */
         max-width: 1100px;
     }
 
@@ -663,8 +657,7 @@ nav ul li a:after {
 
 /* button plaatsing*/
 .owl-dots {
-    text-align: center;
-
+    display: none;
 }
 
 /* opmaak button */
@@ -707,15 +700,6 @@ nav ul li a:after {
     top: -1em;
     }
 
-    /* container opmaak */
-    /* .contact-us {
-        max-width: 1200px;
-        position: relative;
-        top: -4em;
-        height: 100%;
-        padding: 0em 7em 8em;
-    } */
-
 
     .contact-us {
         display: grid;
@@ -724,8 +708,6 @@ nav ul li a:after {
         max-width: 1100px;
         position: relative;
         top: -5em;
-        /* height: 100%; */
-        /* padding: 0em 7em 8em; */
     }
 
 
@@ -740,7 +722,6 @@ nav ul li a:after {
 
     /* p opmaak */
     .contact-us p {
-        /* padding-right: 11em; */
         font-family: var(--h2-fontfamily);
         padding-bottom: 2em;
     }
@@ -751,14 +732,12 @@ nav ul li a:after {
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
-        /* padding: 0em 5em 1em; */
     }
 
     /* opmaak contact form */
     .contact-us .column2 {
         display: flex;
         align-items: center;
-        /* justify-content: center; */
         gap: 4em;
         padding: 2em;
         border-radius: .5em;
@@ -791,7 +770,6 @@ textarea {
     margin-top: 0.5em;
     margin-bottom: 1em;
     font-family: var(--h2-fontfamily);
-    /* box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271); */
 }
 
 /* Style the submit button with a specific background color etc */
@@ -854,16 +832,17 @@ textarea {
         color: var(--color-basic);
     }
 
+    /* tekst stijling */
     .footer-container p {
         font-family: var(--h2-fontfamily);
     }
 
 
+    /* tekst stijling */
     .footer-container ul {
-        padding: 0;
         list-style: none;
         line-height: 1.6;
-        font-size: 14px;
+        font-size: 1em;
         margin-bottom: 1em;
     }
 
@@ -880,25 +859,8 @@ textarea {
         opacity: 0.8;
     }
 
-
-
-
-
-@media (max-width:767px) {
-    .footer-container .item:not(.social) {
-        text-align: center;
-        padding-bottom: 20px;
-    }
-}
-
 .footer-container.item.text {
     margin-bottom: 36px;
-}
-
-@media (max-width:767px) {
-    .footer-container .item.text {
-        margin-bottom: 0;
-    }
 }
 
 .footer-container .item.text p {
@@ -908,13 +870,6 @@ textarea {
 
 .footer-container .col-item-social {
     text-align: center;
-}
-
-@media (max-width:991px) {
-    .footer-container .col-item-social {
-        text-align: center;
-        margin-top: 20px;
-    }
 }
 
 
@@ -935,8 +890,64 @@ textarea {
 /* ************************************************** */
 /* ******************************** OPMAAK " @MEDIA " */
 /* ************************************************** */
+@media (min-width:760px) {
+    .introductie h2 {
+        /* font-size: 6vmin; */
+    }
+    /* .footer-container .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .footer-container .item.text {
+        margin-bottom: 0;
+    } */
+}
 
-@media screen and (max-width: 1000px) {
+
+
+@media screen and (max-width: 1024px) {
+
+    /* padding om de h2 */
+     .introductie {
+        padding: 1.5em 4em;
+    }
+    /* grote h2 tekst */
+    .introductie h2 {
+        font-size: 8vmin;
+    }
+    /* img grote */
+    .container-intro .intro-wrapper img {
+        height: 50vmax;
+    }
+     /* icon zichtbaar "ham"*/
+     button{
+        display: unset;
+        position: absolute;
+        right: 3em;
+        z-index: 1;
+        width: 3em;
+        height: 3em;
+        border: none;
+        background-color: transparent;
+    }
+    /* hamburger menu icon */
+    .icon svg {
+        display: block;
+        position: absolute;
+        top: -.3em;
+        right: -2em;
+        z-index: 1;
+    }
+
+    .container-skills .sub-container {
+        top: -18em;
+        padding: 3em;
+    }
+    /* ruimte */
+    .side-wrapper .wrapper {
+        padding: 0;
+    }
+    
 
     /* size grote van "extra header" box */
     .extra-header ul li {
@@ -957,25 +968,7 @@ textarea {
     nav {
         padding: 0em 2.5em;
     }
-    /* icon zichtbaar "ham"*/
-    button{
-        display: unset;
-        position: absolute;
-        right: 1em;
-        z-index: 1;
-        width: 3em;
-        height: 3em;
-        border: none;
-        background-color: transparent;
-    }
-    
-    .icon svg {
-        display: block;
-        position: absolute;
-        top: -.3em;
-        right: 0em;
-        z-index: 1;
-    }
+   
     .menu{
         opacity: 0;
         position: absolute;
@@ -995,7 +988,6 @@ textarea {
         top: 3em;
         left: 2em;
         padding-bottom: 1em;
-        /* padding: 3vmax 4vmax 0vmax; */
         font-size: 2vmax;
     }
 
@@ -1008,52 +1000,16 @@ textarea {
         transform: translateX(0%);
     }
 
-    
-
-    
-    /* icon "open" opmaak */
-    /* nav ul {    
-        display: none;
-        position: absolute;
-        right: 0;
-        left: 0;
-        top: 0em;
-        height: 35vmax;
-        background: var(--color-creme);
-
-        transition: all 3s linear;
-    } */
-
-    /* opmaak tekst in hamburger */
-    /* nav li {
-        position: relative;
-        top: 2em;
-        padding: 3vmax 4vmax 0vmax;
-        font-size: 2vmax;
-    } */
 
 
-
-
-    /* intro opmaak */
-    .introductie {
-        padding: 3.5em 2.5em 0em;
-    }
     /* container van skills */
-    .container-skills .sub-container {
-        top: -5.5em;
-    }
+  
     .container-skills div div div div {
         padding: 0em;
         margin-bottom: 1.5em;
     }
-    .container-skills .sub-container div:first-of-type {
-        /* padding: .5em; */
-    }
+   
 
-    .container-skills .sub-container {
-        height: 30em;
-    } 
 
     .container-over {
         padding: 5em 3.5em 5em;
@@ -1072,21 +1028,7 @@ textarea {
         height: 100%;
         padding: 3em 3.5em 0em;
     }
-    .footer-container {
-        padding: 2.5em 3.5em 1em;
-    }
     
-
-
-
-
-
-    
-    
-
-
-
-
 
 
     /* in a tekst stijling */
@@ -1104,30 +1046,9 @@ textarea {
     }
 
 
-    .introductie h2 {
-        font-size: 7vmin;
-    }
-
     .introductie h3 {
         font-size: 1.4vmin;
     }
-
-    /* skills komen onder elkaar */
-    .container-skills .sub-box{
-        display: block;
-    }
-    
-
-/*     
-    .container-skills div div div div {
-        padding: 1em;
-    }  */
-
-
-    .over-ons p {
-        columns: 1;
-    }
-
 
     .container-sideText .column {
         padding: 3em 5em 0em;
@@ -1140,11 +1061,6 @@ textarea {
      /* img niet zichtbaar */
      .container-diensten article img {
         display: none;
-    }
-
-       /* box waar de diensten in zit */
-       .container-diensten .diensten-box {
-        display:block;
     }
 
     /* padding in container*/
@@ -1161,26 +1077,15 @@ textarea {
         width: 100%;
     }
 
-    .contact-us .column2 {
-        display: block;
-    }
-
-    /* google kaart */
-    #map {
-       display: none;
-    }
-
-    .footer-container .row-footer {
-        display: block;
-    }
-
-    .container-intro .intro-wrapper img {
-        height: 46vmax;
-    }
-
     .container-intro {
         height: 20vmax;
     }
+
+    .footer-container .row-footer{
+        padding: 0 3em 0;
+        gap: 5em;
+    }
+  
 }
 
 
@@ -1188,13 +1093,12 @@ textarea {
 @media screen and (min-width: 1920px) {
     /* container opmaak */
     .container-intro {
-
         height: 23vmax;
     }
+
     .container-skills .sub-container {
         top: -29em;
         }
-
         .columns-container img {
             width: 5em;
         }
@@ -1202,6 +1106,9 @@ textarea {
     .introductie {
         height: 0vmax;
         padding: 5em 0 4em;
+    }
+    .introductie h2 {
+        font-family: var(--h2-fontfamily);
     }
 
     .content-container .container-skills p {
@@ -1239,8 +1146,6 @@ textarea {
     left: -8em;
 
     }
-
-
     .shape::after {
         content: '';
         position: absolute;
@@ -1265,7 +1170,6 @@ textarea {
 
         }
     }
-    
 
     nav ul {
         height: 28.5vmax;
@@ -1291,7 +1195,7 @@ textarea {
         
     }
     .container-skills .sub-container {
-        height: 41em;
+        height: 45em;
     }
     .container-skills div div div div {
         padding: 0.21em;
@@ -1304,6 +1208,9 @@ textarea {
     .container-diensten .diensten-container {
         padding: 3em;
 
+    }
+    .container-skills .sub-box {
+        display: block;
     }
     .container-diensten .diensten article p {
         font-size: .8em;
@@ -1321,11 +1228,13 @@ textarea {
     .sideText {
         padding: 0em 3.5em 1em;
     }
-    .owl-dots {
-        display: none;
-    }
+
     .contact-us h2 {
         font-size: 2em;
+    }
+    /* google map */
+    #map {
+        display: none;
     }
     .contact-us p {
         text-align: justify;
@@ -1338,19 +1247,25 @@ textarea {
         padding-bottom: 0;
     }
     .footer-container .item.text p {
-        /* text-align: justify; */
         font-size: .8em;
     }
     .footer-social {
         display: flex;
         justify-content: center;
         gap: .5em;
-        /* padding: 0em 5em 0em; */
     }
 
-    .introductie h2 {
-        font-family: var(--h2-fontfamily);
-       
+    .footer-container .row-footer {
+        display: block;
+    }
+    .footer-container .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .container-diensten .diensten-box {
+        display: block;
     }
 
 }
+
