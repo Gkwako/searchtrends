@@ -640,7 +640,6 @@ nav ul li a:after {
 }
 
 
-
 /* opmaak card */
 .carousel .card {
     background: var(--color-lightPink);
@@ -709,7 +708,6 @@ nav ul li a:after {
         position: relative;
         top: -5em;
     }
-
 
 
     /* h2 opmaak */
@@ -859,50 +857,67 @@ textarea {
         opacity: 0.8;
     }
 
-.footer-container.item.text {
-    margin-bottom: 36px;
-}
+    .footer-container.item.text {
+        margin-bottom: 36px;
+    }
 
-.footer-container .item.text p {
-    opacity: 0.6;
-    margin-bottom: 0;
-}
+    .footer-container .item.text p {
+        opacity: 0.6;
+        margin-bottom: 0;
+    }
 
-.footer-container .col-item-social {
-    text-align: center;
-}
+    .footer-container .col-item-social {
+        text-align: center;
+    }
 
 
-.footer-container .copyright {
-    text-align: center;
-    padding-top: 24px;
-    opacity: 0.3;
-    font-size: 13px;
-    margin-bottom: 0;
-}
+    .footer-container .copyright {
+        text-align: center;
+        padding-top: 24px;
+        opacity: 0.3;
+        font-size: 13px;
+        margin-bottom: 0;
+    }
 
-.footer-social img {
-    width: 1.2em;
-}
+    .footer-social img {
+        width: 1.2em;
+    }
 
 
 
 /* ************************************************** */
 /* ******************************** OPMAAK " @MEDIA " */
 /* ************************************************** */
-@media (min-width:760px) {
-    .introductie h2 {
-        /* font-size: 6vmin; */
-    }
-    /* .footer-container .item:not(.social) {
-        text-align: center;
-        padding-bottom: 20px;
-    }
-    .footer-container .item.text {
-        margin-bottom: 0;
-    } */
-}
 
+@media screen and (min-width: 1920px) {
+    /* container opmaak */
+    .container-intro {
+        height: 23vmax;
+    }
+    .introductie {
+        height: 0vmax;
+        padding: 5em 0 4em;
+    }
+    .introductie h2 {
+        font-family: var(--h2-fontfamily);
+    }
+
+    .container-skills .sub-container {
+        top: -29em;
+        }
+        .columns-container img {
+            width: 5em;
+        }
+
+    .content-container .container-skills p {
+        padding: .5em 1.5em .5em;
+    }
+
+    .container-skills div div div div {
+        padding: 5em 0 5em;
+    }
+
+}
 
 
 @media screen and (max-width: 1024px) {
@@ -980,7 +995,6 @@ textarea {
 
         transform: translate(0%, -100%);
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-
     }
 
     .menu li {
@@ -991,9 +1005,6 @@ textarea {
         font-size: 2vmax;
     }
 
-
-
-
     .visible{
         display: block;
         opacity: 1;
@@ -1003,7 +1014,6 @@ textarea {
 
 
     /* container van skills */
-  
     .container-skills div div div div {
         padding: 0em;
         margin-bottom: 1.5em;
@@ -1035,33 +1045,29 @@ textarea {
     .header-top ul li a {
         font-size: .7em;
     }
-
     /* in a tekst stijling */
     .header-top ul li a {
         font-size: .7em;
     }
-
     nav ul {
         font-size: .8em;
     }
-
-
     .introductie h3 {
         font-size: 1.4vmin;
     }
-
     .container-sideText .column {
         padding: 3em 5em 0em;
     }
 
+
+    /* img niet zichtbaar */
+    .container-diensten article img {
+        display: none;
+    }
     .sideText p {
         font-size: 1em;
     }
 
-     /* img niet zichtbaar */
-     .container-diensten article img {
-        display: none;
-    }
 
     /* padding in container*/
     .sideText {
@@ -1072,58 +1078,21 @@ textarea {
    .contact-us .column1 {
         padding: 0;
     }
-
     .contact-us .column2 form {
         width: 100%;
     }
-
     .container-intro {
         height: 20vmax;
     }
-
     .footer-container .row-footer{
         padding: 0 3em 0;
         gap: 5em;
     }
-  
 }
-
-
-
-@media screen and (min-width: 1920px) {
-    /* container opmaak */
-    .container-intro {
-        height: 23vmax;
-    }
-
-    .container-skills .sub-container {
-        top: -29em;
-        }
-        .columns-container img {
-            width: 5em;
-        }
-
-    .introductie {
-        height: 0vmax;
-        padding: 5em 0 4em;
-    }
-    .introductie h2 {
-        font-family: var(--h2-fontfamily);
-    }
-
-    .content-container .container-skills p {
-        padding: .5em 1.5em .5em;
-    }
-
-    .container-skills div div div div {
-        padding: 5em 0 5em;
-    }
-
-}
-
 
 
 @media screen and (max-width: 430px) {
+    /* boven de header */
     .extra-header li a {
         font-size: .9em;
         gap: 0.1em;
@@ -1144,8 +1113,8 @@ textarea {
     
     position: relative;
     left: -8em;
-
     }
+    
     .shape::after {
         content: '';
         position: absolute;
@@ -1158,18 +1127,15 @@ textarea {
         animation: 2s ease-out 0s slideInFromLeft;
         width: 100%;
     }
-   
-    /* slide in voor shape */
-    @keyframes slideInFromLeft {
-        0% {
-            transform: translateX(-100%);
+        /* slide in voor shape */
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: skew(65deg, 70deg);
+            }
         }
-
-        100% {
-            transform: skew(65deg, 70deg);
-
-        }
-    }
 
     nav ul {
         height: 28.5vmax;
@@ -1178,10 +1144,11 @@ textarea {
         height: 17vmax;
     }
     .container-intro .intro-wrapper img {
+        top: -1em;
         height: 29vmax;
     }
-    .container-intro .intro-wrapper img {
-        top: -1em;
+    .container-skills .sub-box {
+        display: block;
     }
     .introductie {
         padding: 1.7em 2.5em 0em;
@@ -1192,29 +1159,25 @@ textarea {
     .container-skills .sub-container {
         top: -6em;
         padding: 3em;
-        
-    }
-    .container-skills .sub-container {
         height: 45em;
     }
     .container-skills div div div div {
         padding: 0.21em;
         margin-bottom: 3.5em;
     }
+
     .over-ons p {
         columns: 1;
         font-size: .8em;
     }
     .container-diensten .diensten-container {
         padding: 3em;
-
-    }
-    .container-skills .sub-box {
-        display: block;
     }
     .container-diensten .diensten article p {
         font-size: .8em;
     }
+
+
     .side-wrapper .wrapper {
         padding: 0;
     }
@@ -1229,23 +1192,26 @@ textarea {
         padding: 0em 3.5em 1em;
     }
 
-    .contact-us h2 {
-        font-size: 2em;
-    }
+
     /* google map */
     #map {
         display: none;
+    }
+    .contact-us {
+        padding: 5em 3.5em 0em;
+    }
+    .contact-us h2 {
+        font-size: 2em;
     }
     .contact-us p {
         text-align: justify;
         font-size: .8em;
     }
-    .contact-us {
-        padding: 5em 3.5em 0em;
-    }
     .container-max {
         padding-bottom: 0;
     }
+
+
     .footer-container .item.text p {
         font-size: .8em;
     }
@@ -1262,7 +1228,6 @@ textarea {
         text-align: center;
         padding-bottom: 20px;
     }
-
     .container-diensten .diensten-box {
         display: block;
     }
