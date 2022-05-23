@@ -1152,6 +1152,9 @@ textarea {
     .introductie {
         padding: 1.7em 2.5em 0em;
     }
+    .introductie h2 {
+        font-weight: 400;
+    }
     .container-skills .sub-container h2 {
         font-size: 1.5em;
     }
@@ -1232,12 +1235,7 @@ textarea {
     }
 
     .parallax {
-        background-image: url(../images/spa2.jpg);
-        min-height: 30em;
         background-attachment: local, scroll;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
 }
