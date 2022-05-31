@@ -696,6 +696,21 @@ nav ul li a:after {
     }
 
 
+    .container-introductie {
+        height: 40vw;
+    }
+
+    .introductie-wrapper img {
+        height: 41vw;
+      }
+
+      .introductie {
+        top: 30%;
+      }
+
+
+
+
 }
 
 @media screen and (max-width:368px) {
