@@ -55,7 +55,7 @@
         margin: auto;
 
         /* voor de dropdown hamburger menu */
-        position: relative;
+        /* position: relative; */
         z-index: 3;
     }
 
@@ -354,35 +354,49 @@ nav ul li a:after {
 /* ************************************ OPMAAK SKILLS */
 /* ************************************************** */
 
-/* hele container van skills */
 .container-skills{
-    /* max-height: 1200px;
-    width: 100%; */
+    /* height: cover; */
+    overflow: hidden;
+    position: relative;
 }
 
 /* 2e svg opmaak */
 .container-skills svg:nth-of-type(2) {
-    position: relative;
-    top: -21vw;
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    /* bottom: 20vw; */
 }
 
 /* container opmaak */
 .container-skills .skills-wrapper {
-    display: grid;
-    justify-content: center;
-    padding: 10.5em;
+    /* display: grid;
+    justify-content: center; */
+
+    /* padding: 10.5em; */
+/*     
+    padding: 5em 11.5em 10em; */
+
+   
+    width: 72%;
+    margin: auto;
+
+    padding: 2em 0 10em;
+
+
     /* max-height: 1200px;
     width: 100%; */
-    position: relative;
-    bottom: 30vw;
+    /* position: relative;
+    bottom: 30vw; */
     }
 
     /* opmaak in skill box */
     .skills{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         text-align: center;
-        gap: 5em;
+        /* gap: 3em; */
     }
 
     /* opmaak tekst */
@@ -397,9 +411,6 @@ nav ul li a:after {
 
     /* box opmaak van skills */
     .container-skills .inhoud {
-        /* display: grid;
-        justify-items: center;
-        align-items: center; */
         padding: 2.5em;
         border-radius: .5em;
         box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271);
@@ -436,7 +447,216 @@ nav ul li a:after {
         font-family: var(--h1-fontfamily);
     }
 
-  
+
+
+
+
+/* ************************************************** */
+/* ******************************* OPMAAK "OVER ONS"" */
+/* ************************************************** */
+
+/* container grote */
+.over-ons {
+    width: 72%;
+    margin: auto;
+    padding: 9em 0 9em;
+ }
+
+    /* opmaak container */
+    .container-over {
+        display: flex;
+        justify-content: center;
+        background-color: var(--color-creme);
+    }
+
+    /* opmaak h2 */
+    .container-over .over-ons h2 {
+        font-size: 2em;
+        font-family: var(--h1-fontfamily);
+        color: var(--color-basic);
+    }
+
+    /* opmaak h5 */
+    .container-over .over-ons h5 {
+        padding-top: .5em;
+        color:  var(--color-lightPink);
+        font-size: 1.1em;
+        font-family: var(--h1-fontfamily);
+    }
+
+    /* opmaak p */
+    .over-ons p {
+        font-family: var(--h1-fontfamily);
+        padding-top: 1em;
+
+        columns: 2;
+        column-gap: 3.5em;
+        text-align: justify;
+    }
+
+
+
+
+
+/* ************************************************** */
+/* ********************************** OPMAAK "SCROLL" */
+/* ************************************************** */
+
+.parallax {
+    background-image: url(../images/spa2.jpg);
+    min-height: 30em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+/* ************************************************** */
+/* ******************************* OPMAAK " DIENSTEN" */
+/* ************************************************** */
+
+.container-diensten {
+    /* padding: 10em 0em 10em; */
+    background-color: var(--color-creme);
+}
+
+.dienst-wrapper{
+    display: flex;
+    justify-content: center;
+
+    width: 72%;
+    margin: auto;
+    padding: 9em 0 9em;
+
+}
+
+    /* max width */
+    .diensten {
+        max-width: 1100px;
+    }
+
+    /* stijling h2 */
+    .container-diensten .diensten h2 {
+        font-size: 2.5em;
+        font-family: var(--h1-fontfamily);
+        color: var(--color-basic);
+    }
+    /* stijling h5 */
+    .container-diensten .diensten h5 {
+        padding-top: .5em;
+        color: var(--color-lightPink);
+        font-size: 1.3em;
+        font-family: var(--h1-fontfamily);
+    }
+    /* stijling p */
+    .container-diensten .diensten article p {
+        font-family: var(--h1-fontfamily);
+        padding-top: 1em;
+        text-align: justify;
+    }
+
+    /* tekst container opmaak */
+    .container-diensten article {
+        display: flex;
+        padding-bottom: 2em;
+        gap: 3.5em;
+    }
+
+    /* img opmaak */
+    .container-diensten article img {
+        width: 50%;
+        height: 100%;
+
+    }
+
+
+    /* box waar de diensten in zit */
+    .container-diensten .diensten-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
+    /* box opmaak en ruimte */
+    .container-diensten .diensten-container {
+        padding: 4em;
+        border-radius: .5em;
+        text-align: center;
+        background-color: var(--color-white);
+
+        box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271);
+    }
+
+
+    /* h3 opmaak */
+    .container-diensten .diensten-container h3 {
+        font-size: 1.3em;
+        color: var(--color-lightPink);
+        font-family: var(--h1-fontfamily);
+        transition: 1s ease-in-out;
+    }
+
+    /* animatie */
+    .container-diensten .diensten-container:hover h3 {
+        transition: 1s ease-in-out;
+        color: #dfbeb3;
+    }
+
+
+
+
+
+/* ************************************************** */
+/* ******************************* OPMAAK "SIDE TEXT" */
+/* ************************************************** */
+
+/* container opmaak */
+.container-sideText {
+    width: 100%;
+ }
+    /* padding in container*/
+   .side-wrapper .wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 0em 12em 0em;
+    }
+
+    .sideText{
+        display: block;
+        columns: 2;
+        column-gap: 3.5em;
+        column-rule-style: solid;
+        column-rule-width: 4px;
+        column-rule-color: rgb(185, 127, 136);
+
+        max-width: 1100px;
+    }
+   
+    /* h5 opmaak */
+    .container-sideText .sideText h5 {
+        padding-bottom: 0.1em;
+        font-size: 3em;
+        color: var(--color-lightPink);
+        font-family: var(--h1-fontfamily);
+    }
+
+    /* p opmaak */
+    .sideText p {
+        font-family: var(--h1-fontfamily);
+        font-size: 15px;
+        text-align: justify;
+    }
+
+
+
+
+
+
+
 
 
 
@@ -477,16 +697,14 @@ nav ul li a:after {
 
     /* ruimte tussen skills container */
     .skills .inhoud {
-        display: block;
-
-        padding: 8em 2em 8em ;
+        padding: 5em 2em 5em ;
         margin-bottom: 3.5em;
 
         /* image in container */
-        background-image: url(../images/spa3.jpg);
+        background-image: url(../images/spa2.jpg);
         background-repeat: no-repeat;
         background-position: 22em;
-        background-size: cover; 
+        /* background-size: cover;  */
     }
 
     /* img icon position */
@@ -512,14 +730,6 @@ nav ul li a:after {
         padding: 0;
     }
 
-  
-
-
-
-
-
-
-
 
 }
 
@@ -528,7 +738,7 @@ nav ul li a:after {
 
 
 
-    @media screen and (max-width:714px) {
+@media screen and (max-width:714px) {
         /* tekst hidden, alleen icon zichtbaar */
         .extra-header ul:nth-of-type(1) li a span {
             display: none;
@@ -632,19 +842,6 @@ nav ul li a:after {
             padding: 2em 2em 2em ;
         }
 
-        /* breedte van container skills */
-        .container-skills .skills-wrapper {
-            padding: 7.5em;
-        }
-
-
-        /* p element extra padding weg */
-        .content-container .container-skills .inhoud {
-            display: block;
-            justify-items: center;
-         
-        }
-
         /* img icon position */
         .inhoud img{
             position: unset;
@@ -665,15 +862,44 @@ nav ul li a:after {
        
         }
 
+        .over-ons p {
+            columns: 1;
+            font-size: .8em;
+        }
+
+
+
+
+        
+
+        /* .container-diensten .diensten-container {
+            padding: 3em;
+        } */
+        .container-diensten .diensten article p {
+            font-size: .8em;
+        }
+    
+    
+        /* .side-wrapper .wrapper {
+            padding: 0;
+        }
+        .sideText p {
+            padding-top: 1em;
+            font-size: .8em;
+        }
+        .container-sideText .sideText h5 {
+            font-size: 2em;
+        }
+        .sideText {
+            padding: 0em 3.5em 1em;
+        }
+    
+     */
+
 }
 
 
 @media screen and (max-width:500px) {
-
-    /* breedte van container skills */
-    .container-skills .skills-wrapper {
-        padding: 5.5em;
-    }
 
     .skills-wrapper h2{
         font-size: 5vw;
@@ -689,10 +915,6 @@ nav ul li a:after {
 
     .content-container .container-skills p {
         font-size: .8em;
-    }
-
-    .container-skills .skills-wrapper {
-        bottom: 32vw;
     }
 
 
@@ -720,12 +942,15 @@ nav ul li a:after {
 
     /* breedte van container skills */
     .container-skills .skills-wrapper {
-        padding: 3.5em;
+        padding: 1.5em;
     }
 
-    .container-skills .skills-wrapper {
-        bottom: 35vw;
+    .over-wrapper{
+        padding: 0 1.5em 0;
     }
+
+
+
 
 }
 
