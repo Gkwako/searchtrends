@@ -40,6 +40,7 @@
     /* container staat voor */
     position: relative;
     z-index: 3;
+    width: 100%;
 
     background-color: var(--color-creme);
     }
@@ -47,11 +48,11 @@
     /* container in extra header*/
     .container-extra {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        gap: 10em;
         padding: 1vw;
-        width: 100%;
+        width: 80%;
+        margin: auto;
 
         /* voor de dropdown hamburger menu */
         position: relative;
@@ -65,7 +66,7 @@
         padding: 0;
     }
 
-    /* li styling en plaatsing */
+    /* li styling en plaatsing van social icon */
     .extra-header ul li {
         display: flex;
         align-items: center;
@@ -102,9 +103,8 @@ header {
     display: flex;
 
     position: sticky;
-    top: 0;
+    top: 0em;
     height: 4.5em;
-    width: 100%;
     background-color: var(--color-white);
     
     transition: .32s;
@@ -114,11 +114,12 @@ header {
     /* nav container opmaak */
     nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        gap: 10em;
         padding: 1vw;
-        width: 100%;
+
+        width: 80%;
+        margin: auto;
     }
 
     /* logo opmaak*/
@@ -137,6 +138,7 @@ header {
         nav ul li {
             font-family: var(--h2-fontfamily);
             list-style: none;
+            
             padding-left: 1.2em;
             font-size: .88em;
         }
@@ -167,6 +169,7 @@ nav ul li a:after {
     /* stroke stijling */
     nav ul li a:after {
         position: absolute;
+        top: 1.5em; /* ruimte tussen stroke en tekst */
         bottom: 0;
         left: 0;
         right: 0;
@@ -229,45 +232,17 @@ nav ul li a:after {
 }
 
 /* display hamburger menu niet zichtbaar */
-/* .icon  svg{
-    display: none;
-    position: absolute;
-    top: -.3em;
-    right: -5em;
-    z-index: 2;
-    } */
-/* 
-    button{
-        display: none;
-        position: absolute;
-        right: 3em;
-        z-index: 1;
-        width: 3em;
-        height: 3em;
-        border: none;
-        background-color: transparent;
-        }
-     */
-
-
      button {
         display: none;
-        z-index: 2;
+       
         position: relative;
         left: 2em;
+         
+        z-index: 2;
         border: none;
         background-color: transparent;
     }
 
-     /* button {
-        display: none;
-
-        z-index: 2;
-        width: 3em;
-        height: 3em;
-        border: none;
-        background-color: transparent;
-    } */
 
     
 
@@ -282,12 +257,10 @@ nav ul li a:after {
     position: relative;
     height: 25vw;
     overflow: hidden;
-    /* background: rebeccapurple; */
     }
     /* img stijling */
     .container-introductie img {
         height: 50vw;
-        /* width: 100%; */
     }
     
 
@@ -301,7 +274,7 @@ nav ul li a:after {
 }
 /* shape opmaak */
 .introductie-wrapper img{
-    height: 25vw;
+    height: 26vw;
     width: 60%;
     opacity: 70%;
     transform: skew(0deg, 0deg);
@@ -327,8 +300,16 @@ nav ul li a:after {
     .introductie {
         position: absolute;
         top: 18%;
-        left: 13%;
         z-index: 1;
+        width: 100%;
+    }
+
+    .introductie-tekst{
+        display: grid;
+        justify-content: left;
+
+        width: 78.88%;
+        margin: auto;
     }
 
     /* h2 tekst opmaak */
@@ -366,35 +347,179 @@ nav ul li a:after {
     }
 
 
+
+
+
+/* ************************************************** */
+/* ************************************ OPMAAK SKILLS */
+/* ************************************************** */
+
+/* hele container van skills */
+.container-skills{
+    /* max-height: 1200px;
+    width: 100%; */
+}
+
+/* 2e svg opmaak */
+.container-skills svg:nth-of-type(2) {
+    position: relative;
+    top: -21vw;
+}
+
+/* container opmaak */
+.container-skills .skills-wrapper {
+    display: grid;
+    justify-content: center;
+    padding: 10.5em;
+    /* max-height: 1200px;
+    width: 100%; */
+    position: relative;
+    bottom: 30vw;
+    }
+
+    /* opmaak in skill box */
+    .skills{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 5em;
+    }
+
+    /* opmaak tekst */
+    .skills-wrapper h2{
+        font-family: var(--h1-fontfamily);
+        font-size: 2em;
+        color: var(--color-lightPink);
+        max-width: 1500px;
+        padding-bottom: 1.3em;
+        }
+
+
+    /* box opmaak van skills */
+    .container-skills .inhoud {
+        /* display: grid;
+        justify-items: center;
+        align-items: center; */
+        padding: 2.5em;
+        border-radius: .5em;
+        box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271);
+    }
+
+    /* grote van box*/
+    .container-skills div div div div {
+        padding: .5em;
+    }
+
+    /* grote van icon */
+    .inhoud img {
+        width: 4.5em;
+    }
+
+    /* h3 opmaak */
+      .content-container .container-skills h3 {
+        font-size: 1.1em;
+        color: var(--color-lightPink);
+        font-family: var(--h1-fontfamily);
+    }
+
+    /* h3 afmetingen */
+    .container-skills div div div div h3 {
+        padding: .3em;
+        margin: 0;
+    }
+
+
+    /* h4 opmaak */
+    .content-container .container-skills p {
+        font-weight: 350;
+        padding: 0.5em 1em 1em;
+        font-family: var(--h1-fontfamily);
+    }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ************************************* MEDIA */
 
-@media screen and (min-width: 178px) {
-    /* h2 tekst meer naar links */
-    .introductie {
-        left: 17%;
+@media screen and (max-width:1350px) {
+
+     /* skills gaan onder elkaar */
+     .skills{
+        display: block;
+        text-align: left;
+        gap: 1em;
     }
-    /* shape meer uitgerekt */
-    .introductie-wrapper img {
-        width: 65%;
+
+    /* ruimte tussen skills container */
+    .skills .inhoud {
+        display: block;
+
+        padding: 8em 2em 8em ;
+        margin-bottom: 3.5em;
+
+        /* image in container */
+        background-image: url(../images/spa3.jpg);
+        background-repeat: no-repeat;
+        background-position: 22em;
+        background-size: cover; 
     }
 
+    /* img icon position */
+    .inhoud img{
+        position: relative;
+        left: 6em;
+        width: 5.5em;
+    }
 
+    /* text plaatsing in skills container */
+    .inhoud h3{
+        position: relative;
+        left: 3.5em;
+    }
 
-/* 
-    .container-skills .sub-container {
-        top: -29em;
-        }
-        .columns-container img {
-            width: 5em;
-        }
+    /* width van container skills (groter geworden) */
+    .container-skills .skills-wrapper {
+        justify-content: unset;
+    }
 
+    /* p element extra padding weg */
     .content-container .container-skills p {
-        padding: .5em 1.5em .5em;
+        padding: 0;
     }
 
-    .container-skills div div div div {
-        padding: 5em 0 5em;
-    } */
+  
+
+
+
+
+
+
+
 
 }
 
@@ -403,21 +528,7 @@ nav ul li a:after {
 
 
 
-    @media screen and (max-width:750px) {
-        /* extra header ruimte kleiner */
-        .container-extra {
-           gap: 0;
-        } 
-        /* header ruimte extra */
-        nav {
-            gap: 0%;
-        } 
-    }
-
-
-
-
-    @media screen and (max-width:550px) {
+    @media screen and (max-width:714px) {
         /* tekst hidden, alleen icon zichtbaar */
         .extra-header ul:nth-of-type(1) li a span {
             display: none;
@@ -444,12 +555,16 @@ nav ul li a:after {
 
         /* plaatsing van logo bij hamburger menu */
         nav{
-            width: 100%;
             flex-direction: row-reverse;
         }
+       
+       
+        /* hamburger menu tekst plaatsing */
         nav ul li {
-            padding-left: 5.2em;
+            /* padding-left: 52px; */
         }
+
+
 
         /* extra header ruimte kleiner */
          .container-extra {
@@ -491,9 +606,9 @@ nav ul li a:after {
 
         .menu li {
             position: relative;
-            top: 3em;
-            padding-bottom: 1em;
-            font-size: 2vmax;
+            top: 4em;
+            padding-bottom: 2em;
+            /* font-size: 2vmax; */
         }
     
         .visible{
@@ -510,6 +625,96 @@ nav ul li a:after {
             font-size: 7vw;
         }
         
+        /* ruimte tussen skills container */
+        .skills .inhoud {
+            /* image in container */
+            background-image:unset;
+            padding: 2em 2em 2em ;
+        }
+
+        /* breedte van container skills */
+        .container-skills .skills-wrapper {
+            padding: 7.5em;
+        }
+
+
+        /* p element extra padding weg */
+        .content-container .container-skills .inhoud {
+            display: block;
+            justify-items: center;
+         
+        }
+
+        /* img icon position */
+        .inhoud img{
+            position: unset;
+        }
+
+        .skills .inhoud p{
+            text-align: center;
+        }
+
+        .skills .inhoud h3{
+            text-align: center;
+            left: 0; 
+        }
+
+         /* skills gaan onder elkaar */
+        .skills{
+            text-align: center;
+       
+        }
+
+}
+
+
+@media screen and (max-width:500px) {
+
+    /* breedte van container skills */
+    .container-skills .skills-wrapper {
+        padding: 5.5em;
     }
+
+    .skills-wrapper h2{
+        font-size: 5vw;
+    }
+
+    /* img icon position */
+    .inhoud img{
+        width: 4em;
+    }
+    .content-container .container-skills h3 {
+        font-size: .98em;
+    }
+
+    .content-container .container-skills p {
+        font-size: .8em;
+    }
+
+    .container-skills .skills-wrapper {
+        bottom: 32vw;
+    }
+
+
+}
+
+@media screen and (max-width:368px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    /* breedte van container skills */
+    .container-skills .skills-wrapper {
+        padding: 3.5em;
+    }
+
+    .container-skills .skills-wrapper {
+        bottom: 35vw;
+    }
+
+}
+
+
+
 
 
