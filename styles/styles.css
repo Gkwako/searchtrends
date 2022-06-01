@@ -255,7 +255,7 @@ nav ul li a:after {
 /* stijling container "introductie */
 .container-introductie {
     position: relative;
-    height: 25vw;
+    height: 29vw;
     overflow: hidden;
     }
     /* img stijling */
@@ -274,7 +274,7 @@ nav ul li a:after {
 }
 /* shape opmaak */
 .introductie-wrapper img{
-    height: 26vw;
+    height: 30vw;
     width: 60%;
     opacity: 70%;
     transform: skew(0deg, 0deg);
@@ -299,7 +299,7 @@ nav ul li a:after {
     /* container opmaak tekst*/
     .introductie {
         position: absolute;
-        top: 18%;
+        top: 20%;
         z-index: 1;
         width: 100%;
     }
@@ -355,7 +355,6 @@ nav ul li a:after {
 /* ************************************************** */
 
 .container-skills{
-    /* height: cover; */
     overflow: hidden;
     position: relative;
 }
@@ -366,45 +365,33 @@ nav ul li a:after {
     left: 0;
     top:0;
     right: 0;
-    /* bottom: 20vw; */
 }
 
 /* container opmaak */
 .container-skills .skills-wrapper {
-    /* display: grid;
-    justify-content: center; */
-
-    /* padding: 10.5em; */
-/*     
-    padding: 5em 11.5em 10em; */
-
-   
-    width: 72%;
+    display: grid;
+    justify-content: center;
+    
+    width: 66.5%;
     margin: auto;
 
     padding: 2em 0 10em;
-
-
-    /* max-height: 1200px;
-    width: 100%; */
-    /* position: relative;
-    bottom: 30vw; */
-    }
+}
 
     /* opmaak in skill box */
     .skills{
         display: flex;
-        justify-content: space-between;
+        /* justify-content: center; */
         text-align: center;
-        /* gap: 3em; */
+        gap: 3em;
     }
 
     /* opmaak tekst */
     .skills-wrapper h2{
         font-family: var(--h1-fontfamily);
         font-size: 2em;
+        
         color: var(--color-lightPink);
-        max-width: 1500px;
         padding-bottom: 1.3em;
         }
 
@@ -418,12 +405,12 @@ nav ul li a:after {
 
     /* grote van box*/
     .container-skills div div div div {
-        padding: .5em;
+        /* padding: .5em; */
     }
 
     /* grote van icon */
     .inhoud img {
-        width: 4.5em;
+        width: 4.2em;
     }
 
     /* h3 opmaak */
@@ -435,15 +422,15 @@ nav ul li a:after {
 
     /* h3 afmetingen */
     .container-skills div div div div h3 {
-        padding: .3em;
-        margin: 0;
+        /* padding: .3em;
+        margin: 0; */
     }
 
 
     /* h4 opmaak */
     .content-container .container-skills p {
         font-weight: 350;
-        padding: 0.5em 1em 1em;
+        padding: .5em;
         font-family: var(--h1-fontfamily);
     }
 
@@ -455,19 +442,17 @@ nav ul li a:after {
 /* ******************************* OPMAAK "OVER ONS"" */
 /* ************************************************** */
 
-/* container grote */
-.over-ons {
-    width: 72%;
-    margin: auto;
-    padding: 9em 0 9em;
- }
+ /* opmaak container */
+ .container-over {
+    background-color: var(--color-creme);
+}
 
-    /* opmaak container */
-    .container-over {
-        display: flex;
-        justify-content: center;
-        background-color: var(--color-creme);
-    }
+/* plaatsing van inhoud */
+.over-ons{
+    width: 66.5%;
+    margin: auto;
+    padding: 10em 0 10em;
+}
 
     /* opmaak h2 */
     .container-over .over-ons h2 {
@@ -478,21 +463,31 @@ nav ul li a:after {
 
     /* opmaak h5 */
     .container-over .over-ons h5 {
+        font-size: 1.1em;
         padding-top: .5em;
         color:  var(--color-lightPink);
-        font-size: 1.1em;
         font-family: var(--h1-fontfamily);
+    }
+
+    .over-ons article{
+        display: flex;
+        gap: 3em;
+        padding-top: 1em;
+        width: 100%;
     }
 
     /* opmaak p */
     .over-ons p {
+        width: 50%;
         font-family: var(--h1-fontfamily);
-        padding-top: 1em;
-
-        columns: 2;
-        column-gap: 3.5em;
         text-align: justify;
     }
+
+    .over-ons article img{
+        width: 50%;
+        object-fit: cover;
+    }
+
 
 
 
@@ -688,46 +683,37 @@ nav ul li a:after {
 
 @media screen and (max-width:1350px) {
 
+    .skills-wrapper h2{
+        font-size: 1.7em;
+    }
+
      /* skills gaan onder elkaar */
      .skills{
-        display: block;
-        text-align: left;
-        gap: 1em;
+        display: grid;
+        gap: 3em;
     }
 
     /* ruimte tussen skills container */
     .skills .inhoud {
-        padding: 5em 2em 5em ;
-        margin-bottom: 3.5em;
+        display: flex;
+        align-items: center;
+        gap: 1em;
 
-        /* image in container */
-        background-image: url(../images/spa2.jpg);
-        background-repeat: no-repeat;
-        background-position: 22em;
-        /* background-size: cover;  */
+        text-align: left;
     }
 
-    /* img icon position */
-    .inhoud img{
-        position: relative;
-        left: 6em;
-        width: 5.5em;
+    /* wit ruimte */
+    .over-ons {
+        padding: 7em 0 7em;
     }
 
-    /* text plaatsing in skills container */
-    .inhoud h3{
-        position: relative;
-        left: 3.5em;
+    .over-ons p {
+        width: unset;
+        font-size: .8em;
     }
 
-    /* width van container skills (groter geworden) */
-    .container-skills .skills-wrapper {
-        justify-content: unset;
-    }
-
-    /* p element extra padding weg */
-    .content-container .container-skills p {
-        padding: 0;
+    .over-ons article img{
+        display: none;
     }
 
 
@@ -739,6 +725,17 @@ nav ul li a:after {
 
 
 @media screen and (max-width:714px) {
+    
+        .container-introductie {
+            height: 30vw;
+        }
+        .introductie-wrapper img {
+            height: 30vw;
+        }
+        .introductie {
+            top: 27%;
+        }
+
         /* tekst hidden, alleen icon zichtbaar */
         .extra-header ul:nth-of-type(1) li a span {
             display: none;
@@ -837,40 +834,12 @@ nav ul li a:after {
         
         /* ruimte tussen skills container */
         .skills .inhoud {
-            /* image in container */
-            background-image:unset;
-            padding: 2em 2em 2em ;
-        }
-
-        /* img icon position */
-        .inhoud img{
-            position: unset;
-        }
-
-        .skills .inhoud p{
+            display: block;
             text-align: center;
         }
 
-        .skills .inhoud h3{
-            text-align: center;
-            left: 0; 
-        }
 
-         /* skills gaan onder elkaar */
-        .skills{
-            text-align: center;
-       
-        }
-
-        .over-ons p {
-            columns: 1;
-            font-size: .8em;
-        }
-
-
-
-
-        
+    
 
         /* .container-diensten .diensten-container {
             padding: 3em;
@@ -901,49 +870,43 @@ nav ul li a:after {
 
 @media screen and (max-width:500px) {
 
+    .container-introductie {
+        height: 30vw;
+    }
+    .introductie-wrapper img {
+        height: 30vw;
+    }
+    .introductie {
+        top: 27%;
+    }
+
     .skills-wrapper h2{
-        font-size: 5vw;
+        font-size: 5.5vw;
     }
 
     /* img icon position */
     .inhoud img{
         width: 4em;
     }
-    .content-container .container-skills h3 {
+    .container-skills h3 {
         font-size: .98em;
     }
 
-    .content-container .container-skills p {
+    .container-skills p {
         font-size: .8em;
     }
 
 
-    .container-introductie {
-        height: 40vw;
-    }
-
-    .introductie-wrapper img {
-        height: 41vw;
-      }
-
-      .introductie {
-        top: 30%;
-      }
-
-
-
-
 }
+
+
+
 
 @media screen and (max-width:368px) {
     h1 {
         font-size: 1em;
     }
 
-    /* breedte van container skills */
-    .container-skills .skills-wrapper {
-        padding: 1.5em;
-    }
 
     .over-wrapper{
         padding: 0 1.5em 0;
