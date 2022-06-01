@@ -375,7 +375,7 @@ nav ul li a:after {
     width: 66.5%;
     margin: auto;
 
-    padding: 2em 0 10em;
+    padding: 2em 0 12em;
 }
 
     /* opmaak in skill box */
@@ -449,9 +449,10 @@ nav ul li a:after {
 
 /* plaatsing van inhoud */
 .over-ons{
+    font-size: .9em;
     width: 66.5%;
     margin: auto;
-    padding: 10em 0 10em;
+    padding: 7em 0 5em;
 }
 
     /* opmaak h2 */
@@ -515,91 +516,70 @@ nav ul li a:after {
 /* ************************************************** */
 
 .container-diensten {
-    /* padding: 10em 0em 10em; */
     background-color: var(--color-creme);
 }
+
+/* box waar de diensten in zit */
+.diensten-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
 
 .dienst-wrapper{
     display: flex;
     justify-content: center;
-
-    width: 72%;
+    
+    width: 66.5%;
     margin: auto;
-    padding: 9em 0 9em;
 
+    padding: 0 0 10em;
 }
 
-    /* max width */
-    .diensten {
-        max-width: 1100px;
-    }
+/* stijling h5 */
+.container-diensten .diensten h5 {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    font-family: var(--h1-fontfamily);
+    color: var(--color-lightPink);
+}
 
-    /* stijling h2 */
-    .container-diensten .diensten h2 {
-        font-size: 2.5em;
-        font-family: var(--h1-fontfamily);
-        color: var(--color-basic);
-    }
-    /* stijling h5 */
-    .container-diensten .diensten h5 {
-        padding-top: .5em;
-        color: var(--color-lightPink);
-        font-size: 1.3em;
-        font-family: var(--h1-fontfamily);
-    }
-    /* stijling p */
-    .container-diensten .diensten article p {
-        font-family: var(--h1-fontfamily);
-        padding-top: 1em;
-        text-align: justify;
-    }
+/* box opmaak en ruimte */
+.container-diensten .diensten-container {
+    /* padding: 5em; */
+    border-radius: .5em;
 
-    /* tekst container opmaak */
-    .container-diensten article {
-        display: flex;
-        padding-bottom: 2em;
-        gap: 3.5em;
-    }
-
-    /* img opmaak */
-    .container-diensten article img {
-        width: 50%;
-        height: 100%;
-
-    }
+    background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../images/spa2.jpg);
+    box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271);
+}
 
 
-    /* box waar de diensten in zit */
-    .container-diensten .diensten-box {
-        display: flex;
-        justify-content: space-between;
-        gap: 2em;
-    }
 
-    /* box opmaak en ruimte */
-    .container-diensten .diensten-container {
-        padding: 4em;
-        border-radius: .5em;
-        text-align: center;
-        background-color: var(--color-white);
+/* h3 opmaak */
+.container-diensten .diensten-container h3 {
+    font-size: 1.3em;
+    padding: 5em 2.5em 0;
+    color: var(--color-white);
+    font-family: var(--h1-fontfamily);
+    
+    transition: .4s ease-in-out;
+}
 
-        box-shadow: -10px 20px 20px 10px rgba(100, 55, 55, 0.271);
-    }
+/* stijling p */
+.container-diensten .diensten-container p {
+    font-family: var(--h1-fontfamily);
+    padding: .7em 3.3em 5em;
+    color: var(--color-white);
+    font-size: 1em;
+   
+}
 
-
-    /* h3 opmaak */
-    .container-diensten .diensten-container h3 {
-        font-size: 1.3em;
-        color: var(--color-lightPink);
-        font-family: var(--h1-fontfamily);
-        transition: 1s ease-in-out;
-    }
-
-    /* animatie */
-    .container-diensten .diensten-container:hover h3 {
-        transition: 1s ease-in-out;
-        color: #dfbeb3;
-    }
+/* animatie */
+.container-diensten .diensten-container:hover h3 {
+    transition: .4s ease-in-out;
+    color: #dfbeb3;
+}
 
 
 
@@ -609,16 +589,19 @@ nav ul li a:after {
 /* ******************************* OPMAAK "SIDE TEXT" */
 /* ************************************************** */
 
-/* container opmaak */
-.container-sideText {
-    width: 100%;
- }
-    /* padding in container*/
-   .side-wrapper .wrapper {
-        display: flex;
-        justify-content: center;
-        padding: 0em 12em 0em;
-    }
+.side-wrapper svg:nth-of-type(2){
+    position: relative;
+    top: 1em;
+}
+
+/* padding in container*/
+.side-wrapper .wrapper {
+    display: flex;
+    justify-content: center;
+    
+    width: 66.5%;
+    margin: auto;
+}
 
     .sideText{
         display: block;
@@ -627,14 +610,12 @@ nav ul li a:after {
         column-rule-style: solid;
         column-rule-width: 4px;
         column-rule-color: rgb(185, 127, 136);
-
-        max-width: 1100px;
     }
    
     /* h5 opmaak */
     .container-sideText .sideText h5 {
-        padding-bottom: 0.1em;
-        font-size: 3em;
+        padding-bottom: .4em;
+        font-size: 2em;
         color: var(--color-lightPink);
         font-family: var(--h1-fontfamily);
     }
@@ -642,9 +623,169 @@ nav ul li a:after {
     /* p opmaak */
     .sideText p {
         font-family: var(--h1-fontfamily);
-        font-size: 15px;
+        font-size: .9em;
         text-align: justify;
     }
+
+
+
+
+
+/* ************************************************** */
+/* ******************************* OPMAAK " CAROUSEL" */
+/* ************************************************** */
+
+/* comtainer opmaak */
+.carousel-container {
+    padding: 0 20%;
+    width: 100%;
+    
+    position: relative;
+    top: 0em;
+    background-color: var(--color-creme);
+}
+
+
+/* opmaak card */
+.carousel .card {
+    background: var(--color-lightPink);
+    border-radius: .3em;
+    padding: .2em;
+    animation-delay: 2s;
+  
+}
+
+/* img grote */
+.carousel .card img {
+    border-radius: .5em;
+}
+
+/* button kleur hover */
+.owl-dot.active,
+.owl-dot:hover {
+    background: var(--color-lightPink) !important;
+}
+
+
+
+
+
+
+/* ************************************************** */
+/* ******************************* OPMAAK " CONTACT " */
+/* ************************************************** */
+
+.container-max {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5em;
+    }
+
+/* svg opmaak boven "neem contact" */
+.contact-container .svg-wrapper svg {
+    position: relative;
+    top: -1em;
+    }
+
+
+    .contact-us {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        max-width: 1100px;
+        position: relative;
+        top: -5em;
+    }
+
+
+    /* h2 opmaak */
+    .contact-us h2 {
+        font-size: 2.5em;
+        font-family: var(--h1-fontfamily);
+        color: var(--color-lightPink);
+        padding-bottom: .2em;
+    }
+
+    /* p opmaak */
+    .contact-us p {
+        font-family: var(--h2-fontfamily);
+        padding-bottom: 2em;
+    }
+
+    /* opmaak tekst */
+    .contact-us .column1 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    /* opmaak contact form */
+    .contact-us .column2 {
+        display: flex;
+        align-items: center;
+        gap: 4em;
+        padding: 2em;
+        border-radius: .5em;
+        box-shadow: -10px 20px 20px 10px rgb(100 55 55 / 27%);
+    }
+
+    /* opmaak grote form */
+    .contact-us .column2 form {
+        width: 31%;
+    }
+
+
+
+
+/* ************************************* GOOGLE MAP OPMAAK */
+
+.contact-us input,
+.contact-us textarea {
+    background: #fcfcfc;
+}
+
+.contact-us input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #e2e0e0;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-family: var(--h2-fontfamily);
+}
+
+/* Style the submit button with a specific background color etc */
+.contact-us input[type=submit] {
+    background-color: rgb(185, 127, 136);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.contact-us input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* google map */
+#map {
+    top: -2em;
+    height: 27em;
+    width: 63%;
+    z-index: 1;
+    border-radius: .4em;
+}
+
+
+
+
+
 
 
 
@@ -704,7 +845,7 @@ nav ul li a:after {
 
     /* wit ruimte */
     .over-ons {
-        padding: 7em 0 7em;
+        padding: 6em 0 6em;
     }
 
     .over-ons p {
@@ -714,6 +855,12 @@ nav ul li a:after {
 
     .over-ons article img{
         display: none;
+    }
+
+    /* grote van box diensten */
+    .diensten-box{
+        display: grid;
+        gap: 3em;
     }
 
 
@@ -838,16 +985,20 @@ nav ul li a:after {
             text-align: center;
         }
 
+        .sideText {
+            columns: 1;
+        }
+
 
     
 
         /* .container-diensten .diensten-container {
             padding: 3em;
         } */
-        .container-diensten .diensten article p {
+        /* .container-diensten .diensten article p {
             font-size: .8em;
         }
-    
+     */
     
         /* .side-wrapper .wrapper {
             padding: 0;
@@ -896,6 +1047,11 @@ nav ul li a:after {
         font-size: .8em;
     }
 
+    /* background image scrolt niet op mobiel */
+    .parallax {
+        background-attachment: local, scroll;
+    }
+
 
 }
 
@@ -908,9 +1064,6 @@ nav ul li a:after {
     }
 
 
-    .over-wrapper{
-        padding: 0 1.5em 0;
-    }
 
 
 
