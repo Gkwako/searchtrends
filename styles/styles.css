@@ -523,7 +523,7 @@ nav ul li a:after {
 .diensten-box {
     display: flex;
     justify-content: space-between;
-    gap: 2em;
+    gap: 5em;
 }
 
 
@@ -983,6 +983,11 @@ textarea {
         font-size: .8em;
     }
 
+    /* opmaak grote form */
+    .contact-us .column2 form {
+        width: 100%;
+    }
+
     /* ___________________________________________footer */
 
     .footer-container .row-footer {
@@ -995,10 +1000,6 @@ textarea {
         justify-items: center;
         align-items: center;
         text-align: center;
-
-        /* display: flex;
-        justify-content: center;
-        gap: 8em; */
     }
 
     .columns-footer p {
@@ -1013,39 +1014,6 @@ textarea {
         width: 100%;
     } 
 
-
-
-    /* .contact-us .column2 form {
-        width: 100%;
-    }
-    .columns-footer{
-        display: grid;
-        justify-content: center;
-
-    }
-
-    .footer-container .row-footer {
-        display: block;
-        justify-content: center;
-        
-    }
-
-    .columns-footer h3 {
-        width: 70%;
-        display: flex;
-        justify-content: center;
-        gap: 3em;
-    }
-
-
-
-
-    .footer-social {
-        display: flex;
-        justify-content: center;
-        gap: .5em;
-        width: 100%;
-    } */
 
 }
 
