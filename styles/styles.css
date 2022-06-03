@@ -151,6 +151,14 @@ header {
 
 
 
+
+
+
+
+
+/* /////////////  */
+
+
 /* ************************************* UNDERLINE EFFECT:HOVER */
 
 /* hover transition */
@@ -189,47 +197,7 @@ nav ul li a:after {
 
 
 
-/* ************************************* HAMBURGER MENU OPMAAK */
 
-/* hamburger icon opmaak */
-.ham {
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    transition: transform 400ms;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    height: 3.5em;
-}
-
-.hamRotate.active {
-    transform: rotate(45deg);
-}
-.hamRotate180.active {
-    transform: rotate(180deg);
-}
-
-.line {
-    fill: none;
-    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke: #000;
-    stroke-width: 2;
-    stroke-linecap: round;
-}
-
-.ham1 .top {
-    stroke-dasharray: 40 139;
-}
-.ham1 .bottom {
-    stroke-dasharray: 40 180;
-}
-.ham1.active .top {
-    stroke-dashoffset: -98px;
-}
-.ham1.active .bottom {
-    stroke-dashoffset: -138px;
-}
 
 /* display hamburger menu niet zichtbaar */
      button {
@@ -242,6 +210,19 @@ nav ul li a:after {
         border: none;
         background-color: transparent;
     }
+
+
+/* //////// */
+
+
+
+
+
+
+
+
+
+
 
 
     
@@ -1034,93 +1015,52 @@ textarea {
             top: 27%;
         }
 
-        /* tekst hidden, alleen icon zichtbaar */
-        .extra-header ul:nth-of-type(1) li a span {
-            display: none;
-        }
-
-        /* streep tussen icon bij extra header */
-        .extra-header ul:nth-of-type(1) li:nth-of-type(2)  {
-            position: relative;
-            right: 1vw; 
-            /* border-left: 1px solid var(--color-lightPink); */
-            border-left: 1px solid rgba(179, 116, 116, 0.328);
-    
-            height: 15px;  
-        }
-
-         /* ruimte tussen streep en icon */
-         .extra-header ul:nth-of-type(1)  img {
-            margin-left: .5em;
-         } 
-
-         .extra-header ul {
-            gap: .6em;
-        }
-
-        /* plaatsing van logo bij hamburger menu */
-        nav{
-            flex-direction: row-reverse;
-        }
-       
-       
-        /* hamburger menu tekst plaatsing */
-        nav ul li {
-            padding-left: 6em;
-        }
 
 
 
-        /* extra header ruimte kleiner */
-         .container-extra {
-            gap: 7.5em;
-        } 
 
-        /* icon zichtbaar "ham"*/
-        button{
-            display: unset; 
-        }
-        
-        /* hamburger opmaak */
-        .menu{
-            z-index: 1;
-            opacity: 0;
-            position: absolute;
-            right: 0;
-            left: 0;
-            top: 0;
-            height: 30.5vmax;
-            
-            background:
-            linear-gradient( to left, 
-            rgba(179, 116, 116, 0.328) 0%,
-            rgba(179, 116, 116, 0.328) 12%,
-            rgba(179, 116, 116, 0.328) 47%,
-            rgba(179, 116, 116, 0.328) 100%
-            )
-            left 
-            top
-            #F0E7E2
-            no-repeat; 
 
-            background-size:100% 5px ;
+/* ************************************* HAMBURGER MENU OPMAAK */
 
-            transform: translate(0%, -100%);
-            transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-        }
+/* hamburger icon opmaak */
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 3.5em;
+}
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+.ham1 .top {
+    stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+    stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+    stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+    stroke-dashoffset: -138px;
+}
 
-        .menu li {
-            position: relative;
-            top: 4em;
-            padding-bottom: 2em;
-            /* font-size: 2vmax; */
-        }
-    
-        .visible{
-            display: block;
-            opacity: 1;
-            transform: translateX(0%);
-        }
+
+
 
         /* tekst onder h2 niet zichtbaar */
         .introductie-tekst h3 {
@@ -1146,7 +1086,7 @@ textarea {
 
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:601px) {
 
     .container-introductie {
         height: 30vw;
@@ -1154,9 +1094,35 @@ textarea {
     .introductie-wrapper img {
         height: 30vw;
     }
+    
     .introductie {
         top: 27%;
     }
+
+     /* tekst hidden, alleen icon zichtbaar */
+     .extra-header ul:nth-of-type(1) li a span {
+        display: none;
+    }
+
+    /* streep tussen icon bij extra header */
+    .extra-header ul:nth-of-type(1) li:nth-of-type(2)  {
+        position: relative;
+        right: 1vw; 
+        /* border-left: 1px solid var(--color-lightPink); */
+        border-left: 1px solid rgba(179, 116, 116, 0.328);
+
+        height: 15px;  
+    }
+
+     /* ruimte tussen streep en icon */
+     .extra-header ul:nth-of-type(1)  img {
+        margin-left: .5em;
+     } 
+
+     .extra-header ul {
+        gap: .6em;
+    }
+
 
     .skills-wrapper h2{
         font-size: 5.5vw;
@@ -1178,6 +1144,83 @@ textarea {
     .parallax {
         background-attachment: local, scroll;
     }
+
+
+
+        
+        /* plaatsing van logo bij hamburger menu */
+        nav{
+            flex-direction: row-reverse;
+        }
+       
+       
+        /* hamburger menu tekst plaatsing */
+        nav ul li {
+            /* padding-left: 6em;
+            margin-left: 3em; */
+        }
+
+
+
+        /* extra header ruimte kleiner */
+         .container-extra {
+            /* gap: 7.5em; */
+        } 
+
+        /* icon zichtbaar "ham"*/
+        button{
+            display: unset; 
+        }
+        
+
+
+        /* hamburger opmaak */
+        .menu{
+            z-index: 1;
+            opacity: 0;
+           
+           
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            /* height: 30; */
+            
+            background:
+            linear-gradient( to left, 
+            rgba(179, 116, 116, 0.328) 0%,
+            rgba(179, 116, 116, 0.328) 12%,
+            rgba(179, 116, 116, 0.328) 47%,
+            rgba(179, 116, 116, 0.328) 100%
+            )
+            left 
+            top
+            #F0E7E2
+            no-repeat; 
+
+            background-size:100% 5px ;
+
+            transform: translate(0%, -100%);
+            transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        }
+
+        .menu li {
+            margin-top: 2.5em;
+            margin-bottom: 2.5em;
+            margin-left: 3.5em;
+            width: 50%;
+            /* position: relative;
+            top: 4em;
+            padding-bottom: 2em; */
+            /* font-size: 2vmax; */
+        }
+        
+    
+        .visible{
+            display: block;
+            opacity: 1;
+            transform: translateX(0%);
+        }
 
 
 }
