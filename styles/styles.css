@@ -317,7 +317,6 @@ nav ul li a:after {
 /* ************************************************** */
 
 .container-skills {
-    /* overflow: hidden; */
     position: relative;
 }
 
@@ -350,7 +349,7 @@ nav ul li a:after {
 /* opmaak tekst */
 .skills-wrapper h2 {
     font-family: var(--h1-fontfamily);
-    font-size: 2em;
+    font-size: 2.5em;
 
     color: var(--color-lightPink);
     padding-bottom: 1.3em;
@@ -366,19 +365,21 @@ nav ul li a:after {
 
 /* grote van icon */
 .inhoud img {
-    width: 4.2em;
+    width: 5em;
 }
 
 /* h3 opmaak */
 .content-container .container-skills h3 {
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: var(--color-lightPink);
     font-family: var(--h1-fontfamily);
 }
 
-/* h4 opmaak */
+/* p opmaak */
 .content-container .container-skills p {
     font-weight: 350;
+    font-size: .95vw;
+    line-height: 1.6em;
     padding: .5em;
     font-family: var(--h1-fontfamily);
 }
@@ -406,14 +407,14 @@ nav ul li a:after {
 
 /* opmaak h2 */
 .container-over .over-ons h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-family: var(--h1-fontfamily);
     color: var(--color-basic);
 }
 
 /* opmaak h5 */
 .container-over .over-ons h5 {
-    font-size: 1.1em;
+    font-size: 1.99em;
     padding-top: .5em;
     color: var(--color-lightPink);
     font-family: var(--h1-fontfamily);
@@ -429,9 +430,11 @@ nav ul li a:after {
 
 /* opmaak p */
 .over-ons p {
+    font-size: 1.17vw;
     width: 50%;
     font-family: var(--h1-fontfamily);
     text-align: justify;
+    line-height: 1.6em;
 }
 
 /* image opmaak */
@@ -469,7 +472,7 @@ nav ul li a:after {
 
 /* stijling h5 */
 .container-diensten .diensten h5 {
-    font-size: 1.5em;
+    font-size: 1.99em;
     padding-bottom: 1em;
     font-family: var(--h1-fontfamily);
     color: var(--color-lightPink);
@@ -496,10 +499,10 @@ nav ul li a:after {
 /* stijling p */
 .container-diensten .diensten-container p {
     font-family: var(--h1-fontfamily);
-    padding: .7em 3.3em 5em;
+    padding: 0.7em 2.7em 5em;
     color: var(--color-white);
-    font-size: 1em;
-
+    font-size: 1.2em;
+    line-height: 1.6em;
 }
 
 /* animatie */
@@ -567,8 +570,9 @@ nav ul li a:after {
 /* p opmaak */
 .sideText p {
     font-family: var(--h1-fontfamily);
-    font-size: .9em;
+    font-size: .8vw;
     text-align: justify;
+    line-height: 1.6em;
 }
 
 
@@ -654,6 +658,8 @@ nav ul li a:after {
 .contact-us p {
     font-family: var(--h2-fontfamily);
     padding-bottom: 2em;
+    line-height: 1.77em;
+    font-size: 1.2em
 }
 
 /* opmaak tekst */
@@ -740,7 +746,6 @@ textarea {
 }
 
 .footer-wrapper {
-
     width: 66.5%;
     margin: auto;
     padding: 5em 0 5em;
@@ -755,7 +760,7 @@ textarea {
 
 /* info bedrijf, tekst heeft max container */
 .columns-footer p {
-    width: 70%;
+    width: 80%;
 }
 
 /* h3 opmaak */
@@ -772,6 +777,7 @@ textarea {
 .footer-container p {
     font-weight: 200;
     font-family: var(--h2-fontfamily);
+    line-height: 1.6em;
 }
 
 /* nav in footer tekst stijling */
