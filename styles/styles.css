@@ -99,7 +99,7 @@ header {
 
     position: sticky;
     top: 0em;
-    height: 4.5em;
+    height: 6.5rem;
     background-color: var(--color-white);
 
     transition: .32s;
@@ -111,15 +111,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw;
 
-    width: 80%;
+    width: 78%;
     margin: auto;
+    height: 100%;
 }
 
 /* logo opmaak*/
 h1 {
-    font-size: 1.2em;
+    font-size: 1.7rem;
     font-family: var(--h1-fontfamily);
     font-weight: 400;
     color: var(--color-basic);
@@ -136,7 +136,7 @@ nav ul li {
     list-style: none;
 
     padding-left: 1.2em;
-    font-size: .88em;
+    font-size: 1.3rem;
 }
 
 /* link stijling */
@@ -905,8 +905,7 @@ textarea {
 
 
 
-
-@media screen and (max-width:714px) {
+@media screen and (max-width:817px) {
 
     .container-introductie {
         height: 30vw;
@@ -987,13 +986,10 @@ textarea {
     .sideText {
         columns: 1;
     }
-}
 
 
 
 
-
-@media screen and (max-width:601px) {
 
     .container-introductie {
         height: 30vw;
@@ -1074,7 +1070,6 @@ textarea {
 
         position: absolute;
         right: 0;
-        left: 0;
         top: 0;
 
         background:
