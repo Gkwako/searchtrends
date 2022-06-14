@@ -423,13 +423,6 @@ nav ul li a:after {
     font-family: var(--h1-fontfamily);
 }
 
-/* opmaak tekst container */
-.over-ons article {
-    
-    /* padding-top: 1em;
-    width: 100%; */
-}
-
 /* opmaak p */
 .over-ons p {
     font-size: 1rem;
@@ -826,10 +819,6 @@ textarea {
 
 @media screen and (max-width:1350px) {
 
-    .skills-wrapper h2 {
-        /* font-size: 1.7em; */
-    }
-
     /* skills gaan onder elkaar */
     .skills {
         display: grid;
@@ -875,10 +864,6 @@ textarea {
 
     .contact-us {
         padding: 5em 0 0;
-    }
-
-    .contact-us h2 {
-        /* font-size: 2em; */
     }
 
     .contact-us p {
