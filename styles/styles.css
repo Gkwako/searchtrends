@@ -83,11 +83,13 @@
 /* grote van img */
 .container-extra ul li a svg {
     width: 2rem;
+    color: #6d4848;
 }
 
 /* grote tekst phone/mail */
 .container-extra ul li a span {
     font-size: 1rem;
+    color: #6d4848;
 }
 
 
