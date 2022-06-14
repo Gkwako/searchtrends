@@ -85,6 +85,11 @@
     width: 2rem;
 }
 
+/* grote tekst phone/mail */
+.container-extra ul li a span {
+    font-size: 1rem;
+}
+
 
 
 
