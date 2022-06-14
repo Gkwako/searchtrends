@@ -805,8 +805,9 @@ textarea {
     margin-bottom: 0;
 }
 
-.footer-social img {
+.footer-social a svg {
     width: 1.2em;
+    color: rgba(0, 0, 0, 0.588);
 }
 
 .footer-social {
