@@ -28,7 +28,7 @@ Maar het is mij wel gelukt om de schuine vorm op te lossen, alleen moet de paral
 </details>
 
 
-## Voortgang 1 (week 3)
+## Voortgang 2 (week 3-4)
 
 <details>
 <summary>Stand van zaken</summary>
@@ -41,13 +41,38 @@ Dankzij Jeroen was het mij gelukt om een grote deel van de structuur over te nem
 
 
 
-## Voortgang 1 (week 4)
+## Voortgang 3 (week 5)
 
 <details>
 <summary>Stand van zaken</summary>
-......
+Deze week was validatie week, hier heb ik mijn eindproduct afgemaakt en ben ik gaan kijken naar eventuele fouten die gewijzigd kunnen worden en feedback hierop.
+Op maandagen zit ik samen met Maxime en Jeroen om over de voortgang van vorige week te bespreken, deze week heb ik het eindproduct van de one page gedeeld. Ook heeft Jeroen deze op zijn eigen laptop bekeken, snel kwamen wij achter dat de one page pagina niet op alle browsers responsief is. Dit zorgde ervoor dat ik terug moest gaan naar mijn code en dit ging achterhalen. 
 
-<img src="RMimages/navv1b.png" width="375px" alt="navv1b">
-<img src="RMimages/navv1.png" width="375px" alt="navv1">
+</details>
+
+
+## Voortgang 4 (week 6)
+
+<details>
+<summary>Stand van zaken</summary>
+De stugglen van deze week was de hamburger menu, hierboven kan je goed zien dat de button icon niet wil terugdraaien. Het idee was wanneer je op een van de navigatie links klikt dat de hamburger menu dicht klapt en dat je meteen genavigeerd wordt op de juiste pagina. De hamburger menu doet in principe naar behoren alleen wilde de button icon niet mee togglen. Dit kwam omdat er in javascript de button niet opgeroepen wordt wanneer er op de link wordt geklikt waardoor de button blijft op het kruisje, dit heb ik uiteindelijk gefixed door een extra regel toe te voegen in javascript. 
+
+</details>
+
+
+## Voortgang 5 (week 7)
+
+<details>
+<summary>Stand van zaken</summary>
+De one page was ook deze week ook goed op weg, heb per onderdeel responsief gemaakt. Helaas heb ik dit niet kunnen laten zien tijdens het functioneringsgesprek omdat ik de one page al had ontleed en dit niet meer op zijn geheel was. 
+
+</details>
+
+
+## Voortgang 6 (week 8)
+
+<details>
+<summary>Stand van zaken</summary>
+Ik ben meteen begonnen met de 2e one page pagina die ik graag nog af wil maken in mijn stageperiode. Het eerste stukje van deze one page was af alleen merkte ik meteen een aantal design fouten die ik niet over na had gedacht. Wanneer deze pagina op mobiele formaat is kan ik geen hamburger menu toevoegen omdat het niet echt een goede plek heeft om op te staan, aangezien de navigatie aan een kant staat. 
 
 </details>

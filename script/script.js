@@ -27,7 +27,7 @@ $( '.menu a' ).on("click", function(){
 	$('.ham').click();
 	console.log(" menu gone");
 
-  });
+});
 
 
  
