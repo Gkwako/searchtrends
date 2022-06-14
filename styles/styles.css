@@ -235,8 +235,8 @@ nav ul li a:after {
 }
 
 /* shape opmaak */
-.introductie-wrapper img {
-    height: 30vw;
+.introductie-wrapper svg {
+    height: 29.99vw;
     width: 60%;
     opacity: 70%;
     transform: skew(0deg, 0deg);
@@ -343,7 +343,7 @@ nav ul li a:after {
 .skills {
     display: flex;
     text-align: center;
-    gap: 8em;
+    gap: 5em;
 }
 
 /* opmaak tekst */
