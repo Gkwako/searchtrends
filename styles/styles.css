@@ -106,7 +106,7 @@ header {
 
     position: sticky;
     top: 0em;
-    height: 6.5rem;
+    height: 4rem;
     background-color: var(--color-white);
 
     transition: .32s;
@@ -126,7 +126,7 @@ nav {
 
 /* logo opmaak*/
 h1 {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-family: var(--h1-fontfamily);
     font-weight: 400;
     color: var(--color-basic);
@@ -1102,6 +1102,7 @@ textarea {
 
     .visible {
         display: block;
+        width: 100%;
         opacity: 1;
         transform: translateX(0%);
     }
