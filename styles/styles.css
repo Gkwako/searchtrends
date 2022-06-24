@@ -1092,10 +1092,11 @@ textarea {
     }
 
     .menu li {
-        margin-top: 2.5em;
+        /* margin-top: 2.5em;
         margin-bottom: 2.5em;
         margin-left: 4.5em;
-        width: 50%;
+        width: 50%; */
+        padding-top: 1rem;
     }
 
     .visible {
@@ -1103,6 +1104,8 @@ textarea {
         width: 100%;
         opacity: 1;
         transform: translateX(0%);
+
+        padding: 5.5em;
     }
 
 }
