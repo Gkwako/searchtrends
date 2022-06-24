@@ -37,8 +37,6 @@
     position: relative;
     z-index: 3; /* container staat voor */
     width: 100%;
-
-    /* background-color: var(--color-creme); */
     background-color: #EBDAD7;
 }
 
@@ -47,7 +45,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw;
+    padding: .5rem;
     width: 80%;
     margin: auto;
 
